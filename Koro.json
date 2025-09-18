@@ -238,6 +238,14 @@
         "name": "pilar flotante.gif",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite3",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -269,7 +277,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.3010461197182463,
+        "zoomFactor": 0.8993607583666642,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -545,6 +553,40 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 550,
+          "keepRatio": true,
+          "layer": "",
+          "name": "LimiteHorizontal",
+          "persistentUuid": "51a192fc-858e-4953-bf00-9536674822e9",
+          "width": 14,
+          "x": -739,
+          "y": 191,
+          "zOrder": 105,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 550,
+          "keepRatio": true,
+          "layer": "",
+          "name": "LimiteHorizontal",
+          "persistentUuid": "054b81ad-7c24-43fe-bacd-4cf262a0ee6d",
+          "width": 14,
+          "x": 2166,
+          "y": 191,
+          "zOrder": 105,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -574,6 +616,7 @@
             {
               "gravity": 1000,
               "jumpSpeed": 900,
+              "maxSpeed": 450,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
               "acceleration": 1500,
@@ -585,7 +628,6 @@
               "jumpSustainTime": 0.2,
               "ladderClimbingSpeed": 150,
               "maxFallingSpeed": 700,
-              "maxSpeed": 250,
               "slopeMaxAngle": 60,
               "useLegacyTrajectory": false,
               "useRepeatedJump": false,
@@ -1539,7 +1581,7 @@
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": true,
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "PlataformaFlotante",
           "type": "Sprite",
@@ -1591,12 +1633,24 @@
                             "y": 16
                           },
                           {
-                            "x": 63,
-                            "y": 55
+                            "x": 62.5,
+                            "y": 30
                           },
                           {
-                            "x": 1,
-                            "y": 55
+                            "x": 56.5,
+                            "y": 42.5
+                          },
+                          {
+                            "x": 39,
+                            "y": 59.5
+                          },
+                          {
+                            "x": 14.5,
+                            "y": 44.5
+                          },
+                          {
+                            "x": 3,
+                            "y": 31.5
                           }
                         ]
                       ]
@@ -1667,6 +1721,76 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "LimiteHorizontal",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "canBeGrabbed": true,
+              "isFolded": true,
+              "name": "Platform",
+              "platformType": "NormalPlatform",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "yGrabOffset": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "NewSprite",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite3",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 64
+                          },
+                          {
+                            "x": 0,
+                            "y": 64
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -1698,6 +1822,9 @@
           },
           {
             "objectName": "PlataformaFlotante"
+          },
+          {
+            "objectName": "LimiteHorizontal"
           }
         ]
       },
