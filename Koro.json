@@ -1,5 +1,5 @@
 {
-  "firstLayout": "",
+  "firstLayout": "Start Screen",
   "gdVersion": {
     "build": 242,
     "major": 5,
@@ -24,7 +24,7 @@
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "D:\\OneDrive\\Docs\\UNER\\Dropbox\\Tecnicatura Universitaria en Desarrollo Web\\14. Multimedia y Juegos en Web\\TPF\\Export3",
+    "latestCompilationDirectory": "D:\\OneDrive\\Docs\\UNER\\Dropbox\\Tecnicatura Universitaria en Desarrollo Web\\14. Multimedia y Juegos en Web\\TPF\\Export5",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
