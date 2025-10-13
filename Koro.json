@@ -12123,7 +12123,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.9934433498259917,
+        "zoomFactor": 0.7130377630690652,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -12399,7 +12399,7 @@
           "name": "Historia_txt",
           "persistentUuid": "c53ff01a-1502-4661-ba15-a246d3eee2f0",
           "width": 207,
-          "x": 521,
+          "x": 522,
           "y": 185,
           "zOrder": 110,
           "numberProperties": [],
@@ -12449,8 +12449,8 @@
           "name": "Historia_btn",
           "persistentUuid": "044c38fa-569b-4e4d-8991-f1550cbfe8ff",
           "width": 218,
-          "x": 515,
-          "y": 181,
+          "x": 516,
+          "y": 180,
           "zOrder": 113,
           "numberProperties": [],
           "stringProperties": [],
@@ -12701,6 +12701,71 @@
           "x": 850,
           "y": 589,
           "zOrder": 128,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "CapaHistoriaJuego",
+          "name": "Historia_txt",
+          "persistentUuid": "3ae7cb1e-ce1a-4896-8a1f-1c5c009f9ccf",
+          "width": 0,
+          "x": 533,
+          "y": 42,
+          "zOrder": 129,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "CapaHistoriaJuego",
+          "name": "TextoOpcionHistoria",
+          "persistentUuid": "813d5e5d-ae7d-4360-905f-92b39a8e8fd8",
+          "width": 0,
+          "x": 70,
+          "y": 70,
+          "zOrder": 130,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "CapaHistoriaJuego",
+          "name": "volver_menu_anterior_texto",
+          "persistentUuid": "53e07e9f-99bc-4366-b631-d3cc926e98eb",
+          "width": 0,
+          "x": 845,
+          "y": 601,
+          "zOrder": 131,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 42,
+          "keepRatio": true,
+          "layer": "CapaHistoriaJuego",
+          "name": "volver_menu_anterior_btn",
+          "persistentUuid": "b3674ae5-5e3e-433e-9922-f757c728a252",
+          "width": 419,
+          "x": 801,
+          "y": 597,
+          "zOrder": 132,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -15324,13 +15389,13 @@
           ],
           "behaviors": [],
           "string": "Historia",
-          "font": "",
+          "font": "80s-retro-future2.ttf",
           "textAlignment": "center",
           "characterSize": 28,
           "color": {
-            "b": 151,
-            "g": 148,
-            "r": 145
+            "b": 20,
+            "g": 7,
+            "r": 117
           },
           "content": {
             "bold": false,
@@ -15347,12 +15412,12 @@
             "smoothed": true,
             "underlined": false,
             "text": "Historia",
-            "font": "",
+            "font": "80s-retro-future2.ttf",
             "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 28,
             "lineHeight": 0,
-            "color": "145;148;151"
+            "color": "117;7;20"
           }
         },
         {
@@ -16376,6 +16441,59 @@
             "lineHeight": 0,
             "color": "143;4;21"
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "TextoOpcionHistoria",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "AutoTyping",
+              "type": "AutoTyping::AutoTyping",
+              "Text": "Text",
+              "Interval": 0.05,
+              "CharacterJustAdded": false,
+              "FullText": "",
+              "TypedText": ""
+            }
+          ],
+          "string": "Tipo de Juego\nEl juego combina mecánicas de plataformas y combates. \n\nMisión: \nEl viaje de Koro es un juego de de plataforma de acción y aventura que \nemprende Koro con una única misión, salvar su planeta. \nSu especie se enfrenta a una escasez de recursos vitales. Para ello, nuestro \nhéroe debe encontrar un cristal con energía ilimitada. Un diamante preciado \nque esta custodiado en otra dimensión la cual debe viajar.  \n\nNarrativa: \nKoro vive tranquilamente con su padre en un planeta cuya energía se está agotando.\nSu padre le revela la existencia de un diamante ancestral y lo elige \npara una misión: recuperarlo. \nEn su viaje, Koro recibe la bendición de su padre y un compañero espiritual \nque lo ayuda, un pequeño y amistoso robot android. Más adelante, se encuentra \ncon un sabio imaginario que le advierte sobre el Guardián, a quien debe enfrentar \npara conseguir el diamante. Al final, Koro regresa a su planeta, completando su \nviaje y salvándolo con la nueva fuente de energía.  ",
+          "font": "80s-retro-future2.ttf",
+          "textAlignment": "left",
+          "characterSize": 23,
+          "color": {
+            "b": 6,
+            "g": 6,
+            "r": 124
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Tipo de Juego\nEl juego combina mecánicas de plataformas y combates. \n\nMisión: \nEl viaje de Koro es un juego de de plataforma de acción y aventura que \nemprende Koro con una única misión, salvar su planeta. \nSu especie se enfrenta a una escasez de recursos vitales. Para ello, nuestro \nhéroe debe encontrar un cristal con energía ilimitada. Un diamante preciado \nque esta custodiado en otra dimensión la cual debe viajar.  \n\nNarrativa: \nKoro vive tranquilamente con su padre en un planeta cuya energía se está agotando.\nSu padre le revela la existencia de un diamante ancestral y lo elige \npara una misión: recuperarlo. \nEn su viaje, Koro recibe la bendición de su padre y un compañero espiritual \nque lo ayuda, un pequeño y amistoso robot android. Más adelante, se encuentra \ncon un sabio imaginario que le advierte sobre el Guardián, a quien debe enfrentar \npara conseguir el diamante. Al final, Koro regresa a su planeta, completando su \nviaje y salvándolo con la nueva fuente de energía.  ",
+            "font": "80s-retro-future2.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 23,
+            "lineHeight": 0,
+            "color": "124;6;6"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -16479,6 +16597,9 @@
           },
           {
             "objectName": "Historia_txt"
+          },
+          {
+            "objectName": "TextoOpcionHistoria"
           },
           {
             "objectName": "Acerca_de_txt"
@@ -16892,6 +17013,61 @@
                 "value": "SourisSurObjet"
               },
               "parameters": [
+                "Historia_btn",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonFromTextPressed"
+              },
+              "parameters": [
+                "Start_btn",
+                "\"Left\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"CapaBotonesOpciones\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"CapaHistoriaJuego\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AutoTyping::AutoTyping::RestartFromBeginning"
+              },
+              "parameters": [
+                "TextoOpcionHistoria",
+                "AutoTyping",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
                 "volver_menu_anterior_texto",
                 "",
                 "",
@@ -16916,6 +17092,15 @@
               "parameters": [
                 "",
                 "\"CapaTeclasJuego\""
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"CapaHistoriaJuego\""
               ]
             },
             {
@@ -16979,6 +17164,16 @@
               "parameters": [
                 "",
                 "\"CapaObjetivosJuego\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AutoTyping::AutoTyping::RestartFromBeginning"
+              },
+              "parameters": [
+                "Objetivos_texto",
+                "AutoTyping",
+                ""
               ]
             }
           ]
@@ -17258,6 +17453,59 @@
           "isLightingLayer": false,
           "isLocked": false,
           "name": "CapaObjetivosJuego",
+          "renderingType": "",
+          "visibility": false,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "CapaHistoriaJuego",
           "renderingType": "",
           "visibility": true,
           "cameras": [],
