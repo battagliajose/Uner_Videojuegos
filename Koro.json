@@ -12083,7 +12083,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.4481978045410505,
+        "zoomFactor": 0.5117784035210352,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -12596,6 +12596,38 @@
           "x": 834,
           "y": 553,
           "zOrder": 124,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "CapaObjetivosJuego",
+          "name": "Objetivos_texto",
+          "persistentUuid": "7283dd9e-49ab-4eb1-ac74-beec215b65c0",
+          "width": 0,
+          "x": 114,
+          "y": 107,
+          "zOrder": 125,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "CapaObjetivosJuego",
+          "name": "objetivos_txt",
+          "persistentUuid": "731776db-97fe-49fb-9532-8e6ecf6d6847",
+          "width": 0,
+          "x": 517,
+          "y": 84,
+          "zOrder": 126,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -15158,9 +15190,9 @@
           "textAlignment": "center",
           "characterSize": 28,
           "color": {
-            "b": 151,
-            "g": 148,
-            "r": 145
+            "b": 25,
+            "g": 10,
+            "r": 143
           },
           "content": {
             "bold": false,
@@ -15182,7 +15214,7 @@
             "verticalTextAlignment": "bottom",
             "characterSize": 28,
             "lineHeight": 0,
-            "color": "145;148;151"
+            "color": "143;10;25"
           }
         },
         {
@@ -16190,6 +16222,77 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "NewTextInput",
+          "type": "TextInput::TextInputObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "initialValue": "",
+            "placeholder": "Touch to start typing",
+            "fontResourceName": "",
+            "fontSize": 20,
+            "inputType": "text",
+            "textColor": "0;0;0",
+            "fillColor": "255;255;255",
+            "fillOpacity": 255,
+            "borderColor": "0;0;0",
+            "borderOpacity": 255,
+            "borderWidth": 1,
+            "readOnly": false,
+            "disabled": false,
+            "spellCheck": false,
+            "paddingX": 2,
+            "paddingY": 1,
+            "textAlign": "left",
+            "maxLength": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Objetivos_texto",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Nivel 1: El salto a la aventura\nObjetivo principal: Recolectar 10 orbes de energía para activar el portal dimensional.\nCondiciones:\nEvitar obstáculos como volcanes y bolas de fuego.\nMantener el traje en buen estado utilizando gemas, que también tienen un uso de reparación.\n\nNivel 2: El guardián y su compañero\nObjetivo principal: Sobrevivir a las oleadas de enemigos y alcanzar el segundo portal.\nCondiciones:\nRecolectar 10 gemas para poder subir al cohete.\nMantener el traje por encima del 50% de integridad.\nUtilizar al compañero lobo android para moverse más rápido y esquivar obstáculos.\n\nNivel 3: El diamante y el Guardián Final\nObjetivo principal: Derrotar al Guardián y obtener el diamante ancestral.\nCondiciones:\nFase 1: Navegar por un cinturón de plataformas armadas esquivando cohetes.\nFase 2: Enfrentar al Guardián usando bolas de hielo para congelarlo, \ncon cada 3 impactos congelando una parte de su cuerpo.\nEvitar bolas de fuego para conservar la barra de vida.",
+          "font": "80s-retro-future2.ttf",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Nivel 1: El salto a la aventura\nObjetivo principal: Recolectar 10 orbes de energía para activar el portal dimensional.\nCondiciones:\nEvitar obstáculos como volcanes y bolas de fuego.\nMantener el traje en buen estado utilizando gemas, que también tienen un uso de reparación.\n\nNivel 2: El guardián y su compañero\nObjetivo principal: Sobrevivir a las oleadas de enemigos y alcanzar el segundo portal.\nCondiciones:\nRecolectar 10 gemas para poder subir al cohete.\nMantener el traje por encima del 50% de integridad.\nUtilizar al compañero lobo android para moverse más rápido y esquivar obstáculos.\n\nNivel 3: El diamante y el Guardián Final\nObjetivo principal: Derrotar al Guardián y obtener el diamante ancestral.\nCondiciones:\nFase 1: Navegar por un cinturón de plataformas armadas esquivando cohetes.\nFase 2: Enfrentar al Guardián usando bolas de hielo para congelarlo, \ncon cada 3 impactos congelando una parte de su cuerpo.\nEvitar bolas de fuego para conservar la barra de vida.",
+            "font": "80s-retro-future2.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "0;0;0"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -16329,6 +16432,12 @@
           },
           {
             "objectName": "volver_menu_anterior_btn"
+          },
+          {
+            "objectName": "NewTextInput"
+          },
+          {
+            "objectName": "Objetivos_texto"
           }
         ]
       },
@@ -16907,7 +17016,7 @@
           "isLocked": false,
           "name": "CapaBotonesOpciones",
           "renderingType": "",
-          "visibility": true,
+          "visibility": false,
           "cameras": [],
           "effects": [
             {
@@ -16961,6 +17070,59 @@
           "name": "CapaTeclasJuego",
           "renderingType": "",
           "visibility": false,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "CapaObjetivosJuego",
+          "renderingType": "",
+          "visibility": true,
           "cameras": [],
           "effects": [
             {
