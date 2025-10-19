@@ -4531,7 +4531,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.814188120370996,
+        "zoomFactor": 0.3925161175488248,
         "windowMask": false,
         "selectedLayer": ""
       },
@@ -5060,7 +5060,7 @@
           "persistentUuid": "14011394-9dfd-4231-8a7b-216d9569f8d6",
           "width": 722,
           "x": 2888,
-          "y": 592,
+          "y": 591,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -5077,7 +5077,7 @@
           "persistentUuid": "28de2b9e-d717-4049-b6d3-81e2f1fccc89",
           "width": 722,
           "x": 3605,
-          "y": 592,
+          "y": 591,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -5196,7 +5196,7 @@
           "persistentUuid": "97d9132a-02e1-42a9-9257-1c7a3508780e",
           "width": 722,
           "x": 4322,
-          "y": 597,
+          "y": 591,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -5213,7 +5213,7 @@
           "persistentUuid": "37b029eb-21e9-4294-88a3-23e38d5c5dc6",
           "width": 722,
           "x": 5041,
-          "y": 597,
+          "y": 591,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -9075,7 +9075,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.7130377630690443,
+        "zoomFactor": 0.3553434558817008,
         "windowMask": false,
         "selectedLayer": "Lighting"
       },
@@ -11033,10 +11033,10 @@
               "type": "Lighting::LightObstacleBehavior"
             },
             {
-              "cost": 2,
-              "impassable": true,
               "name": "PathfindingObstacle",
-              "type": "PathfindingBehavior::PathfindingObstacleBehavior"
+              "type": "PathfindingBehavior::PathfindingObstacleBehavior",
+              "cost": 2,
+              "impassable": true
             },
             {
               "isFolded": true,
@@ -12443,10 +12443,10 @@
           "effects": [],
           "behaviors": [
             {
-              "cost": 2,
-              "impassable": true,
               "name": "PathfindingObstacle",
-              "type": "PathfindingBehavior::PathfindingObstacleBehavior"
+              "type": "PathfindingBehavior::PathfindingObstacleBehavior",
+              "cost": 2,
+              "impassable": true
             },
             {
               "name": "Platform",
@@ -12534,6 +12534,9 @@
           "effects": [],
           "behaviors": [
             {
+              "isFolded": true,
+              "name": "Pathfinding",
+              "type": "PathfindingBehavior::PathfindingBehavior",
               "acceleration": 400,
               "allowDiagonals": true,
               "angleOffset": 0,
@@ -12543,12 +12546,9 @@
               "extraBorder": 0,
               "gridOffsetX": 0,
               "gridOffsetY": 0,
-              "isFolded": true,
               "maxSpeed": 200,
-              "name": "Pathfinding",
               "rotateObject": true,
-              "smoothingMaxCellGap": 1,
-              "type": "PathfindingBehavior::PathfindingBehavior"
+              "smoothingMaxCellGap": 1
             },
             {
               "isFolded": true,
@@ -12560,6 +12560,9 @@
               "OffsetY": 0
             },
             {
+              "isFolded": true,
+              "name": "PlatformerObject",
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "acceleration": 1500,
               "canGoDownFromJumpthru": true,
               "canGrabPlatforms": false,
@@ -12567,15 +12570,12 @@
               "deceleration": 1500,
               "gravity": 0,
               "ignoreDefaultControls": true,
-              "isFolded": true,
               "jumpSpeed": 600,
               "jumpSustainTime": 0.2,
               "ladderClimbingSpeed": 150,
               "maxFallingSpeed": 700,
               "maxSpeed": 250,
-              "name": "PlatformerObject",
               "slopeMaxAngle": 60,
-              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "useLegacyTrajectory": false,
               "useRepeatedJump": false,
               "xGrabTolerance": 10,
@@ -12653,6 +12653,9 @@
               "FloorDownwardSpeedMax": 9000
             },
             {
+              "isFolded": true,
+              "name": "TopDownMovement",
+              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
               "acceleration": 400,
               "allowDiagonals": true,
               "angleOffset": 0,
@@ -12660,12 +12663,9 @@
               "customIsometryAngle": 30,
               "deceleration": 800,
               "ignoreDefaultControls": false,
-              "isFolded": true,
               "maxSpeed": 200,
               "movementAngleOffset": 0,
-              "name": "TopDownMovement",
               "rotateObject": true,
-              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
               "useLegacyTurnBack": false,
               "viewpoint": "TopDown"
             }
@@ -12834,6 +12834,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Inicio",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -12937,6 +12938,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Camara",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -13840,16 +13842,6 @@
                 "value": "ActivateBehavior"
               },
               "parameters": [
-                "Koro",
-                "PlatformerObject",
-                "yes"
-              ]
-            },
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
                 "Robot",
                 "TopDownMovement",
                 "no"
@@ -13883,6 +13875,16 @@
                 "Koro",
                 "SmoothCamera",
                 "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlatformBehavior::IgnoreDefaultControls"
+              },
+              "parameters": [
+                "Koro",
+                "PlatformerObject",
+                "no"
               ]
             }
           ]
@@ -13913,16 +13915,6 @@
                 "value": "ActivateBehavior"
               },
               "parameters": [
-                "Koro",
-                "PlatformerObject",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
                 "Robot",
                 "TopDownMovement",
                 "yes"
@@ -13956,6 +13948,16 @@
                 "Koro",
                 "SmoothCamera",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlatformBehavior::IgnoreDefaultControls"
+              },
+              "parameters": [
+                "Koro",
+                "PlatformerObject",
+                "yes"
               ]
             }
           ]
