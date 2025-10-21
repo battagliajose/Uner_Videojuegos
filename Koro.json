@@ -933,6 +933,78 @@
         "name": "robot.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "Heart.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "Heart.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Heart.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Heart.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Heart2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Heart2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Heart3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Heart3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite28.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite28",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite29.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite29",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite30.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite30",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite31.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite31.png\"}",
+        "name": "NewSprite31",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite32.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite32",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1010,11 +1082,88 @@
         "lineHeight": 0,
         "color": "221;231;243"
       }
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "Life_TiledSprite",
+      "texture": "Heart3.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Diamantes",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "diamantes-varios.gif",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 3
+                      },
+                      {
+                        "x": 24,
+                        "y": 3
+                      },
+                      {
+                        "x": 24,
+                        "y": 23
+                      },
+                      {
+                        "x": 1,
+                        "y": 23
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
+      {
+        "objectName": "Life_TiledSprite"
+      },
+      {
+        "objectName": "Diamantes"
+      },
       {
         "objectName": "retro_future_Texto_Viaje_de_Koro"
       }
@@ -1026,6 +1175,22 @@
       "name": "ContadorDiamantes",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "CheckPoint",
+      "type": "structure",
+      "children": [
+        {
+          "name": "X",
+          "type": "number",
+          "value": 380
+        },
+        {
+          "name": "Y",
+          "type": "number",
+          "value": 350
+        }
+      ]
     }
   ],
   "layouts": [
@@ -1142,23 +1307,6 @@
           "width": 48,
           "x": 490,
           "y": 205,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 48,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Diamantes",
-          "persistentUuid": "95a001a0-243b-4a09-9a2a-7cec3b233d35",
-          "width": 48,
-          "x": 856,
-          "y": 102,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -2481,66 +2629,6 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "Diamantes",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "diamantes-varios.gif",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 1,
-                            "y": 3
-                          },
-                          {
-                            "x": 24,
-                            "y": 3
-                          },
-                          {
-                            "x": 24,
-                            "y": 23
-                          },
-                          {
-                            "x": 1,
-                            "y": 23
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
           "name": "Esmeralda",
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -3564,9 +3652,6 @@
             "objectName": "Diamante"
           },
           {
-            "objectName": "Diamantes"
-          },
-          {
             "objectName": "Esmeralda"
           },
           {
@@ -4531,7 +4616,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.3925161175488248,
+        "zoomFactor": 0.46331118245140124,
         "windowMask": false,
         "selectedLayer": ""
       },
@@ -4541,6 +4626,11 @@
           "name": "CamPosX",
           "type": "number",
           "value": 0
+        },
+        {
+          "name": "DiamantesParaPortal",
+          "type": "number",
+          "value": 10
         }
       ],
       "instances": [
@@ -4554,8 +4644,8 @@
           "name": "Koro",
           "persistentUuid": "1729dbab-bbe2-4a8f-b172-2cec8c707e60",
           "width": 64,
-          "x": 381,
-          "y": 358,
+          "x": 380,
+          "y": 350,
           "zOrder": 100,
           "numberProperties": [],
           "stringProperties": [],
@@ -4974,8 +5064,8 @@
           "name": "TextoContadorDiamantes",
           "persistentUuid": "c3a856b1-e1db-47cc-a9c1-4e5ee02cfa0a",
           "width": 0,
-          "x": 77,
-          "y": 25,
+          "x": 74,
+          "y": 81,
           "zOrder": 109,
           "numberProperties": [],
           "stringProperties": [],
@@ -5043,7 +5133,7 @@
           "persistentUuid": "8fd8a474-ad79-41df-918d-a76e403369c6",
           "width": 48,
           "x": 18,
-          "y": 21,
+          "y": 80,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -5357,13 +5447,14 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 60.00000000000001,
+          "height": 200,
           "keepRatio": true,
           "layer": "Interface",
           "name": "LineLightJoystick",
           "persistentUuid": "8fb852a5-7dbf-4845-8f20-197c01853d64",
-          "width": 0,
+          "width": 200,
           "x": 118,
           "y": 608,
           "zOrder": 112,
@@ -5435,6 +5526,22 @@
           "x": 6125,
           "y": 435,
           "zOrder": 114,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0.6896551724137931,
+          "height": 40,
+          "layer": "Interface",
+          "name": "Life_TiledSprite",
+          "persistentUuid": "aa1c874f-926d-428b-b9ab-f18f603882ea",
+          "width": 181,
+          "x": 21,
+          "y": 20,
+          "zOrder": 115,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6246,66 +6353,6 @@
                           },
                           {
                             "x": 3,
-                            "y": 23
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Diamantes",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "diamantes-varios.gif",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 1,
-                            "y": 3
-                          },
-                          {
-                            "x": 24,
-                            "y": 3
-                          },
-                          {
-                            "x": 24,
-                            "y": 23
-                          },
-                          {
-                            "x": 1,
                             "y": 23
                           }
                         ]
@@ -7940,9 +7987,6 @@
             "objectName": "Diamante"
           },
           {
-            "objectName": "Diamantes"
-          },
-          {
             "objectName": "Esmeralda"
           },
           {
@@ -8114,6 +8158,29 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Portal"
+                  ]
+                }
+              ]
             }
           ],
           "parameters": []
@@ -8208,6 +8275,17 @@
                 },
                 {
                   "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                  },
+                  "parameters": [
+                    "Life_TiledSprite",
+                    "Resizable",
+                    "0",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Wait"
                   },
                   "parameters": [
@@ -8216,12 +8294,33 @@
                 },
                 {
                   "type": {
-                    "value": "Scene"
+                    "value": "MettreX"
                   },
                   "parameters": [
-                    "",
-                    "\"Level1\"",
-                    ""
+                    "Koro",
+                    "=",
+                    "CheckPoint.X"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreY"
+                  },
+                  "parameters": [
+                    "Koro",
+                    "=",
+                    "CheckPoint.Y"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                  },
+                  "parameters": [
+                    "Life_TiledSprite",
+                    "Resizable",
+                    "181",
+                    "40"
                   ]
                 }
               ]
@@ -8530,6 +8629,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Items",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -8547,6 +8647,16 @@
                     "",
                     "",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "ContadorDiamantes",
+                    ">=",
+                    "DiamantesParaPortal"
                   ]
                 },
                 {
@@ -8662,8 +8772,8 @@
                   "parameters": [
                     "Koro",
                     "Resizable",
-                    "128",
-                    "128"
+                    "96",
+                    "96"
                   ]
                 },
                 {
@@ -8776,6 +8886,26 @@
                 },
                 {
                   "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "CheckPoint.X",
+                    "=",
+                    "Koro.X()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "CheckPoint.Y",
+                    "=",
+                    "Koro.Y()"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "EffectCapability::EffectBehavior::EnableEffect"
                   },
                   "parameters": [
@@ -8801,6 +8931,32 @@
                     "Koro",
                     "Effect",
                     "\"Brillo\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "ContadorDiamantes",
+                    ">=",
+                    "DiamantesParaPortal"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Portal",
                     ""
                   ]
                 }
@@ -9075,7 +9231,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.3553434558817008,
+        "zoomFactor": 0.9610368693714791,
         "windowMask": false,
         "selectedLayer": "Lighting"
       },
@@ -9088,6 +9244,31 @@
         },
         {
           "name": "PlayerSeleccionado",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "DiamantesParaPortal",
+          "type": "number",
+          "value": 11
+        },
+        {
+          "name": "RadioLuzFlash",
+          "type": "number",
+          "value": 6000
+        },
+        {
+          "name": "RadioLuzMin",
+          "type": "number",
+          "value": 500
+        },
+        {
+          "name": "RadioLuz",
+          "type": "number",
+          "value": 500
+        },
+        {
+          "name": "SeguimientoDrone",
           "type": "boolean",
           "value": true
         }
@@ -9139,23 +9320,6 @@
           "width": 48,
           "x": 1102,
           "y": 396,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 48,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Diamantes",
-          "persistentUuid": "95a001a0-243b-4a09-9a2a-7cec3b233d35",
-          "width": 48,
-          "x": 4200,
-          "y": -115,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -9523,8 +9687,8 @@
           "name": "TextoContadorDiamantes",
           "persistentUuid": "c3a856b1-e1db-47cc-a9c1-4e5ee02cfa0a",
           "width": 0,
-          "x": 77,
-          "y": 25,
+          "x": 74,
+          "y": 81,
           "zOrder": 109,
           "numberProperties": [],
           "stringProperties": [],
@@ -9592,7 +9756,7 @@
           "persistentUuid": "8fd8a474-ad79-41df-918d-a76e403369c6",
           "width": 48,
           "x": 18,
-          "y": 21,
+          "y": 80,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -9906,13 +10070,14 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 60.00000000000001,
+          "height": 200,
           "keepRatio": true,
           "layer": "Interface",
           "name": "LineLightJoystick",
           "persistentUuid": "8fb852a5-7dbf-4845-8f20-197c01853d64",
-          "width": 0,
+          "width": 200,
           "x": 118,
           "y": 608,
           "zOrder": 112,
@@ -10016,6 +10181,121 @@
           "x": 234,
           "y": 448,
           "zOrder": 116,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 40,
+          "keepRatio": true,
+          "layer": "Interface",
+          "name": "Life_TiledSprite",
+          "persistentUuid": "ec94fcca-f9c4-4c2d-9ad9-9417ba918bdb",
+          "width": 181,
+          "x": 21,
+          "y": 20,
+          "zOrder": 115,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 48,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Diamantes",
+          "persistentUuid": "acedbe0a-2bfc-44f7-863c-2e4dd7740d9a",
+          "width": 48,
+          "x": 4205,
+          "y": -93,
+          "zOrder": 117,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Interface",
+          "name": "DroneButton",
+          "persistentUuid": "0efec6f5-d9e2-46e3-8425-a1d95e63bcad",
+          "width": 0,
+          "x": 554,
+          "y": 597,
+          "zOrder": 118,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Interface",
+          "name": "SetDroneButton",
+          "persistentUuid": "621bc08b-51f9-45ae-8083-95e1b804ccbc",
+          "width": 0,
+          "x": 634,
+          "y": 597,
+          "zOrder": 119,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 251,
+          "keepRatio": true,
+          "layer": "Lighting",
+          "name": "FlashDroneButton2",
+          "persistentUuid": "d380d2a5-a2d7-4968-8c38-b636c0555aa5",
+          "width": 52,
+          "x": 817,
+          "y": 604,
+          "zOrder": 120,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Lighting",
+          "name": "Luz_Koro",
+          "persistentUuid": "a7903a20-f153-48b6-8d67-040dcb8db56b",
+          "width": 0,
+          "x": 416,
+          "y": 392,
+          "zOrder": 121,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Interface",
+          "name": "FlashDroneButton",
+          "persistentUuid": "2c466454-7064-4784-89c5-d86bd90a3f74",
+          "width": 0,
+          "x": 714,
+          "y": 597,
+          "zOrder": 122,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -10841,66 +11121,6 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "Diamantes",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "diamantes-varios.gif",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 1,
-                            "y": 3
-                          },
-                          {
-                            "x": 24,
-                            "y": 3
-                          },
-                          {
-                            "x": 24,
-                            "y": 23
-                          },
-                          {
-                            "x": 1,
-                            "y": 23
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
           "name": "Esmeralda",
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -11029,10 +11249,7 @@
           "effects": [],
           "behaviors": [
             {
-              "name": "LightObstacleBehavior",
-              "type": "Lighting::LightObstacleBehavior"
-            },
-            {
+              "isFolded": true,
               "name": "PathfindingObstacle",
               "type": "PathfindingBehavior::PathfindingObstacleBehavior",
               "cost": 2,
@@ -11911,9 +12128,9 @@
           "textAlignment": "left",
           "characterSize": 40,
           "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
+            "b": 255,
+            "g": 255,
+            "r": 255
           },
           "content": {
             "bold": false,
@@ -11935,7 +12152,7 @@
             "verticalTextAlignment": "top",
             "characterSize": 40,
             "lineHeight": 0,
-            "color": "0;0;0"
+            "color": "255;255;255"
           }
         },
         {
@@ -12729,7 +12946,240 @@
           "effects": [],
           "behaviors": [],
           "content": {
-            "radius": 300,
+            "radius": 600,
+            "color": "255;255;255",
+            "debugMode": false,
+            "texture": ""
+          }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "DroneButton",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "MultitouchButton",
+              "type": "SpriteMultitouchJoystick::MultitouchButton",
+              "ControllerIdentifier": 1,
+              "ButtonIdentifier": "M",
+              "TouchId": 0,
+              "TouchIndex": 2.0247e-320,
+              "IsReleased": false,
+              "IsJustPressed": false,
+              "Radius": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "NewSprite2",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite32",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 64
+                          },
+                          {
+                            "x": 0,
+                            "y": 64
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "SetDroneButton",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "MultitouchButton",
+              "type": "SpriteMultitouchJoystick::MultitouchButton",
+              "ControllerIdentifier": 1,
+              "ButtonIdentifier": "s",
+              "TouchId": 0,
+              "TouchIndex": 2.0247e-320,
+              "IsReleased": false,
+              "IsJustPressed": false,
+              "Radius": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "NewSprite2",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite31",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 64
+                          },
+                          {
+                            "x": 0,
+                            "y": 64
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "FlashDroneButton",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "MultitouchButton",
+              "type": "SpriteMultitouchJoystick::MultitouchButton",
+              "ControllerIdentifier": 1,
+              "ButtonIdentifier": "f",
+              "TouchId": 0,
+              "TouchIndex": 2.0247e-320,
+              "IsReleased": false,
+              "IsJustPressed": false,
+              "Radius": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "NewSprite2",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite30",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 64
+                          },
+                          {
+                            "x": 0,
+                            "y": 64
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "Luz_Koro",
+          "type": "Lighting::LightObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "radius": 100,
             "color": "255;255;255",
             "debugMode": false,
             "texture": ""
@@ -12749,9 +13199,6 @@
             "objectName": "Diamante"
           },
           {
-            "objectName": "Diamantes"
-          },
-          {
             "objectName": "Esmeralda"
           },
           {
@@ -12765,6 +13212,9 @@
           },
           {
             "objectName": "Luz_Robot"
+          },
+          {
+            "objectName": "Luz_Koro"
           },
           {
             "objectName": "PlataformaFlotanteMovH"
@@ -12819,6 +13269,15 @@
           },
           {
             "objectName": "JumpButton"
+          },
+          {
+            "objectName": "DroneButton"
+          },
+          {
+            "objectName": "SetDroneButton"
+          },
+          {
+            "objectName": "FlashDroneButton"
           },
           {
             "objectName": "PilarLargo"
@@ -12929,6 +13388,29 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Portal"
+                  ]
+                }
+              ]
             }
           ],
           "parameters": []
@@ -13036,11 +13518,6 @@
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
@@ -13074,6 +13551,17 @@
                 },
                 {
                   "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                  },
+                  "parameters": [
+                    "Life_TiledSprite",
+                    "Resizable",
+                    "0",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Wait"
                   },
                   "parameters": [
@@ -13082,12 +13570,33 @@
                 },
                 {
                   "type": {
-                    "value": "Scene"
+                    "value": "MettreX"
                   },
                   "parameters": [
-                    "",
-                    "\"Level1\"",
-                    ""
+                    "Koro",
+                    "=",
+                    "CheckPoint.X"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreY"
+                  },
+                  "parameters": [
+                    "Koro",
+                    "=",
+                    "CheckPoint.Y"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                  },
+                  "parameters": [
+                    "Life_TiledSprite",
+                    "Resizable",
+                    "181",
+                    "40"
                   ]
                 }
               ]
@@ -13418,6 +13927,16 @@
                 },
                 {
                   "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "ContadorDiamantes",
+                    ">=",
+                    "DiamantesParaPortal"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "BuiltinCommonInstructions::Once"
                   },
                   "parameters": []
@@ -13643,6 +14162,26 @@
                 },
                 {
                   "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "CheckPoint.X",
+                    "=",
+                    "Koro.X()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "CheckPoint.Y",
+                    "=",
+                    "Koro.Y()"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "EffectCapability::EffectBehavior::EnableEffect"
                   },
                   "parameters": [
@@ -13672,6 +14211,37 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "ContadorDiamantes",
+                    ">=",
+                    "DiamantesParaPortal"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Portal",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
             }
           ],
           "parameters": []
@@ -13787,6 +14357,26 @@
                 "=",
                 "Robot.CenterY()"
               ]
+            },
+            {
+              "type": {
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "Luz_Koro",
+                "=",
+                "Koro.CenterX()"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenterY"
+              },
+              "parameters": [
+                "Luz_Koro",
+                "=",
+                "Koro.CenterY()"
+              ]
             }
           ]
         },
@@ -13821,6 +14411,58 @@
           "conditions": [
             {
               "type": {
+                "value": "KeyFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"f\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "RadioLuz",
+                "=",
+                "RadioLuzFlash"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"s\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "SeguimientoDrone",
+                "Toggle",
+                "RadioLuzFlash"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "BooleanVariable"
               },
               "parameters": [
@@ -13845,16 +14487,6 @@
                 "Robot",
                 "TopDownMovement",
                 "no"
-              ]
-            },
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
-                "Robot",
-                "Pathfinding",
-                "yes"
               ]
             },
             {
@@ -13912,12 +14544,12 @@
           "actions": [
             {
               "type": {
-                "value": "ActivateBehavior"
+                "value": "SetBooleanVariable"
               },
               "parameters": [
-                "Robot",
-                "TopDownMovement",
-                "yes"
+                "SeguimientoDrone",
+                "False",
+                "RadioLuzFlash"
               ]
             },
             {
@@ -13926,8 +14558,8 @@
               },
               "parameters": [
                 "Robot",
-                "Pathfinding",
-                "no"
+                "TopDownMovement",
+                "yes"
               ]
             },
             {
@@ -13967,6 +14599,60 @@
           "conditions": [
             {
               "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "SeguimientoDrone",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Robot",
+                "Pathfinding",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "SeguimientoDrone",
+                "False",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Robot",
+                "Pathfinding",
+                "no"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": []
@@ -13993,7 +14679,7 @@
                 "value": "SourisSurObjet"
               },
               "parameters": [
-                "Robot",
+                "DroneButton",
                 "",
                 "",
                 ""
@@ -14027,6 +14713,133 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "FlashDroneButton",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "RadioLuz",
+                "=",
+                "RadioLuzFlash"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "RadioLuz",
+                ">",
+                "RadioLuzMin"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "RadioLuz",
+                "=",
+                "RadioLuz-200"
+              ]
+            },
+            {
+              "type": {
+                "value": "Lighting::SetRadius"
+              },
+              "parameters": [
+                "Luz_Robot",
+                "RadioLuz"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "SetDroneButton",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "SeguimientoDrone",
+                "Toggle",
+                "RadioLuzFlash"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
@@ -14095,6 +14908,23 @@
           ]
         },
         {
+          "ambientLightColorB": 10,
+          "ambientLightColorG": 10,
+          "ambientLightColorR": 10,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": true,
+          "isLightingLayer": true,
+          "isLocked": false,
+          "name": "Lighting",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
+        {
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,
           "ambientLightColorR": 200,
@@ -14146,23 +14976,6 @@
               }
             }
           ]
-        },
-        {
-          "ambientLightColorB": 10,
-          "ambientLightColorG": 10,
-          "ambientLightColorR": 10,
-          "camera3DFarPlaneDistance": 10000,
-          "camera3DFieldOfView": 45,
-          "camera3DNearPlaneDistance": 3,
-          "cameraType": "",
-          "followBaseLayerCamera": true,
-          "isLightingLayer": true,
-          "isLocked": false,
-          "name": "Lighting",
-          "renderingType": "",
-          "visibility": true,
-          "cameras": [],
-          "effects": []
         }
       ],
       "behaviorsSharedData": [
@@ -14181,10 +14994,6 @@
         {
           "name": "Flippable",
           "type": "FlippableCapability::FlippableBehavior"
-        },
-        {
-          "name": "LightObstacleBehavior",
-          "type": "Lighting::LightObstacleBehavior"
         },
         {
           "name": "MultitouchButton",
@@ -15418,66 +16227,6 @@
                           },
                           {
                             "x": 3,
-                            "y": 23
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Diamantes",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "diamantes-varios.gif",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 1,
-                            "y": 3
-                          },
-                          {
-                            "x": 24,
-                            "y": 3
-                          },
-                          {
-                            "x": 24,
-                            "y": 23
-                          },
-                          {
-                            "x": 1,
                             "y": 23
                           }
                         ]
@@ -16993,9 +17742,6 @@
           },
           {
             "objectName": "Diamante"
-          },
-          {
-            "objectName": "Diamantes"
           },
           {
             "objectName": "Esmeralda"
@@ -19099,66 +19845,6 @@
                           },
                           {
                             "x": 3,
-                            "y": 23
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Diamantes",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "diamantes-varios.gif",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 1,
-                            "y": 3
-                          },
-                          {
-                            "x": 24,
-                            "y": 3
-                          },
-                          {
-                            "x": 24,
-                            "y": 23
-                          },
-                          {
-                            "x": 1,
                             "y": 23
                           }
                         ]
@@ -22163,9 +22849,6 @@
           },
           {
             "objectName": "Diamante"
-          },
-          {
-            "objectName": "Diamantes"
           },
           {
             "objectName": "Esmeralda"
