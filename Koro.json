@@ -14618,6 +14618,16 @@
                 "Pathfinding",
                 "yes"
               ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "PlayerSeleccionado",
+                "True",
+                ""
+              ]
             }
           ]
         },
