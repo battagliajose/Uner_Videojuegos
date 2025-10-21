@@ -11102,11 +11102,11 @@
           "effects": [],
           "behaviors": [
             {
-              "cost": 2,
-              "impassable": true,
               "isFolded": true,
               "name": "PathfindingObstacle",
-              "type": "PathfindingBehavior::PathfindingObstacleBehavior"
+              "type": "PathfindingBehavior::PathfindingObstacleBehavior",
+              "cost": 2,
+              "impassable": true
             },
             {
               "isFolded": true,
@@ -12592,7 +12592,9 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "content": {},
+          "content": {
+            "DeadZoneRadius": 0.4
+          },
           "childrenContent": {
             "Border": {
               "adaptCollisionMaskAutomatically": false,
@@ -12986,6 +12988,7 @@
               "FloorDownwardSpeedMax": 9000
             },
             {
+              "isFolded": true,
               "name": "TopDownMovement",
               "type": "TopDownMovementBehavior::TopDownMovementBehavior",
               "acceleration": 400,
@@ -13007,7 +13010,7 @@
               "TopDownMovement": "TopDownMovement",
               "ControllerIdentifier": 1,
               "JoystickIdentifier": "Primary",
-              "StickMode": "Analog"
+              "StickMode": "8 Directions"
             }
           ],
           "animations": [
