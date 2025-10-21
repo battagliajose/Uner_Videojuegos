@@ -5448,15 +5448,15 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 60.00000000000001,
-          "height": 200,
+          "depth": 90,
+          "height": 300,
           "keepRatio": true,
-          "layer": "Interface",
+          "layer": "ControlesTactiles",
           "name": "LineLightJoystick",
           "persistentUuid": "8fb852a5-7dbf-4845-8f20-197c01853d64",
-          "width": 200,
-          "x": 118,
-          "y": 608,
+          "width": 300,
+          "x": 168,
+          "y": 546,
           "zOrder": 112,
           "numberProperties": [],
           "stringProperties": [],
@@ -5465,13 +5465,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 2,
-          "height": 129,
+          "depth": 2.3255813953488373,
+          "height": 150,
           "keepRatio": true,
-          "layer": "Interface",
+          "layer": "ControlesTactiles",
           "name": "JumpButton",
           "persistentUuid": "3b4a4823-0a09-4980-82f9-ed0c500dd37a",
-          "width": 129,
+          "width": 150,
           "x": 247,
           "y": 536,
           "zOrder": 113,
@@ -8063,7 +8063,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Inicio",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -8178,6 +8177,57 @@
                   },
                   "parameters": [
                     "Portal"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "CheckPoint.X",
+                    "=",
+                    "350"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "CheckPoint.Y",
+                    "=",
+                    "380"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "SystemInfo::HasTouchScreen"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"ControlesTactiles\""
                   ]
                 }
               ]
@@ -9142,6 +9192,59 @@
               }
             }
           ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "ControlesTactiles",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
         }
       ],
       "behaviorsSharedData": [
@@ -9231,7 +9334,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.9610368693714791,
+        "zoomFactor": 0.6244537826600038,
         "windowMask": false,
         "selectedLayer": "Lighting"
       },
@@ -10071,15 +10174,15 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 60.00000000000001,
-          "height": 200,
+          "depth": 90,
+          "height": 300,
           "keepRatio": true,
-          "layer": "Interface",
+          "layer": "ControlesTactiles",
           "name": "LineLightJoystick",
           "persistentUuid": "8fb852a5-7dbf-4845-8f20-197c01853d64",
-          "width": 200,
-          "x": 118,
-          "y": 608,
+          "width": 300,
+          "x": 168,
+          "y": 546,
           "zOrder": 112,
           "numberProperties": [],
           "stringProperties": [],
@@ -10088,13 +10191,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 2,
-          "height": 129,
+          "depth": 2.3255813953488373,
+          "height": 150,
           "keepRatio": true,
-          "layer": "Interface",
+          "layer": "ControlesTactiles",
           "name": "JumpButton",
           "persistentUuid": "3b4a4823-0a09-4980-82f9-ed0c500dd37a",
-          "width": 129,
+          "width": 150,
           "x": 247,
           "y": 536,
           "zOrder": 113,
@@ -10221,15 +10324,16 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 100,
           "keepRatio": true,
-          "layer": "Interface",
+          "layer": "ControlesTactiles",
           "name": "DroneButton",
           "persistentUuid": "0efec6f5-d9e2-46e3-8425-a1d95e63bcad",
-          "width": 0,
-          "x": 554,
-          "y": 597,
+          "width": 100,
+          "x": 508,
+          "y": 600,
           "zOrder": 118,
           "numberProperties": [],
           "stringProperties": [],
@@ -10237,15 +10341,16 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 100,
           "keepRatio": true,
-          "layer": "Interface",
+          "layer": "ControlesTactiles",
           "name": "SetDroneButton",
           "persistentUuid": "621bc08b-51f9-45ae-8083-95e1b804ccbc",
-          "width": 0,
+          "width": 100,
           "x": 634,
-          "y": 597,
+          "y": 600,
           "zOrder": 119,
           "numberProperties": [],
           "stringProperties": [],
@@ -10286,15 +10391,16 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 100,
           "keepRatio": true,
-          "layer": "Interface",
+          "layer": "ControlesTactiles",
           "name": "FlashDroneButton",
           "persistentUuid": "2c466454-7064-4784-89c5-d86bd90a3f74",
-          "width": 0,
-          "x": 714,
-          "y": 597,
+          "width": 100,
+          "x": 762,
+          "y": 600,
           "zOrder": 122,
           "numberProperties": [],
           "stringProperties": [],
@@ -10996,6 +11102,14 @@
           "effects": [],
           "behaviors": [
             {
+              "cost": 2,
+              "impassable": true,
+              "isFolded": true,
+              "name": "PathfindingObstacle",
+              "type": "PathfindingBehavior::PathfindingObstacleBehavior"
+            },
+            {
+              "isFolded": true,
               "name": "Platform",
               "type": "PlatformBehavior::PlatformBehavior",
               "canBeGrabbed": true,
@@ -12799,6 +12913,7 @@
               "yGrabOffset": 0
             },
             {
+              "isFolded": true,
               "name": "SmoothCamera",
               "type": "SmoothCamera::SmoothCamera",
               "LeftwardSpeed": 0.9,
@@ -12851,6 +12966,7 @@
               "IsCalledManually": false
             },
             {
+              "isFolded": true,
               "name": "SmoothPlatformerCamera",
               "type": "SmoothCamera::SmoothPlatformerCamera",
               "PlatformerCharacter": "PlatformerObject",
@@ -12870,7 +12986,6 @@
               "FloorDownwardSpeedMax": 9000
             },
             {
-              "isFolded": true,
               "name": "TopDownMovement",
               "type": "TopDownMovementBehavior::TopDownMovementBehavior",
               "acceleration": 400,
@@ -12885,6 +13000,14 @@
               "rotateObject": true,
               "useLegacyTurnBack": false,
               "viewpoint": "TopDown"
+            },
+            {
+              "name": "TopDownMultitouchMapper",
+              "type": "SpriteMultitouchJoystick::TopDownMultitouchMapper",
+              "TopDownMovement": "TopDownMovement",
+              "ControllerIdentifier": 1,
+              "JoystickIdentifier": "Primary",
+              "StickMode": "Analog"
             }
           ],
           "animations": [
@@ -13293,7 +13416,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Inicio",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -13409,8 +13531,64 @@
                   "parameters": [
                     "Portal"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "CheckPoint.X",
+                    "=",
+                    "350"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "CheckPoint.Y",
+                    "=",
+                    "380"
+                  ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "SystemInfo::HasTouchScreen"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"ControlesTactiles\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
             }
           ],
           "parameters": []
@@ -14518,6 +14696,26 @@
                 "PlatformerObject",
                 "no"
               ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Koro",
+                "PlatformerMultitouchMapper",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Robot",
+                "PlatformerMultitouchMapper",
+                "no"
+              ]
             }
           ]
         },
@@ -14589,6 +14787,26 @@
               "parameters": [
                 "Koro",
                 "PlatformerObject",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Koro",
+                "PlatformerMultitouchMapper",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "Robot",
+                "PlatformerMultitouchMapper",
                 "yes"
               ]
             }
@@ -14986,6 +15204,59 @@
               }
             }
           ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "ControlesTactiles",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
         }
       ],
       "behaviorsSharedData": [
@@ -15068,6 +15339,10 @@
         {
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+        },
+        {
+          "name": "TopDownMultitouchMapper",
+          "type": "SpriteMultitouchJoystick::TopDownMultitouchMapper"
         }
       ]
     },
