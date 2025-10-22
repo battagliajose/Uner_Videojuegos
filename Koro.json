@@ -1119,6 +1119,14 @@
         "name": "Untitled2",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/fondoHelpBlancolevel2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/fondoHelpBlancolevel2.png\"}",
+        "name": "fondoHelpBlancolevel2",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -10323,8 +10331,8 @@
           "name": "textoAyudaLevel2",
           "persistentUuid": "afa7d2d4-5ac7-4945-979b-4306ffdca67d",
           "width": 0,
-          "x": 482,
-          "y": 203,
+          "x": 429,
+          "y": 188,
           "zOrder": 123,
           "numberProperties": [],
           "stringProperties": [],
@@ -10487,23 +10495,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 1,
-          "height": 255,
-          "keepRatio": true,
-          "layer": "Capa Ayuda",
-          "name": "fondoAyudaNivel2",
-          "persistentUuid": "6b81e456-e20f-4ee3-90e6-3276ed3943b3",
-          "width": 811,
-          "x": 375,
-          "y": 163,
-          "zOrder": 122,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "depth": 2,
           "height": 64,
           "keepRatio": true,
@@ -10565,6 +10556,23 @@
           "x": 941,
           "y": 331,
           "zOrder": 1005,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 244,
+          "keepRatio": true,
+          "layer": "Capa Ayuda",
+          "name": "fondoHelpBlancolevel2",
+          "persistentUuid": "879c0ff3-05ba-432f-a0bd-fe889501d0d4",
+          "width": 741,
+          "x": 401,
+          "y": 156,
+          "zOrder": 122,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -13507,22 +13515,22 @@
           "string": "Koro está a oscuras, para avanzar sigue estos consejos:\n\nActivar/desactivar el seguimiento del         \n\nIntercambiar entre controlar el Drone o Koro \n\nFlash de luz para iluminar la pantalla",
           "font": "80s-retro-future2.ttf",
           "textAlignment": "left",
-          "characterSize": 20,
+          "characterSize": 22,
           "color": {
-            "b": 194,
-            "g": 249,
-            "r": 253
+            "b": 255,
+            "g": 255,
+            "r": 255
           },
           "content": {
             "bold": false,
             "isOutlineEnabled": false,
             "isShadowEnabled": false,
             "italic": false,
-            "outlineColor": "255;255;255",
+            "outlineColor": "247;243;243",
             "outlineThickness": 2,
             "shadowAngle": 90,
             "shadowBlurRadius": 2,
-            "shadowColor": "0;0;0",
+            "shadowColor": "255;255;255",
             "shadowDistance": 4,
             "shadowOpacity": 127,
             "smoothed": true,
@@ -13531,9 +13539,9 @@
             "font": "80s-retro-future2.ttf",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
-            "characterSize": 20,
+            "characterSize": 22,
             "lineHeight": 0,
-            "color": "253;249;194"
+            "color": "255;255;255"
           }
         },
         {
@@ -14064,6 +14072,89 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "fondoHelpBlancolevel2",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [
+            {
+              "effectType": "CRT",
+              "name": "Effect",
+              "doubleParameters": {
+                "animationFrequency": 60,
+                "animationSpeed": 1,
+                "curvature": 1,
+                "lineContrast": 0.25,
+                "lineWidth": 1,
+                "noise": 0.3,
+                "noiseSize": 1,
+                "padding": 0,
+                "vignetting": 0.3,
+                "vignettingAlpha": 1,
+                "vignettingBlur": 0.3
+              },
+              "stringParameters": {},
+              "booleanParameters": {
+                "verticalLine": false
+              }
+            }
+          ],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "fondoHelpBlancolevel2",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "fondoHelpBlancolevel2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 17
+                          },
+                          {
+                            "x": 64,
+                            "y": 17
+                          },
+                          {
+                            "x": 64,
+                            "y": 52
+                          },
+                          {
+                            "x": 0,
+                            "y": 52
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -14170,6 +14261,9 @@
           },
           {
             "objectName": "textoAyudaLevel2"
+          },
+          {
+            "objectName": "fondoHelpBlancolevel2"
           },
           {
             "objectName": "NewSprite2"
