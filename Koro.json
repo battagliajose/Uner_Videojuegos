@@ -1,7 +1,7 @@
 {
   "firstLayout": "Start Screen",
   "gdVersion": {
-    "build": 242,
+    "build": 243,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -1020,6 +1020,56 @@
         "metadata": "{\"extension\":\".png\"}",
         "name": "joyretro-removebg-preview",
         "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "layer1 nocturno.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "layer1 nocturno.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "layer2 noturno .png",
+        "kind": "image",
+        "metadata": "",
+        "name": "layer2 noturno .png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "layer3 nocturno.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "layer3 nocturno.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "luna1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "luna1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "luna2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "luna2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Level2-SuspenseMusic.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Level2-SuspenseMusic.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
         "userAdded": false
       }
     ],
@@ -4632,7 +4682,8 @@
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.46331118245140124,
-        "windowMask": false
+        "windowMask": false,
+        "selectedLayer": ""
       },
       "objectsGroups": [],
       "variables": [
@@ -9329,15 +9380,15 @@
       ]
     },
     {
-      "b": 225,
+      "b": 103,
       "disableInputWhenNotFocused": true,
       "mangledName": "Level2",
       "name": "Level2",
-      "r": 62,
+      "r": 4,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
       "title": "",
-      "v": 196,
+      "v": 66,
       "uiSettings": {
         "grid": false,
         "gridType": "rectangular",
@@ -9348,8 +9399,9 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.4633111824514015,
-        "windowMask": false
+        "zoomFactor": 0.49508400737489383,
+        "windowMask": false,
+        "selectedLayer": ""
       },
       "objectsGroups": [],
       "variables": [
@@ -9402,7 +9454,7 @@
           "width": 64,
           "x": 381,
           "y": 358,
-          "zOrder": 100,
+          "zOrder": 1000,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -9417,26 +9469,9 @@
           "name": "Plataforma",
           "persistentUuid": "61670e35-484d-4758-9129-437e5d412644",
           "width": 717,
-          "x": 5,
-          "y": 591,
+          "x": -240,
+          "y": 596,
           "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 48,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Diamante",
-          "persistentUuid": "680ece68-3c36-4140-8fa1-dc2a3b402e2e",
-          "width": 48,
-          "x": 1102,
-          "y": 396,
-          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -9451,8 +9486,8 @@
           "name": "Esmeralda",
           "persistentUuid": "4d754c65-64a4-4bb0-a23c-267a90a24bb3",
           "width": 64,
-          "x": 1963,
-          "y": 120,
+          "x": 1375,
+          "y": 357,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -9485,8 +9520,8 @@
           "name": "PlataformaFlotante",
           "persistentUuid": "f9ada56c-c79c-4b82-b962-eed3eb626004",
           "width": 128,
-          "x": 567,
-          "y": 420,
+          "x": 746,
+          "y": 416,
           "zOrder": 102,
           "numberProperties": [],
           "stringProperties": [],
@@ -9502,8 +9537,8 @@
           "name": "Plataforma",
           "persistentUuid": "330fc475-04ea-4168-8df8-56dad23a4613",
           "width": 722,
-          "x": 2169,
-          "y": 591,
+          "x": 1044,
+          "y": 589,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -9519,8 +9554,8 @@
           "name": "PlataformaFlotante",
           "persistentUuid": "f2c7158f-aebf-44d3-896c-926c3daded42",
           "width": 128,
-          "x": 1063,
-          "y": 425,
+          "x": 1339,
+          "y": 406,
           "zOrder": 103,
           "numberProperties": [],
           "stringProperties": [],
@@ -9535,8 +9570,8 @@
           "name": "LimiteSuperior",
           "persistentUuid": "3883214d-a9cb-4aef-940c-9cc3bfd58443",
           "width": 2886,
-          "x": 4,
-          "y": -218,
+          "x": 1,
+          "y": -1022,
           "zOrder": 104,
           "numberProperties": [],
           "stringProperties": [],
@@ -9546,14 +9581,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 550,
+          "height": 1116,
           "keepRatio": true,
           "layer": "",
           "name": "LimiteHorizontal",
           "persistentUuid": "51a192fc-858e-4953-bf00-9536674822e9",
           "width": 14,
-          "x": -12,
-          "y": 182,
+          "x": -14,
+          "y": -384,
           "zOrder": 105,
           "numberProperties": [],
           "stringProperties": [],
@@ -9563,14 +9598,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 550,
+          "height": 1041,
           "keepRatio": true,
           "layer": "",
           "name": "LimiteHorizontal",
           "persistentUuid": "054b81ad-7c24-43fe-bacd-4cf262a0ee6d",
           "width": 14,
-          "x": 6474,
-          "y": 164,
+          "x": 5904,
+          "y": -320,
           "zOrder": 105,
           "numberProperties": [],
           "stringProperties": [],
@@ -9634,8 +9669,8 @@
           "name": "Water",
           "persistentUuid": "3a2d0962-2eab-4ead-90e0-997265d70172",
           "width": 1264,
-          "x": 859,
-          "y": -520,
+          "x": 797,
+          "y": -922,
           "zOrder": 106,
           "numberProperties": [],
           "stringProperties": [],
@@ -9651,43 +9686,9 @@
           "name": "backWater",
           "persistentUuid": "f51b483d-a72a-43ca-a0d2-3f0ca19cba55",
           "width": 1266,
-          "x": 850,
-          "y": -520,
+          "x": 792,
+          "y": -925,
           "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 128,
-          "keepRatio": true,
-          "layer": "",
-          "name": "PlataformaFlotante",
-          "persistentUuid": "d9c42d09-b690-474b-b8ee-d3766d91d330",
-          "width": 128,
-          "x": 1931,
-          "y": 182,
-          "zOrder": 103,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 128,
-          "keepRatio": true,
-          "layer": "",
-          "name": "PlataformaFlotante",
-          "persistentUuid": "d468f6b4-bd21-4857-8f68-e667a36de726",
-          "width": 128,
-          "x": 2238,
-          "y": 179,
-          "zOrder": 103,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -9702,8 +9703,8 @@
           "name": "PlataformaFlotante",
           "persistentUuid": "8cb3267f-85c5-43a6-898a-00477b14177d",
           "width": 128,
-          "x": 3110,
-          "y": 398,
+          "x": 3498,
+          "y": 426,
           "zOrder": 103,
           "numberProperties": [],
           "stringProperties": [],
@@ -9719,8 +9720,8 @@
           "name": "PlataformaFlotante",
           "persistentUuid": "fb84ce44-befd-4dc5-9b5c-c36a661dc9eb",
           "width": 128,
-          "x": 833,
-          "y": 233,
+          "x": 1025,
+          "y": 229,
           "zOrder": 103,
           "numberProperties": [],
           "stringProperties": [],
@@ -9736,8 +9737,8 @@
           "name": "Diamante",
           "persistentUuid": "89bf0967-37f0-4c56-80e2-17d4c0681718",
           "width": 48,
-          "x": 3531,
-          "y": 230,
+          "x": 5085,
+          "y": 235,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -9753,43 +9754,9 @@
           "name": "Diamante",
           "persistentUuid": "7f3e26b0-9e93-401f-8fd6-bc50807469e0",
           "width": 48,
-          "x": 605,
-          "y": 394,
+          "x": 793,
+          "y": 380,
           "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 64,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Esmeralda",
-          "persistentUuid": "a4575c0a-59ac-4abc-92e0-acb1dbaefb59",
-          "width": 64,
-          "x": 2267,
-          "y": 110,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 128,
-          "keepRatio": true,
-          "layer": "",
-          "name": "PlataformaFlotanteMovH",
-          "persistentUuid": "ff7f0a30-2bd2-4e7f-a8d6-8865f512c93b",
-          "width": 128,
-          "x": 1373,
-          "y": 238,
-          "zOrder": 108,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -9818,44 +9785,10 @@
           "keepRatio": true,
           "layer": "",
           "name": "Diamante",
-          "persistentUuid": "238a692b-cb0e-4e29-9e17-e16fc1a59f19",
-          "width": 48,
-          "x": 1473,
-          "y": 188,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 48,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Diamante",
           "persistentUuid": "b5ede954-556f-4cf8-99db-450d876431c7",
           "width": 48,
-          "x": 1583,
-          "y": 186,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 48,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Diamante",
-          "persistentUuid": "97ba340f-202b-4f62-9698-5f2726f93647",
-          "width": 48,
-          "x": 1694,
-          "y": 187,
+          "x": 1081,
+          "y": 522,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -9888,8 +9821,8 @@
           "name": "Plataforma",
           "persistentUuid": "14011394-9dfd-4231-8a7b-216d9569f8d6",
           "width": 722,
-          "x": 2888,
-          "y": 592,
+          "x": 1760,
+          "y": 600,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -9905,8 +9838,8 @@
           "name": "Plataforma",
           "persistentUuid": "28de2b9e-d717-4049-b6d3-81e2f1fccc89",
           "width": 722,
-          "x": 3605,
-          "y": 592,
+          "x": 2897,
+          "y": 597,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -9922,25 +9855,8 @@
           "name": "Diamante",
           "persistentUuid": "ee7f6c1f-4a16-4de8-a308-9715fd7d09e1",
           "width": 48,
-          "x": 3447,
-          "y": 244,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 48,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Diamante",
-          "persistentUuid": "34183048-6b15-48fd-9694-1d0923ac5d57",
-          "width": 48,
-          "x": 3623,
-          "y": 239,
+          "x": 3542,
+          "y": 369,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -9956,8 +9872,8 @@
           "name": "Diamante",
           "persistentUuid": "734d8964-ae9f-4eef-b617-a6860355374e",
           "width": 48,
-          "x": 2811,
-          "y": 514,
+          "x": 2433,
+          "y": 353,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -9973,8 +9889,8 @@
           "name": "Diamante",
           "persistentUuid": "799375e8-0084-4130-b02f-396ae7ef7829",
           "width": 48,
-          "x": 2635,
-          "y": 519,
+          "x": 2252,
+          "y": 342,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -9990,60 +9906,9 @@
           "name": "Diamante",
           "persistentUuid": "078f8e8c-0965-4962-b8f2-ca8151256e21",
           "width": 48,
-          "x": 2719,
-          "y": 505,
+          "x": 2344,
+          "y": 312,
           "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 64,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Esmeralda",
-          "persistentUuid": "bddd3a69-e72f-4db0-8d91-ad64e87c0a13",
-          "width": 64,
-          "x": 3139,
-          "y": 344,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 122,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Plataforma",
-          "persistentUuid": "97d9132a-02e1-42a9-9257-1c7a3508780e",
-          "width": 722,
-          "x": 4322,
-          "y": 597,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 122,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Plataforma",
-          "persistentUuid": "37b029eb-21e9-4294-88a3-23e38d5c5dc6",
-          "width": 722,
-          "x": 5041,
-          "y": 597,
-          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -10058,8 +9923,8 @@
           "name": "PlataformaFlotanteMovV",
           "persistentUuid": "f7051a7a-408c-43be-b89e-8af3b64acadb",
           "width": 128,
-          "x": 3874,
-          "y": 123,
+          "x": 5368,
+          "y": -55,
           "zOrder": 110,
           "numberProperties": [],
           "stringProperties": [],
@@ -10075,8 +9940,8 @@
           "name": "PlataformaFlotanteMovH",
           "persistentUuid": "2c7b82e5-1499-462a-b8ee-494f99138a26",
           "width": 128,
-          "x": 4675,
-          "y": 105,
+          "x": 4252,
+          "y": 263,
           "zOrder": 111,
           "numberProperties": [],
           "stringProperties": [],
@@ -10092,8 +9957,8 @@
           "name": "PlataformaFlotanteMovH",
           "persistentUuid": "46c1a720-14a3-4b16-841d-991c2482cc3a",
           "width": 128,
-          "x": 5107,
-          "y": 102,
+          "x": 4667,
+          "y": 267,
           "zOrder": 111,
           "numberProperties": [],
           "stringProperties": [],
@@ -10109,8 +9974,8 @@
           "name": "PlataformaFlotanteMovH",
           "persistentUuid": "4719b6be-2137-4146-8e96-18068957d1e1",
           "width": 128,
-          "x": 5513,
-          "y": 105,
+          "x": 5047,
+          "y": 271,
           "zOrder": 111,
           "numberProperties": [],
           "stringProperties": [],
@@ -10126,8 +9991,8 @@
           "name": "Diamante",
           "persistentUuid": "bb49f0c5-dc86-4326-b01f-a6211d22a67a",
           "width": 48,
-          "x": 4931,
-          "y": -18,
+          "x": 4709,
+          "y": 225,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -10143,8 +10008,8 @@
           "name": "Diamante",
           "persistentUuid": "72a85038-6428-4756-bf76-100651cbbe74",
           "width": 48,
-          "x": 5359,
-          "y": -18,
+          "x": 4293,
+          "y": 216,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -10160,26 +10025,9 @@
           "name": "Portal",
           "persistentUuid": "b1d7fa73-00a9-4bc4-bb82-67952d1d1d87",
           "width": 256,
-          "x": 6144,
-          "y": 188,
+          "x": 4609,
+          "y": -705,
           "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 844,
-          "keepRatio": true,
-          "layer": "",
-          "name": "fadeBg",
-          "persistentUuid": "29c63305-4672-4ca1-90db-466cf5275b6d",
-          "width": 1000,
-          "x": 5527,
-          "y": -121,
-          "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -10228,8 +10076,8 @@
           "name": "PilarLargo",
           "persistentUuid": "320bf9e0-8960-476a-8b1e-79c2e36b6505",
           "width": 299,
-          "x": 3410,
-          "y": 316,
+          "x": 2225,
+          "y": 436,
           "zOrder": 114,
           "numberProperties": [],
           "stringProperties": [],
@@ -10245,8 +10093,8 @@
           "name": "PilarLargo",
           "persistentUuid": "58ca6422-3090-4fa4-8605-7ee71e167bbb",
           "width": 299,
-          "x": 4079,
-          "y": -33,
+          "x": 3679,
+          "y": 306,
           "zOrder": 114,
           "numberProperties": [],
           "stringProperties": [],
@@ -10262,8 +10110,8 @@
           "name": "PilarLargo",
           "persistentUuid": "bbe2d9a2-7325-46b1-8e78-19d58aed2fd9",
           "width": 299,
-          "x": 6125,
-          "y": 435,
+          "x": 4590,
+          "y": -458,
           "zOrder": 114,
           "numberProperties": [],
           "stringProperties": [],
@@ -10280,7 +10128,7 @@
           "width": 0,
           "x": 305,
           "y": 281,
-          "zOrder": 115,
+          "zOrder": 1000,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -10328,8 +10176,8 @@
           "name": "Diamantes",
           "persistentUuid": "acedbe0a-2bfc-44f7-863c-2e4dd7740d9a",
           "width": 48,
-          "x": 4205,
-          "y": -93,
+          "x": 3799,
+          "y": 233,
           "zOrder": 117,
           "numberProperties": [],
           "stringProperties": [],
@@ -10448,6 +10296,127 @@
           "x": 223,
           "y": 9,
           "zOrder": 124,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Luna",
+          "opacity": 140,
+          "persistentUuid": "61a9109f-2d0f-4ec7-9058-86bf6ddecfad",
+          "width": 0,
+          "x": 168,
+          "y": 89,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Planeta",
+          "opacity": 0,
+          "persistentUuid": "88dc89b1-15ff-43a3-b63d-ae863c2cd1be",
+          "width": 0,
+          "x": 1089,
+          "y": 90,
+          "zOrder": 126,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 2,
+          "height": 192,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Luna",
+          "opacity": 28,
+          "persistentUuid": "58737f6f-76b3-40d8-b14f-77e2af62182c",
+          "width": 192,
+          "x": 1886,
+          "y": -99,
+          "zOrder": 125,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 113,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Luna",
+          "opacity": 128,
+          "persistentUuid": "8e622077-c502-409b-93f9-69b35fa5e582",
+          "width": 113,
+          "x": 3877,
+          "y": -17,
+          "zOrder": 125,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 128,
+          "keepRatio": true,
+          "layer": "",
+          "name": "PlataformaFlotanteMovV",
+          "persistentUuid": "62984a17-0f30-49d8-8980-3a6069f1cbd3",
+          "width": 128,
+          "x": 5063,
+          "y": -297,
+          "zOrder": 110,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 48,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Diamante",
+          "persistentUuid": "0f9a7026-2572-4195-8dbf-3e36151d0896",
+          "width": 48,
+          "x": 5407,
+          "y": -122,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 48,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Diamante",
+          "persistentUuid": "b0c7581a-1859-4d29-af7b-58832266a135",
+          "width": 48,
+          "x": 5104,
+          "y": -352,
+          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -11148,11 +11117,10 @@
           "effects": [],
           "behaviors": [
             {
-              "isFolded": true,
+              "impassable": false,
               "name": "PathfindingObstacle",
               "type": "PathfindingBehavior::PathfindingObstacleBehavior",
-              "cost": 2,
-              "impassable": true
+              "cost": 2
             },
             {
               "isFolded": true,
@@ -11716,7 +11684,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "fondo5.png",
+                      "image": "layer1 nocturno.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -11733,11 +11701,11 @@
                         [
                           {
                             "x": 0,
-                            "y": 243
+                            "y": 165
                           },
                           {
                             "x": 2560,
-                            "y": 243
+                            "y": 165
                           },
                           {
                             "x": 2560,
@@ -11776,7 +11744,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "fondo6.png",
+                      "image": "layer2 noturno .png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -11793,11 +11761,11 @@
                         [
                           {
                             "x": 0,
-                            "y": 166
+                            "y": 89
                           },
                           {
                             "x": 2560,
-                            "y": 166
+                            "y": 89
                           },
                           {
                             "x": 2560,
@@ -11836,7 +11804,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "fondo8.png",
+                      "image": "layer3 nocturno.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -11853,11 +11821,11 @@
                         [
                           {
                             "x": 0,
-                            "y": 127
+                            "y": 0
                           },
                           {
                             "x": 2560,
-                            "y": 127
+                            "y": 0
                           },
                           {
                             "x": 2560,
@@ -13470,6 +13438,126 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Luna",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "luna1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 7
+                          },
+                          {
+                            "x": 124,
+                            "y": 7
+                          },
+                          {
+                            "x": 124,
+                            "y": 124
+                          },
+                          {
+                            "x": 6,
+                            "y": 124
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Planeta",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "luna2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 4,
+                            "y": 18
+                          },
+                          {
+                            "x": 128,
+                            "y": 18
+                          },
+                          {
+                            "x": 128,
+                            "y": 109
+                          },
+                          {
+                            "x": 4,
+                            "y": 109
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -13576,6 +13664,12 @@
           },
           {
             "objectName": "retrojoylevel2"
+          },
+          {
+            "objectName": "Luna"
+          },
+          {
+            "objectName": "Planeta"
           }
         ]
       },
@@ -13585,6 +13679,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Inicio",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -13858,7 +13953,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Muertes",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -13917,20 +14011,12 @@
                 },
                 {
                   "type": {
-                    "value": "MettreX"
+                    "value": "MettreXY"
                   },
                   "parameters": [
                     "Koro",
                     "=",
-                    "CheckPoint.X"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "MettreY"
-                  },
-                  "parameters": [
-                    "Koro",
+                    "CheckPoint.X",
                     "=",
                     "CheckPoint.Y"
                   ]
@@ -13944,6 +14030,18 @@
                     "Resizable",
                     "181",
                     "40"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "Robot",
+                    "=",
+                    "CheckPoint.X",
+                    "=",
+                    "CheckPoint.Y"
                   ]
                 }
               ]
@@ -13978,7 +14076,7 @@
                   },
                   "parameters": [
                     "",
-                    "Kefrens - Desert Dream - Amiga Demo (HD 50fps) (128kbit_AAC)_Koro.wav",
+                    "Level2-SuspenseMusic.mp3",
                     "yes",
                     "15",
                     ""
@@ -39566,6 +39664,7 @@
               "initialVariables": []
             }
           ],
+          "editionSettings": {},
           "eventsFunctions": [
             {
               "fullName": "",
@@ -41050,7 +41149,8 @@
                   "stringProperties": [],
                   "initialVariables": []
                 }
-              ]
+              ],
+              "editionSettings": {}
             },
             {
               "areaMaxX": 68,
@@ -41355,7 +41455,8 @@
                   "stringProperties": [],
                   "initialVariables": []
                 }
-              ]
+              ],
+              "editionSettings": {}
             }
           ]
         }
@@ -48913,6 +49014,7 @@
             }
           ],
           "instances": [],
+          "editionSettings": {},
           "eventsFunctions": [
             {
               "fullName": "",
