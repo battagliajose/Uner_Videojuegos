@@ -1,7 +1,7 @@
 {
   "firstLayout": "Start Screen",
   "gdVersion": {
-    "build": 243,
+    "build": 242,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -1005,6 +1005,22 @@
         "name": "NewSprite32",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "joyretro-removebg-preview.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "joyretro-removebg-preview.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/joyretro-removebg-preview.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "joyretro-removebg-preview",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1215,8 +1231,7 @@
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.30104611971824724,
-        "windowMask": false,
-        "selectedLayer": ""
+        "windowMask": false
       },
       "objectsGroups": [],
       "variables": [
@@ -4617,8 +4632,7 @@
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.46331118245140124,
-        "windowMask": false,
-        "selectedLayer": ""
+        "windowMask": false
       },
       "objectsGroups": [],
       "variables": [
@@ -9334,9 +9348,8 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6244537826600038,
-        "windowMask": false,
-        "selectedLayer": "Lighting"
+        "zoomFactor": 0.4633111824514015,
+        "windowMask": false
       },
       "objectsGroups": [],
       "variables": [
@@ -10402,6 +10415,39 @@
           "x": 762,
           "y": 600,
           "zOrder": 122,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Capa Ayuda",
+          "name": "textoAyudaLevel2",
+          "persistentUuid": "afa7d2d4-5ac7-4945-979b-4306ffdca67d",
+          "width": 0,
+          "x": 599,
+          "y": 34,
+          "zOrder": 123,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 61,
+          "keepRatio": true,
+          "layer": "Capa Joystick level2",
+          "name": "retrojoylevel2",
+          "persistentUuid": "b82a423d-9b00-4837-8ffc-fbcf99c3ef0e",
+          "width": 54,
+          "x": 223,
+          "y": 9,
+          "zOrder": 124,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -13310,6 +13356,120 @@
             "debugMode": false,
             "texture": ""
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "textoAyudaLevel2",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "AutoTyping",
+              "type": "AutoTyping::AutoTyping",
+              "Text": "Text",
+              "Interval": 0.05,
+              "CharacterJustAdded": false,
+              "FullText": "",
+              "TypedText": ""
+            }
+          ],
+          "string": "Koro está a oscuras, para avanzar sigue estos consejos:\n\nActivar/desactivar el seguimiento del drone: Tecla S\nIntercambiar entre controlar el Drone o Koro: Tecla M\nFlash de luz para iluminar la pantalla: Tecla F",
+          "font": "80s-retro-future2.ttf",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 194,
+            "g": 249,
+            "r": 253
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Koro está a oscuras, para avanzar sigue estos consejos:\n\nActivar/desactivar el seguimiento del drone: Tecla S\nIntercambiar entre controlar el Drone o Koro: Tecla M\nFlash de luz para iluminar la pantalla: Tecla F",
+            "font": "80s-retro-future2.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "253;249;194"
+          }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "retrojoylevel2",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "joyretro-removebg-preview",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "joyretro-removebg-preview",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 16,
+                            "y": 31
+                          },
+                          {
+                            "x": 201,
+                            "y": 31
+                          },
+                          {
+                            "x": 201,
+                            "y": 210
+                          },
+                          {
+                            "x": 16,
+                            "y": 210
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -13410,6 +13570,12 @@
           },
           {
             "objectName": "Robot"
+          },
+          {
+            "objectName": "textoAyudaLevel2"
+          },
+          {
+            "objectName": "retrojoylevel2"
           }
         ]
       },
@@ -15069,8 +15235,91 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
+          "conditions": [
+            {
+              "type": {
+                "value": "AutoTyping::AutoTyping::IsFinished"
+              },
+              "parameters": [
+                "textoAyudaLevel2",
+                "AutoTyping",
+                ">="
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "4"
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"Capa Ayuda\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"Capa Joystick level2\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "retrojoylevel2",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"Capa Joystick level2\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"Capa Ayuda\""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -15260,12 +15509,122 @@
               }
             }
           ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Capa Ayuda",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Capa Joystick level2",
+          "renderingType": "",
+          "visibility": false,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
         }
       ],
       "behaviorsSharedData": [
         {
           "name": "Animation",
           "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
+          "name": "AutoTyping",
+          "type": "AutoTyping::AutoTyping"
         },
         {
           "name": "DynamicWaterBody",
@@ -15370,8 +15729,7 @@
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.49508400737489716,
-        "windowMask": false,
-        "selectedLayer": ""
+        "windowMask": false
       },
       "objectsGroups": [],
       "variables": [
@@ -15392,8 +15750,8 @@
           "name": "Koro",
           "persistentUuid": "1729dbab-bbe2-4a8f-b172-2cec8c707e60",
           "width": 64,
-          "x": 586,
-          "y": 415,
+          "x": 623,
+          "y": 412,
           "zOrder": 100,
           "numberProperties": [],
           "stringProperties": [],
@@ -18695,8 +19053,7 @@
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.43357743047025404,
-        "windowMask": false,
-        "selectedLayer": ""
+        "windowMask": false
       },
       "objectsGroups": [],
       "variables": [
@@ -39209,7 +39566,6 @@
               "initialVariables": []
             }
           ],
-          "editionSettings": {},
           "eventsFunctions": [
             {
               "fullName": "",
@@ -40694,8 +41050,7 @@
                   "stringProperties": [],
                   "initialVariables": []
                 }
-              ],
-              "editionSettings": {}
+              ]
             },
             {
               "areaMaxX": 68,
@@ -41000,8 +41355,7 @@
                   "stringProperties": [],
                   "initialVariables": []
                 }
-              ],
-              "editionSettings": []
+              ]
             }
           ]
         }
@@ -48559,7 +48913,6 @@
             }
           ],
           "instances": [],
-          "editionSettings": {},
           "eventsFunctions": [
             {
               "fullName": "",
