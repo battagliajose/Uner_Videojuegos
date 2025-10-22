@@ -1,7 +1,7 @@
 {
   "firstLayout": "Start Screen",
   "gdVersion": {
-    "build": 242,
+    "build": 243,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -9455,8 +9455,9 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6455105703311556,
-        "windowMask": false
+        "zoomFactor": 0.5653158055126376,
+        "windowMask": false,
+        "selectedLayer": ""
       },
       "objectsGroups": [],
       "variables": [
@@ -10472,22 +10473,6 @@
           "x": 5104,
           "y": -352,
           "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "Lighting",
-          "name": "fondoAyudaNivel2",
-          "persistentUuid": "9d89d750-2deb-44eb-bca4-1215d37c0b69",
-          "width": 0,
-          "x": 1457,
-          "y": 318,
-          "zOrder": 1001,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -16446,7 +16431,8 @@
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.49508400737489716,
-        "windowMask": false
+        "windowMask": false,
+        "selectedLayer": ""
       },
       "objectsGroups": [],
       "variables": [
@@ -40283,6 +40269,7 @@
               "initialVariables": []
             }
           ],
+          "editionSettings": {},
           "eventsFunctions": [
             {
               "fullName": "",
@@ -41767,7 +41754,8 @@
                   "stringProperties": [],
                   "initialVariables": []
                 }
-              ]
+              ],
+              "editionSettings": {}
             },
             {
               "areaMaxX": 68,
@@ -42072,7 +42060,8 @@
                   "stringProperties": [],
                   "initialVariables": []
                 }
-              ]
+              ],
+              "editionSettings": {}
             }
           ]
         }
@@ -49630,6 +49619,7 @@
             }
           ],
           "instances": [],
+          "editionSettings": {},
           "eventsFunctions": [
             {
               "fullName": "",
