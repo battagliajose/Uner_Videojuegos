@@ -9455,7 +9455,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5653158055126376,
+        "zoomFactor": 0.2022070730360212,
         "windowMask": false,
         "selectedLayer": ""
       },
@@ -9620,12 +9620,12 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 0,
+          "depth": 1,
           "height": 13,
           "layer": "",
           "name": "LimiteSuperior",
           "persistentUuid": "3883214d-a9cb-4aef-940c-9cc3bfd58443",
-          "width": 2886,
+          "width": 5947,
           "x": 1,
           "y": -1022,
           "zOrder": 104,
@@ -9637,14 +9637,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 1116,
+          "height": 1754,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Limites",
           "name": "LimiteHorizontal",
           "persistentUuid": "51a192fc-858e-4953-bf00-9536674822e9",
           "width": 14,
           "x": -14,
-          "y": -384,
+          "y": -1019,
           "zOrder": 105,
           "numberProperties": [],
           "stringProperties": [],
@@ -9654,14 +9654,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 1041,
+          "height": 1743,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Limites",
           "name": "LimiteHorizontal",
           "persistentUuid": "054b81ad-7c24-43fe-bacd-4cf262a0ee6d",
           "width": 14,
           "x": 5904,
-          "y": -320,
+          "y": -1022,
           "zOrder": 105,
           "numberProperties": [],
           "stringProperties": [],
@@ -9725,8 +9725,8 @@
           "name": "Water",
           "persistentUuid": "3a2d0962-2eab-4ead-90e0-997265d70172",
           "width": 1264,
-          "x": 797,
-          "y": -922,
+          "x": 535,
+          "y": -1481,
           "zOrder": 106,
           "numberProperties": [],
           "stringProperties": [],
@@ -9742,8 +9742,8 @@
           "name": "backWater",
           "persistentUuid": "f51b483d-a72a-43ca-a0d2-3f0ca19cba55",
           "width": 1266,
-          "x": 792,
-          "y": -925,
+          "x": 535,
+          "y": -1489,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -14282,7 +14282,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Inicio",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -14417,6 +14416,15 @@
                     "CheckPoint.Y",
                     "=",
                     "380"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Limites\""
                   ]
                 }
               ]
@@ -16279,6 +16287,59 @@
           "name": "Capa Joystick level2",
           "renderingType": "",
           "visibility": false,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Limites",
+          "renderingType": "",
+          "visibility": true,
           "cameras": [],
           "effects": [
             {
