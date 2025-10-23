@@ -5154,7 +5154,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.7370816317994087,
+        "zoomFactor": 0.5117784035210216,
         "windowMask": false,
         "selectedLayer": ""
       },
@@ -8821,10 +8821,9 @@
           "effects": [],
           "behaviors": [
             {
-              "isFolded": true,
               "name": "FireBullet",
               "type": "FireBullet::FireBullet",
-              "FireCooldown": 0.7,
+              "FireCooldown": 2,
               "HasJustFired": false,
               "RotateBullet": true,
               "FiringArc": 25,
@@ -8852,6 +8851,8 @@
               "RandomizedAngle": 0
             },
             {
+              "name": "Pathfinding",
+              "type": "PathfindingBehavior::PathfindingBehavior",
               "acceleration": 500,
               "allowDiagonals": true,
               "angleOffset": 0,
@@ -8862,10 +8863,8 @@
               "gridOffsetX": 0,
               "gridOffsetY": 0,
               "maxSpeed": 300,
-              "name": "Pathfinding",
               "rotateObject": false,
-              "smoothingMaxCellGap": 1,
-              "type": "PathfindingBehavior::PathfindingBehavior"
+              "smoothingMaxCellGap": 1
             }
           ],
           "animations": [
@@ -10404,7 +10403,7 @@
                 "NaveEnemiga.Y()",
                 "FireBall2",
                 "Koro",
-                "400",
+                "600",
                 ""
               ]
             }
@@ -10485,8 +10484,75 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Koro",
+                "FireBall2",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "Inmune",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Life",
+                "=",
+                "Life - 1"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Koro",
+                "=",
+                "Koro.X()-30",
+                "=",
+                "Koro.Y()-10"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "New sound effect",
+                "",
+                "30",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "FireBall2",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
