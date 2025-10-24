@@ -1568,7 +1568,8 @@
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.30104611971824724,
-        "windowMask": false
+        "windowMask": false,
+        "selectedLayer": ""
       },
       "objectsGroups": [],
       "variables": [
@@ -4151,7 +4152,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Muertes",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -4968,7 +4968,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.7370816317994086,
+        "zoomFactor": 0.4481978045410392,
         "windowMask": false,
         "selectedLayer": ""
       },
@@ -5142,12 +5142,12 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 0,
+          "depth": 1,
           "height": 13,
           "layer": "",
           "name": "LimiteSuperior",
           "persistentUuid": "3883214d-a9cb-4aef-940c-9cc3bfd58443",
-          "width": 2886,
+          "width": 6481,
           "x": 4,
           "y": -218,
           "zOrder": 104,
@@ -5899,7 +5899,7 @@
           "initialVariables": []
         },
         {
-          "angle": 0,
+          "angle": 176,
           "customSize": false,
           "height": 0,
           "keepRatio": true,
@@ -5909,6 +5909,166 @@
           "width": 0,
           "x": 1009,
           "y": 743,
+          "zOrder": 117,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 176,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FireBall",
+          "persistentUuid": "0738bee4-cbac-45b1-ba32-8b1c159f223b",
+          "width": 0,
+          "x": 962,
+          "y": 966,
+          "zOrder": 117,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 176,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FireBall",
+          "persistentUuid": "51d5d8d8-39dc-4b7b-9cc5-7d93b9fa298a",
+          "width": 0,
+          "x": 1757,
+          "y": 782,
+          "zOrder": 117,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 176,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FireBall",
+          "persistentUuid": "ab65d9f3-15c2-463a-b10d-ed1b2e980dfb",
+          "width": 0,
+          "x": 1716,
+          "y": 928,
+          "zOrder": 117,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 176,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FireBall",
+          "persistentUuid": "249f0584-0438-4da8-83e5-ec82b4b1b8d0",
+          "width": 0,
+          "x": 2119,
+          "y": 889,
+          "zOrder": 117,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 176,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FireBall",
+          "persistentUuid": "aa7850d9-cbac-41d7-9fc4-a5d3e1d5b3a4",
+          "width": 0,
+          "x": 1295,
+          "y": 816,
+          "zOrder": 117,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 176,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FireBall",
+          "persistentUuid": "4ee21f27-b5c0-4866-b942-ebe87925431c",
+          "width": 0,
+          "x": 5907,
+          "y": 868,
+          "zOrder": 117,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 176,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FireBall",
+          "persistentUuid": "d7bba892-bc42-4ae7-929d-c8b9dcda8c92",
+          "width": 0,
+          "x": 5835,
+          "y": 987,
+          "zOrder": 117,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 176,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FireBall",
+          "persistentUuid": "9602d46a-7806-4a6f-81e3-d23efe393d6a",
+          "width": 0,
+          "x": 5980,
+          "y": 799,
+          "zOrder": 117,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 176,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FireBall",
+          "persistentUuid": "00d57561-8285-409c-a376-9fc55192a1bd",
+          "width": 0,
+          "x": 6016,
+          "y": 940,
+          "zOrder": 117,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 176,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FireBall",
+          "persistentUuid": "6220b30c-df88-42e8-b156-3846f5db124a",
+          "width": 0,
+          "x": 5826,
+          "y": 737,
           "zOrder": 117,
           "numberProperties": [],
           "stringProperties": [],
@@ -8836,17 +8996,6 @@
                 },
                 {
                   "type": {
-                    "value": "ResizableCapability::ResizableBehavior::SetSize"
-                  },
-                  "parameters": [
-                    "Life_TiledSprite",
-                    "Resizable",
-                    "0",
-                    "0"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "Wait"
                   },
                   "parameters": [
@@ -8867,13 +9016,12 @@
                 },
                 {
                   "type": {
-                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                    "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "Life_TiledSprite",
-                    "Resizable",
-                    "181",
-                    "40"
+                    "Life",
+                    "=",
+                    "Life - 2"
                   ]
                 }
               ]
@@ -8887,7 +9035,7 @@
                   },
                   "parameters": [
                     "Life",
-                    "=",
+                    "<=",
                     "0"
                   ]
                 },
@@ -8913,14 +9061,22 @@
                 },
                 {
                   "type": {
-                    "value": "MettreXY"
+                    "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "Koro",
+                    "Life",
                     "=",
-                    "CheckPoint.X",
-                    "=",
-                    "CheckPoint.Y"
+                    "8"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Start Screen\"",
+                    ""
                   ]
                 }
               ]
@@ -12318,11 +12474,11 @@
           "effects": [],
           "behaviors": [
             {
-              "canBeGrabbed": true,
               "isFolded": true,
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "NormalPlatform",
               "yGrabOffset": 0
             }
           ],
