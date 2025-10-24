@@ -350,7 +350,7 @@
       {
         "file": "assets/Water.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Water.png\"}",
         "name": "Water",
         "smoothed": true,
         "userAdded": false
@@ -1151,6 +1151,58 @@
         "name": "NewSprite39",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/Diamantes.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Diamantes",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Diamantes2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Diamantes2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Diamantes3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Diamantes3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/New sound effect.wav",
+        "kind": "audio",
+        "metadata": "{\"extension\":\".wav\",\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Hit/hurt 2\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0,\\\"sustain\\\":0.09,\\\"sustainPunch\\\":0,\\\"decay\\\":0.02,\\\"tremoloDepth\\\":0,\\\"tremoloFrequency\\\":10,\\\"frequency\\\":600,\\\"frequencySweep\\\":-400,\\\"frequencyDeltaSweep\\\":-400,\\\"repeatFrequency\\\":0,\\\"frequencyJump1Onset\\\":33,\\\"frequencyJump1Amount\\\":0,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":0,\\\"harmonicsFalloff\\\":0.5,\\\"waveform\\\":\\\"pinknoise\\\",\\\"interpolateNoise\\\":true,\\\"vibratoDepth\\\":0,\\\"vibratoFrequency\\\":10,\\\"squareDuty\\\":50,\\\"squareDutySweep\\\":0,\\\"flangerOffset\\\":0,\\\"flangerOffsetSweep\\\":0,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":22050,\\\"lowPassCutoffSweep\\\":-9900,\\\"highPassCutoff\\\":0,\\\"highPassCutoffSweep\\\":0,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"New sound effect\"}}",
+        "name": "New sound effect",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/New sound effect2.wav",
+        "kind": "audio",
+        "metadata": "{\"extension\":\".wav\",\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Powerup 2\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0,\\\"sustain\\\":0.06,\\\"sustainPunch\\\":30,\\\"decay\\\":0.16,\\\"tremoloDepth\\\":0,\\\"tremoloFrequency\\\":10,\\\"frequency\\\":1300,\\\"frequencySweep\\\":600,\\\"frequencyDeltaSweep\\\":1700,\\\"repeatFrequency\\\":0,\\\"frequencyJump1Onset\\\":33,\\\"frequencyJump1Amount\\\":0,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":0,\\\"harmonicsFalloff\\\":0.5,\\\"waveform\\\":\\\"whistle\\\",\\\"interpolateNoise\\\":true,\\\"vibratoDepth\\\":0,\\\"vibratoFrequency\\\":10,\\\"squareDuty\\\":85,\\\"squareDutySweep\\\":30,\\\"flangerOffset\\\":0,\\\"flangerOffsetSweep\\\":0,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":22050,\\\"lowPassCutoffSweep\\\":0,\\\"highPassCutoff\\\":0,\\\"highPassCutoffSweep\\\":0,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"New sound effect\"}}",
+        "name": "New sound effect2",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite40.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite40",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1251,16 +1303,89 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "",
+          "name": "Diamantes",
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.3,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "diamantes-varios.gif",
+                  "image": "Diamantes",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 3
+                      },
+                      {
+                        "x": 24,
+                        "y": 3
+                      },
+                      {
+                        "x": 24,
+                        "y": 23
+                      },
+                      {
+                        "x": 1,
+                        "y": 23
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Diamantes2",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 3
+                      },
+                      {
+                        "x": 24,
+                        "y": 3
+                      },
+                      {
+                        "x": 24,
+                        "y": 23
+                      },
+                      {
+                        "x": 1,
+                        "y": 23
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Diamantes3",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1544,6 +1669,11 @@
       "name": "Life",
       "type": "number",
       "value": 8
+    },
+    {
+      "name": "Inmune",
+      "type": "boolean",
+      "value": false
     }
   ],
   "layouts": [
@@ -4968,7 +5098,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.4481978045410392,
+        "zoomFactor": 0.4789341884535285,
         "windowMask": false,
         "selectedLayer": ""
       },
@@ -5064,8 +5194,8 @@
           "name": "Esmeralda",
           "persistentUuid": "4d754c65-64a4-4bb0-a23c-267a90a24bb3",
           "width": 64,
-          "x": 1963,
-          "y": 120,
+          "x": 1617,
+          "y": -49,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -5360,40 +5490,6 @@
           "angle": 0,
           "customSize": true,
           "depth": 0,
-          "height": 48,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Diamante",
-          "persistentUuid": "7f3e26b0-9e93-401f-8fd6-bc50807469e0",
-          "width": 48,
-          "x": 605,
-          "y": 395,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 64,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Esmeralda",
-          "persistentUuid": "a4575c0a-59ac-4abc-92e0-acb1dbaefb59",
-          "width": 64,
-          "x": 2267,
-          "y": 120,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
           "height": 128,
           "keepRatio": true,
           "layer": "",
@@ -5588,40 +5684,6 @@
           "width": 48,
           "x": 2630,
           "y": 520,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 48,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Diamante",
-          "persistentUuid": "078f8e8c-0965-4962-b8f2-ca8151256e21",
-          "width": 48,
-          "x": 2710,
-          "y": 500,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 64,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Esmeralda",
-          "persistentUuid": "bddd3a69-e72f-4db0-8d91-ad64e87c0a13",
-          "width": 64,
-          "x": 3141,
-          "y": 340,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -6073,6 +6135,40 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 26,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Water",
+          "persistentUuid": "c7eac134-0ddc-45d7-bc9f-31781b7afd35",
+          "width": 1450,
+          "x": 721,
+          "y": 696,
+          "zOrder": 118,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 26,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Water",
+          "persistentUuid": "8d4b383a-e785-4356-b59e-3271feeb709c",
+          "width": 726,
+          "x": 5762,
+          "y": 697,
+          "zOrder": 118,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -6114,6 +6210,7 @@
               "Flippable": "Flippable"
             },
             {
+              "isFolded": true,
               "name": "PlatformerMultitouchMapper",
               "type": "SpriteMultitouchJoystick::PlatformerMultitouchMapper",
               "Property": "PlatformerObject",
@@ -7499,14 +7596,14 @@
               "Spread": 0.1,
               "Columns": 50,
               "Thickness": 8,
-              "SurfaceColor": "107;165;233",
+              "SurfaceColor": "250;60;159",
               "SufaceOpacity": 100,
-              "BodyColor": "74;144;226",
+              "BodyColor": "209;6;9",
               "BodyOpacity": 100,
               "SurfaceSize": 1,
               "WavePeriod": 0.1,
-              "WaveMagnitude": 8,
-              "WaveLength": 0.2,
+              "WaveMagnitude": 4,
+              "WaveLength": 0.4,
               "WaveDirection": "Right",
               "AutoWave": true,
               "ColorOfColumns": "255;255;255",
@@ -9223,7 +9320,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Agua",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -9350,6 +9446,12 @@
                     "",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -9374,6 +9476,35 @@
                     "PlatformerObject"
                   ]
                 }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "Inmune",
+                        "=",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Life",
+                        "=",
+                        "Life - 1"
+                      ]
+                    }
+                  ]
+                }
               ]
             }
           ],
@@ -9384,7 +9515,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Items",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -9522,13 +9652,23 @@
                 },
                 {
                   "type": {
-                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
                   },
                   "parameters": [
                     "Koro",
-                    "Resizable",
-                    "96",
-                    "96"
+                    "Effect",
+                    "\"Brillo\"",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Inmune",
+                    "True",
+                    ""
                   ]
                 },
                 {
@@ -9541,13 +9681,23 @@
                 },
                 {
                   "type": {
-                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
                   },
                   "parameters": [
                     "Koro",
-                    "Resizable",
-                    "64",
-                    "64"
+                    "Effect",
+                    "\"Brillo\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Inmune",
+                    "False",
+                    ""
                   ]
                 }
               ]
@@ -9627,18 +9777,15 @@
                     "",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "Diamantes",
-                    ""
-                  ]
-                },
                 {
                   "type": {
                     "value": "SetNumberVariable"
@@ -9661,13 +9808,32 @@
                 },
                 {
                   "type": {
-                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                    "value": "ChangeColor"
                   },
                   "parameters": [
-                    "Koro",
-                    "Effect",
-                    "\"Brillo\"",
-                    "yes"
+                    "Diamantes",
+                    "\"160;160;160\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
+                  },
+                  "parameters": [
+                    "Diamantes",
+                    "Animation"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "New sound effect2",
+                    "",
+                    "30",
+                    ""
                   ]
                 },
                 {
@@ -9675,17 +9841,15 @@
                     "value": "Wait"
                   },
                   "parameters": [
-                    "4"
+                    "2"
                   ]
                 },
                 {
                   "type": {
-                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                    "value": "Delete"
                   },
                   "parameters": [
-                    "Koro",
-                    "Effect",
-                    "\"Brillo\"",
+                    "Diamantes",
                     ""
                   ]
                 }
@@ -9825,6 +9989,16 @@
             },
             {
               "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "Inmune",
+                "=",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": []
@@ -9862,6 +10036,18 @@
                 "=",
                 "LimiteInferior.Y()-20"
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "New sound effect",
+                "",
+                "30",
+                ""
+              ]
             }
           ]
         },
@@ -9878,6 +10064,27 @@
                 "Resizable",
                 "=",
                 "45 * Life / 2"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::FireTowardObject"
+              },
+              "parameters": [
+                "NewSprite2",
+                "FireBullet",
+                "NewSprite2.X()",
+                "NewSprite2.X()",
+                "Life_TiledSprite",
+                "Koro",
+                "",
+                ""
               ]
             }
           ]
@@ -10058,6 +10265,59 @@
               }
             }
           ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Sin colision",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
         }
       ],
       "behaviorsSharedData": [
@@ -10074,6 +10334,10 @@
           "type": "EffectCapability::EffectBehavior"
         },
         {
+          "name": "FireBullet",
+          "type": "FireBullet::FireBullet"
+        },
+        {
           "name": "Flippable",
           "type": "FlippableCapability::FlippableBehavior"
         },
@@ -10084,10 +10348,6 @@
         {
           "name": "MultitouchButton",
           "type": "SpriteMultitouchJoystick::MultitouchButton"
-        },
-        {
-          "name": "ObjectSpawner",
-          "type": "ObjectSpawner::ObjectSpawner"
         },
         {
           "name": "Opacity",
