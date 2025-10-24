@@ -24,7 +24,7 @@
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "D:\\OneDrive\\Docs\\UNER\\Dropbox\\Tecnicatura Universitaria en Desarrollo Web\\14. Multimedia y Juegos en Web\\TPF\\Export5",
+    "latestCompilationDirectory": "C:\\Users\\Jose\\Downloads\\Export12",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -1259,6 +1259,82 @@
         "name": "FireBall3",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite44.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite44",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/LightGlow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "LightGlow.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Particles/GDevelop/c17e2d500015e598624b763f4942b26e3aac96efca094cd20257a61e15b27fcb_LightGlow.png",
+          "name": "LightGlow.png"
+        }
+      },
+      {
+        "file": "assets/New sound effect3.wav",
+        "kind": "audio",
+        "metadata": "{\"extension\":\".wav\",\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Explosion 1\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0,\\\"sustain\\\":0.08,\\\"sustainPunch\\\":0,\\\"decay\\\":0.39,\\\"tremoloDepth\\\":13,\\\"tremoloFrequency\\\":97,\\\"frequency\\\":10000,\\\"frequencySweep\\\":-1700,\\\"frequencyDeltaSweep\\\":-4000,\\\"repeatFrequency\\\":0,\\\"frequencyJump1Onset\\\":33,\\\"frequencyJump1Amount\\\":0,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":0,\\\"harmonicsFalloff\\\":0.5,\\\"waveform\\\":\\\"brownnoise\\\",\\\"interpolateNoise\\\":true,\\\"vibratoDepth\\\":0,\\\"vibratoFrequency\\\":10,\\\"squareDuty\\\":50,\\\"squareDutySweep\\\":0,\\\"flangerOffset\\\":0,\\\"flangerOffsetSweep\\\":0,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":22050,\\\"lowPassCutoffSweep\\\":0,\\\"highPassCutoff\\\":0,\\\"highPassCutoffSweep\\\":0,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"New sound effect\"}}",
+        "name": "New sound effect3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/New sound effect4.wav",
+        "kind": "audio",
+        "metadata": "{\"extension\":\".wav\",\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Laser/shoot 8\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0,\\\"sustain\\\":0.03,\\\"sustainPunch\\\":60,\\\"decay\\\":0.02,\\\"tremoloDepth\\\":0,\\\"tremoloFrequency\\\":10,\\\"frequency\\\":500,\\\"frequencySweep\\\":-300,\\\"frequencyDeltaSweep\\\":-1300,\\\"repeatFrequency\\\":0,\\\"frequencyJump1Onset\\\":33,\\\"frequencyJump1Amount\\\":0,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":0,\\\"harmonicsFalloff\\\":0.5,\\\"waveform\\\":\\\"sawtooth\\\",\\\"interpolateNoise\\\":true,\\\"vibratoDepth\\\":0,\\\"vibratoFrequency\\\":10,\\\"squareDuty\\\":35,\\\"squareDutySweep\\\":50,\\\"flangerOffset\\\":0,\\\"flangerOffsetSweep\\\":-1,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":22050,\\\"lowPassCutoffSweep\\\":0,\\\"highPassCutoff\\\":0,\\\"highPassCutoffSweep\\\":0,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"New sound effect\"}}",
+        "name": "New sound effect4",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Explosion1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Explosion1.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Particles/PixiJS/c693a024a868728da3e9e91c9d23513306582bda6ba10191afc24d6c5667dd5e_Explosion1.png",
+          "name": "Explosion1.png"
+        }
+      },
+      {
+        "file": "assets/Bubble.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bubble.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Particles/PixiJS/12254a94cf3e8dbc4bcccadf4f2f761ee0736f0abe7405c4a419fab822ba90ca_Bubble.png",
+          "name": "Bubble.png"
+        }
+      },
+      {
+        "file": "assets/Gas.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Gas.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Particles/PixiJS/04556cffa8fa75a9515382f3ad3d092361a7a339c612344926d372f906e3e7ed_Gas.png",
+          "name": "Gas.png"
+        }
       }
     ],
     "resourceFolders": []
@@ -1724,7 +1800,7 @@
     {
       "name": "Life",
       "type": "number",
-      "value": 8
+      "value": 6
     },
     {
       "name": "Inmune",
@@ -5154,7 +5230,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5117784035210216,
+        "zoomFactor": 0.8993607583666692,
         "windowMask": false,
         "selectedLayer": ""
       },
@@ -5991,7 +6067,7 @@
           "layer": "Interface",
           "name": "Life_TiledSprite",
           "persistentUuid": "aa1c874f-926d-428b-b9ab-f18f603882ea",
-          "width": 180,
+          "width": 136,
           "x": 21,
           "y": 20,
           "zOrder": 115,
@@ -9051,6 +9127,215 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "IceBall",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "LinearMovement",
+              "type": "LinearMovement::LinearMovement",
+              "SpeedX": 0,
+              "SpeedY": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "NewSprite2",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite44",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 5,
+                            "y": 6
+                          },
+                          {
+                            "x": 27,
+                            "y": 6
+                          },
+                          {
+                            "x": 27,
+                            "y": 27
+                          },
+                          {
+                            "x": 5,
+                            "y": 27
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "additive": true,
+          "assetStoreId": "b87985c7d940ec893b61769fbdc76585c5a871da0bd68799eeda96791b3b763d",
+          "destroyWhenNoParticles": true,
+          "emitterAngleA": 0,
+          "emitterAngleB": 360,
+          "emitterForceMax": 140,
+          "emitterForceMin": 80,
+          "flow": 400,
+          "jumpForwardInTimeOnCreation": 0,
+          "maxParticleNb": 500,
+          "name": "RedExplosion",
+          "particleAlpha1": 255,
+          "particleAlpha2": 0,
+          "particleAlphaRandomness1": 0,
+          "particleAlphaRandomness2": 0,
+          "particleAngle1": 0,
+          "particleAngle2": 0,
+          "particleAngleRandomness1": 0,
+          "particleAngleRandomness2": 0,
+          "particleBlue1": 64,
+          "particleBlue2": 0,
+          "particleColor1": "255;255;64",
+          "particleColor2": "255;0;0",
+          "particleGravityX": 0,
+          "particleGravityY": 0,
+          "particleGreen1": 255,
+          "particleGreen2": 0,
+          "particleLifeTimeMax": 1.2,
+          "particleLifeTimeMin": 0.6,
+          "particleRed1": 255,
+          "particleRed2": 255,
+          "particleSize1": 50,
+          "particleSize2": 200,
+          "particleSizeRandomness1": 0,
+          "particleSizeRandomness2": 0,
+          "rendererParam1": 0,
+          "rendererParam2": 0,
+          "rendererType": "Quad",
+          "tank": 100,
+          "textureParticleName": "LightGlow.png",
+          "type": "ParticleSystem::ParticleEmitter",
+          "zoneRadius": 0,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "additive": false,
+          "assetStoreId": "6f92b69880fa0285fd436b12083e29adb2d45af5669106fcfbb3d745a72b053d",
+          "destroyWhenNoParticles": true,
+          "emitterAngleA": 0,
+          "emitterAngleB": 360,
+          "emitterForceMax": 200,
+          "emitterForceMin": 100,
+          "flow": 100,
+          "jumpForwardInTimeOnCreation": 0,
+          "maxParticleNb": 1000,
+          "name": "Explosion1",
+          "particleAlpha1": 255,
+          "particleAlpha2": 0,
+          "particleAlphaRandomness1": 0,
+          "particleAlphaRandomness2": 0,
+          "particleAngle1": 0,
+          "particleAngle2": 0,
+          "particleAngleRandomness1": 0,
+          "particleAngleRandomness2": 0,
+          "particleBlue1": 16,
+          "particleBlue2": 48,
+          "particleColor1": "251;16;16",
+          "particleColor2": "245;184;48",
+          "particleGravityX": 0,
+          "particleGravityY": 0,
+          "particleGreen1": 16,
+          "particleGreen2": 184,
+          "particleLifeTimeMax": 0.5,
+          "particleLifeTimeMin": 0.5,
+          "particleRed1": 251,
+          "particleRed2": 245,
+          "particleSize1": 100,
+          "particleSize2": 0,
+          "particleSizeRandomness1": 0,
+          "particleSizeRandomness2": 0,
+          "rendererParam1": 1,
+          "rendererParam2": 1,
+          "rendererType": "Quad",
+          "tank": 30,
+          "textureParticleName": "Explosion1.png",
+          "type": "ParticleSystem::ParticleEmitter",
+          "zoneRadius": 10,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "additive": true,
+          "assetStoreId": "8b9d676aee2e7b4e359522aecea263890ba30f957c5665d63d459675b12980f2",
+          "destroyWhenNoParticles": true,
+          "emitterAngleA": 0,
+          "emitterAngleB": 0,
+          "emitterForceMax": 0,
+          "emitterForceMin": 0,
+          "flow": 100,
+          "jumpForwardInTimeOnCreation": 0,
+          "maxParticleNb": 1000,
+          "name": "Gas",
+          "particleAlpha1": 50,
+          "particleAlpha2": 0,
+          "particleAlphaRandomness1": 0,
+          "particleAlphaRandomness2": 0,
+          "particleAngle1": 0,
+          "particleAngle2": 0,
+          "particleAngleRandomness1": 0,
+          "particleAngleRandomness2": 0,
+          "particleBlue1": 97,
+          "particleBlue2": 74,
+          "particleColor1": "107;255;97",
+          "particleColor2": "216;255;74",
+          "particleGravityX": 0,
+          "particleGravityY": 0,
+          "particleGreen1": 255,
+          "particleGreen2": 255,
+          "particleLifeTimeMax": 2,
+          "particleLifeTimeMin": 1.7999999523162842,
+          "particleRed1": 107,
+          "particleRed2": 216,
+          "particleSize1": 100,
+          "particleSize2": 0,
+          "particleSizeRandomness1": 0,
+          "particleSizeRandomness2": 0,
+          "rendererParam1": 1,
+          "rendererParam2": 1,
+          "rendererType": "Quad",
+          "tank": -1,
+          "textureParticleName": "Gas.png",
+          "type": "ParticleSystem::ParticleEmitter",
+          "zoneRadius": 150,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
         }
       ],
       "objectsFolderStructure": {
@@ -9129,6 +9414,9 @@
             "objectName": "TinyYellowButton"
           },
           {
+            "objectName": "Gas"
+          },
+          {
             "objectName": "JumpButton"
           },
           {
@@ -9142,6 +9430,15 @@
           },
           {
             "objectName": "NaveEnemiga"
+          },
+          {
+            "objectName": "RedExplosion"
+          },
+          {
+            "objectName": "IceBall"
+          },
+          {
+            "objectName": "Explosion1"
           }
         ]
       },
@@ -9483,7 +9780,7 @@
                   "parameters": [
                     "Life",
                     "=",
-                    "8"
+                    "6"
                   ]
                 },
                 {
@@ -9900,6 +10197,18 @@
                     "goal-sfx-95846.mp3",
                     "",
                     "15",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Gas",
+                    "Portal.CenterX()",
+                    "Portal.CenterY()",
                     ""
                   ]
                 },
@@ -10368,6 +10677,18 @@
                 "30",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Explosion1",
+                "Koro.CenterX()",
+                "Koro.CenterY()",
+                ""
+              ]
             }
           ]
         },
@@ -10550,6 +10871,255 @@
               "parameters": [
                 "FireBall2",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Explosion1",
+                "Koro.CenterX()",
+                "Koro.CenterY()",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextJustPressed"
+              },
+              "parameters": [
+                "",
+                "\"LControl\""
+              ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlippedX"
+              },
+              "parameters": [
+                "Koro",
+                "Flippable"
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "Koro",
+                "\"Disparo\"",
+                ">=",
+                "0.3"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "IceBall",
+                "Koro.CenterX()",
+                "Koro.CenterY()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "LinearMovement::LinearMovement::SetSpeedX"
+              },
+              "parameters": [
+                "IceBall",
+                "LinearMovement",
+                "=",
+                "-600",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "New sound effect4",
+                "",
+                "30",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Koro",
+                "\"Disparo\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextJustPressed"
+              },
+              "parameters": [
+                "",
+                "\"LControl\""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "FlippableCapability::FlippableBehavior::FlippedX"
+              },
+              "parameters": [
+                "Koro",
+                "Flippable"
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "Koro",
+                "\"Disparo\"",
+                ">=",
+                "0.3"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "IceBall",
+                "Koro.CenterX()",
+                "Koro.CenterY()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "LinearMovement::LinearMovement::SetSpeedX"
+              },
+              "parameters": [
+                "IceBall",
+                "LinearMovement",
+                "=",
+                "600",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "New sound effect4",
+                "",
+                "30",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Koro",
+                "\"Disparo\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "IceBall",
+                "NaveEnemiga",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "NaveEnemiga",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "New sound effect3",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "RedExplosion",
+                "NaveEnemiga.CenterX()",
+                "NaveEnemiga.CenterY()",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Koro",
+                "\"Disparo\""
               ]
             }
           ]
