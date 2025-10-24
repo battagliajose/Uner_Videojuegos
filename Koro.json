@@ -24,7 +24,7 @@
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "C:\\Users\\Jose\\Downloads\\Export12",
+    "latestCompilationDirectory": "C:\\Users\\Jose\\Downloads\\Export13",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -1335,6 +1335,54 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Particles/PixiJS/04556cffa8fa75a9515382f3ad3d092361a7a339c612344926d372f906e3e7ed_Gas.png",
           "name": "Gas.png"
         }
+      },
+      {
+        "file": "assets/Point.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Point.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Particles/PixiJS/e75f02ffb5796a124fe04ea8594f63e031a42cfe6d46e697d8f05bdbb0673b7e_Point.png",
+          "name": "Point.png"
+        }
+      },
+      {
+        "file": "assets/ExplosionTexture1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ExplosionTexture1.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Particles/50be691a42be33a96faa72d0fc17e0463403326c605888adb799bbb2b02e3fd8_ExplosionTexture1.png",
+          "name": "ExplosionTexture1.png"
+        }
+      },
+      {
+        "file": "assets/ExplosionFog-Texture-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ExplosionFog-Texture-2.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Particles/64a424eeec46f355f121c7c3f25a37d39954b746c504a496642c49181467359c_ExplosionFog-Texture-2.png",
+          "name": "ExplosionFog-Texture-2.png"
+        }
+      },
+      {
+        "file": "assets/Lightning-Texture-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Lightning-Texture-1.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Particles/59f79e94532692d7af37ad256af2fc5e3e4de06e178f51de298704cc5eb449b2_Lightning-Texture-1.png",
+          "name": "Lightning-Texture-1.png"
+        }
       }
     ],
     "resourceFolders": []
@@ -1806,6 +1854,11 @@
       "name": "Inmune",
       "type": "boolean",
       "value": false
+    },
+    {
+      "name": "LifeNave",
+      "type": "number",
+      "value": 3
     }
   ],
   "layouts": [
@@ -5230,7 +5283,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.8993607583666692,
+        "zoomFactor": 0.39251611754882576,
         "windowMask": false,
         "selectedLayer": ""
       },
@@ -6312,8 +6365,8 @@
           "name": "NaveEnemiga",
           "persistentUuid": "3c3bf94d-cba4-4dd6-aad8-8f8377c90b18",
           "width": 128,
-          "x": 3880,
-          "y": 62,
+          "x": 6152,
+          "y": -45,
           "zOrder": 119,
           "numberProperties": [],
           "stringProperties": [],
@@ -9336,6 +9389,147 @@
           "variables": [],
           "effects": [],
           "behaviors": []
+        },
+        {
+          "additive": true,
+          "assetStoreId": "0313bde459d2aa5257fbd978abe8ced6c994ae649f95adefa900388b5a7f2e4e",
+          "destroyWhenNoParticles": true,
+          "emitterAngleA": 0,
+          "emitterAngleB": 360,
+          "emitterForceMax": 100,
+          "emitterForceMin": 80,
+          "flow": 100,
+          "jumpForwardInTimeOnCreation": 0,
+          "maxParticleNb": 300,
+          "name": "BasicExplosionSmooth",
+          "particleAlpha1": 204,
+          "particleAlpha2": 0,
+          "particleAlphaRandomness1": 0,
+          "particleAlphaRandomness2": 0,
+          "particleAngle1": 0,
+          "particleAngle2": 0,
+          "particleAngleRandomness1": 0,
+          "particleAngleRandomness2": 0,
+          "particleBlue1": 8,
+          "particleBlue2": 36,
+          "particleColor1": "8;8;8",
+          "particleColor2": "36;36;36",
+          "particleGravityX": 0,
+          "particleGravityY": 0,
+          "particleGreen1": 8,
+          "particleGreen2": 36,
+          "particleLifeTimeMax": 1.5,
+          "particleLifeTimeMin": 0.5,
+          "particleRed1": 8,
+          "particleRed2": 36,
+          "particleSize1": 10,
+          "particleSize2": 120,
+          "particleSizeRandomness1": 0,
+          "particleSizeRandomness2": 0,
+          "rendererParam1": 80,
+          "rendererParam2": 8,
+          "rendererType": "Quad",
+          "tank": 25,
+          "textureParticleName": "ExplosionTexture1.png",
+          "type": "ParticleSystem::ParticleEmitter",
+          "zoneRadius": 3,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "additive": true,
+          "assetStoreId": "0313bde459d2aa5257fbd978abe8ced6c994ae649f95adefa900388b5a7f2e4e",
+          "destroyWhenNoParticles": true,
+          "emitterAngleA": 0,
+          "emitterAngleB": 360,
+          "emitterForceMax": 90,
+          "emitterForceMin": 50,
+          "flow": 100,
+          "jumpForwardInTimeOnCreation": 0,
+          "maxParticleNb": 300,
+          "name": "BasicExplosionEnergy",
+          "particleAlpha1": 204,
+          "particleAlpha2": 0,
+          "particleAlphaRandomness1": 0,
+          "particleAlphaRandomness2": 0,
+          "particleAngle1": 0,
+          "particleAngle2": 0,
+          "particleAngleRandomness1": 0,
+          "particleAngleRandomness2": 0,
+          "particleBlue1": 255,
+          "particleBlue2": 194,
+          "particleColor1": "40;232;255",
+          "particleColor2": "97;0;194",
+          "particleGravityX": 0,
+          "particleGravityY": 0,
+          "particleGreen1": 232,
+          "particleGreen2": 0,
+          "particleLifeTimeMax": 1.5,
+          "particleLifeTimeMin": 0.5,
+          "particleRed1": 40,
+          "particleRed2": 97,
+          "particleSize1": 50,
+          "particleSize2": 0,
+          "particleSizeRandomness1": 0,
+          "particleSizeRandomness2": 0,
+          "rendererParam1": 30,
+          "rendererParam2": 1,
+          "rendererType": "Quad",
+          "tank": 30,
+          "textureParticleName": "ExplosionFog-Texture-2.png",
+          "type": "ParticleSystem::ParticleEmitter",
+          "zoneRadius": 1,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "additive": true,
+          "assetStoreId": "0313bde459d2aa5257fbd978abe8ced6c994ae649f95adefa900388b5a7f2e4e",
+          "destroyWhenNoParticles": true,
+          "emitterAngleA": 0,
+          "emitterAngleB": 360,
+          "emitterForceMax": 20,
+          "emitterForceMin": 10,
+          "flow": 100,
+          "jumpForwardInTimeOnCreation": 0,
+          "maxParticleNb": 300,
+          "name": "LightningTexture",
+          "particleAlpha1": 204,
+          "particleAlpha2": 0,
+          "particleAlphaRandomness1": 0,
+          "particleAlphaRandomness2": 0,
+          "particleAngle1": 0,
+          "particleAngle2": 0,
+          "particleAngleRandomness1": 0,
+          "particleAngleRandomness2": 0,
+          "particleBlue1": 255,
+          "particleBlue2": 112,
+          "particleColor1": "0;166;255",
+          "particleColor2": "0;2;112",
+          "particleGravityX": 0,
+          "particleGravityY": -60,
+          "particleGreen1": 166,
+          "particleGreen2": 2,
+          "particleLifeTimeMax": 2,
+          "particleLifeTimeMin": 1,
+          "particleRed1": 0,
+          "particleRed2": 0,
+          "particleSize1": 0,
+          "particleSize2": 100,
+          "particleSizeRandomness1": 0,
+          "particleSizeRandomness2": 0,
+          "rendererParam1": 200,
+          "rendererParam2": 200,
+          "rendererType": "Quad",
+          "tank": 6,
+          "textureParticleName": "Lightning-Texture-1.png",
+          "type": "ParticleSystem::ParticleEmitter",
+          "zoneRadius": 3,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
         }
       ],
       "objectsFolderStructure": {
@@ -9439,6 +9633,15 @@
           },
           {
             "objectName": "Explosion1"
+          },
+          {
+            "objectName": "BasicExplosionSmooth"
+          },
+          {
+            "objectName": "BasicExplosionEnergy"
+          },
+          {
+            "objectName": "LightningTexture"
           }
         ]
       },
@@ -9448,7 +9651,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Inicio",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -9583,6 +9785,26 @@
                     "CheckPoint.Y",
                     "=",
                     "380"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "NaveEnemiga",
+                    "Pathfinding",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "NaveEnemiga",
+                    "FireBullet",
+                    ""
                   ]
                 }
               ]
@@ -9908,7 +10130,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Pruebas",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -10389,6 +10610,18 @@
                     "10",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "BasicExplosionEnergy",
+                    "Diamante.CenterX()",
+                    "Diamante.CenterY()",
+                    ""
+                  ]
                 }
               ]
             },
@@ -10808,6 +11041,49 @@
           "conditions": [
             {
               "type": {
+                "value": "Distance"
+              },
+              "parameters": [
+                "NaveEnemiga",
+                "Koro",
+                "4000",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "NaveEnemiga",
+                "Pathfinding",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "NaveEnemiga",
+                "FireBullet",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "CollisionNP"
               },
               "parameters": [
@@ -11064,18 +11340,82 @@
                 "",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "Delete"
+                "value": "PlaySound"
               },
               "parameters": [
-                "NaveEnemiga",
+                "",
+                "New sound effect",
+                "",
+                "30",
                 ""
               ]
             },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "LifeNave",
+                "=",
+                "LifeNave-1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Koro",
+                "\"Disparo\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "LifeNave",
+                "<=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
             {
               "type": {
                 "value": "PlaySound"
@@ -11099,6 +11439,15 @@
                 "NaveEnemiga.CenterY()",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "NaveEnemiga",
+                ""
+              ]
             }
           ]
         },
@@ -11107,19 +11456,23 @@
           "conditions": [
             {
               "type": {
-                "value": "BuiltinCommonInstructions::Once"
+                "value": "NumberVariable"
               },
-              "parameters": []
+              "parameters": [
+                "LifeNave",
+                "<",
+                "3"
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "ResetObjectTimer"
+                "value": "ChangeColor"
               },
               "parameters": [
-                "Koro",
-                "\"Disparo\""
+                "NaveEnemiga",
+                "ToString(Random(255)) + \";\" + ToString(Random(255)) + \";\" + ToString(Random(255))"
               ]
             }
           ]
