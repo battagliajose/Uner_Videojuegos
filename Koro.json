@@ -28454,9 +28454,9 @@
           "effects": [],
           "behaviors": [
             {
-              "extraBorder": 0,
               "name": "Destruir Fuera",
-              "type": "DestroyOutsideBehavior::DestroyOutside"
+              "type": "DestroyOutsideBehavior::DestroyOutside",
+              "extraBorder": 0
             }
           ],
           "animations": [
@@ -28822,6 +28822,29 @@
                 "BackGround",
                 "+",
                 "40 * TimeDelta()"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCameraCenterX"
+              },
+              "parameters": [
+                "",
+                "+",
+                "150 * TimeDelta()",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceXY"
+              },
+              "parameters": [
+                "Player",
+                "150",
+                "0",
+                ""
               ]
             }
           ]
