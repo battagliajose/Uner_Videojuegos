@@ -1855,6 +1855,22 @@
         "name": "NewSprite73",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite74.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite74",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Enemy22.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Enemy22",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -28885,7 +28901,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.8141881203709993,
+        "zoomFactor": 0.37971210019479684,
         "windowMask": false
       },
       "objectsGroups": [
@@ -28942,56 +28958,6 @@
           "x": 40,
           "y": 296,
           "zOrder": 9,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 64,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Enemy3",
-          "persistentUuid": "559434a5-cc8e-4dc7-ba89-98a214abb686",
-          "width": 59,
-          "x": 456,
-          "y": 400,
-          "zOrder": 10,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 64,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Enemy1",
-          "persistentUuid": "e4983a3d-0a56-4f22-a2cd-bf6f28a54c7f",
-          "width": 64,
-          "x": 1024,
-          "y": 216,
-          "zOrder": 11,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Enemy2",
-          "persistentUuid": "9a9355a5-1592-43b3-aefd-f6f223a3c6ae",
-          "width": 0,
-          "x": 592,
-          "y": 342,
-          "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -29353,7 +29319,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "NewSprite72",
+                      "image": "NewSprite74",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -29373,16 +29339,16 @@
                             "y": 0
                           },
                           {
-                            "x": 75,
+                            "x": 65,
                             "y": 0
                           },
                           {
-                            "x": 75,
-                            "y": 99
+                            "x": 65,
+                            "y": 86
                           },
                           {
                             "x": 0,
-                            "y": 99
+                            "y": 86
                           }
                         ]
                       ]
@@ -29613,7 +29579,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "NewSprite70",
+                      "image": "Enemy22",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -29630,19 +29596,19 @@
                         [
                           {
                             "x": 0,
-                            "y": 11
+                            "y": 5
                           },
                           {
-                            "x": 144,
-                            "y": 11
+                            "x": 67,
+                            "y": 5
                           },
                           {
-                            "x": 144,
-                            "y": 151
+                            "x": 67,
+                            "y": 70
                           },
                           {
                             "x": 0,
-                            "y": 151
+                            "y": 70
                           }
                         ]
                       ]
@@ -29979,10 +29945,61 @@
                 "",
                 "Enemy1",
                 "CameraX() + CameraWidth() / 2 + 50",
-                "RandomInRange(CameraY() - CameraHeight() / 2 + 100, CameraY() + CameraHeight() / 2 - 100)",
+                "RandomInRange(CameraY() - CameraHeight() / 2 + 100, CameraY() + CameraHeight() / 2 - 50)",
                 ""
               ]
             },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Enemy2",
+                "CameraX() + CameraWidth() / 2 + 150",
+                "RandomInRange(CameraY() - CameraHeight() / 2 + 100, CameraY() + CameraHeight() / 2 - 50)",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Enemy3",
+                "CameraX() + CameraWidth() / 2 + 250",
+                "RandomInRange(CameraY() - CameraHeight() / 2 + 100, CameraY() + CameraHeight() / 2 - 50)",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"Respawn\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"Respawn\"",
+                ">=",
+                "3"
+              ]
+            }
+          ],
+          "actions": [
             {
               "type": {
                 "value": "ResetTimer"
