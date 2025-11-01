@@ -28569,10 +28569,25 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.6672773998330023,
+        "zoomFactor": 0.5468750000000046,
         "windowMask": false
       },
-      "objectsGroups": [],
+      "objectsGroups": [
+        {
+          "name": "Enemies",
+          "objects": [
+            {
+              "name": "Enemy1"
+            },
+            {
+              "name": "Enemy2"
+            },
+            {
+              "name": "Enemy3"
+            }
+          ]
+        }
+      ],
       "variables": [
         {
           "name": "IsDamaged",
@@ -29635,7 +29650,7 @@
                 "value": "CollisionNP"
               },
               "parameters": [
-                "Enemy1",
+                "Enemies",
                 "bullet",
                 "",
                 "",
@@ -29658,7 +29673,7 @@
                 "value": "Health::Health::Hit"
               },
               "parameters": [
-                "Enemy1",
+                "Enemies",
                 "Health",
                 "100",
                 "",
@@ -29676,7 +29691,7 @@
                 "value": "Health::Health::IsDead"
               },
               "parameters": [
-                "Enemy1",
+                "Enemies",
                 "Health",
                 ""
               ]
@@ -29688,141 +29703,7 @@
                 "value": "Delete"
               },
               "parameters": [
-                "Enemy1",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Enemy2",
-                "bullet",
-                "",
-                "",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "bullet",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Health::Health::Hit"
-              },
-              "parameters": [
-                "Enemy2",
-                "Health",
-                "100",
-                "",
-                "",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "Health::Health::IsDead"
-              },
-              "parameters": [
-                "Enemy2",
-                "Health",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "Enemy2",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Enemy3",
-                "bullet",
-                "",
-                "",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "bullet",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Health::Health::Hit"
-              },
-              "parameters": [
-                "Enemy3",
-                "Health",
-                "100",
-                "",
-                "",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "Health::Health::IsDead"
-              },
-              "parameters": [
-                "Enemy3",
-                "Health",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "Enemy3",
+                "Enemies",
                 ""
               ]
             }
@@ -29836,7 +29717,7 @@
                 "value": "PosX"
               },
               "parameters": [
-                "Enemy1",
+                "Enemies",
                 "<=",
                 "CameraX()+450"
               ]
@@ -29848,63 +29729,7 @@
                 "value": "AddForceXY"
               },
               "parameters": [
-                "Enemy1",
-                "180",
-                "200",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PosX"
-              },
-              "parameters": [
-                "Enemy2",
-                "<=",
-                "CameraX()+450"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AddForceXY"
-              },
-              "parameters": [
-                "Enemy2",
-                "180",
-                "200",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PosX"
-              },
-              "parameters": [
-                "Enemy2",
-                "<=",
-                "CameraX()+450"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AddForceXY"
-              },
-              "parameters": [
-                "Enemy3",
+                "Enemies",
                 "180",
                 "200",
                 ""
@@ -29921,7 +29746,7 @@
               },
               "parameters": [
                 "Player",
-                "Enemy1",
+                "Enemies",
                 "",
                 "",
                 ""
@@ -29937,91 +29762,6 @@
                 "IsDamaged",
                 "=",
                 "40"
-              ]
-            },
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "Enemy1",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Player",
-                "Enemy2",
-                "",
-                "",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "IsDamaged",
-                "=",
-                "40"
-              ]
-            },
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "Enemy2",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "Player",
-                "Enemy3",
-                "",
-                "",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "IsDamaged",
-                "=",
-                "40"
-              ]
-            },
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "Enemy3",
-                ""
               ]
             }
           ]
