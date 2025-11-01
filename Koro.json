@@ -1815,6 +1815,14 @@
         "name": "NewSprite72",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/BulletEnemy.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "BulletEnemy",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -29287,6 +29295,73 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "BulletEnemy",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "extraBorder": 0,
+              "name": "DestroyOutside",
+              "type": "DestroyOutsideBehavior::DestroyOutside"
+            }
+          ],
+          "animations": [
+            {
+              "name": "BulletEnemy",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "BulletEnemy",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 10,
+                            "y": 0
+                          },
+                          {
+                            "x": 10,
+                            "y": 10
+                          },
+                          {
+                            "x": 0,
+                            "y": 10
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -29312,6 +29387,9 @@
               },
               {
                 "objectName": "Enemy3"
+              },
+              {
+                "objectName": "BulletEnemy"
               }
             ]
           }
@@ -29713,34 +29791,6 @@
           "conditions": [
             {
               "type": {
-                "value": "PosX"
-              },
-              "parameters": [
-                "Enemies",
-                "<=",
-                "CameraX()+450"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AddForceXY"
-              },
-              "parameters": [
-                "Enemies",
-                "18",
-                "20",
-                "0"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
                 "value": "CollisionNP"
               },
               "parameters": [
@@ -29767,8 +29817,65 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
+          "conditions": [
+            {
+              "type": {
+                "value": "PosX"
+              },
+              "parameters": [
+                "Enemies",
+                "<=",
+                "CameraX()+450"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AddForceXY"
+              },
+              "parameters": [
+                "Enemies",
+                "1.8",
+                "2.0",
+                "0"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "Enemies",
+                    "<=",
+                    "CameraX()+150"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::Fire"
+                  },
+                  "parameters": [
+                    "Enemy2",
+                    "FireBullet",
+                    "Enemy2.X()-5",
+                    "Enemy2.Y()+45",
+                    "BulletEnemy",
+                    "180",
+                    "700",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "layers": [
