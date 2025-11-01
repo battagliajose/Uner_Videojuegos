@@ -1443,7 +1443,7 @@
       {
         "file": "assets/NewTiledSprite4.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{},\"localFilePath\":\"assets/NewTiledSprite4.png\"}",
         "name": "NewTiledSprite4",
         "smoothed": true,
         "userAdded": false
@@ -28666,14 +28666,13 @@
         },
         {
           "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 66,
+          "customSize": false,
+          "height": 0,
           "keepRatio": true,
           "layer": "",
           "name": "Enemy2",
           "persistentUuid": "9a9355a5-1592-43b3-aefd-f6f223a3c6ae",
-          "width": 34,
+          "width": 0,
           "x": 592,
           "y": 342,
           "zOrder": 12,
