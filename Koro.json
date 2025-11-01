@@ -1823,6 +1823,14 @@
         "name": "BulletEnemy",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "Copilot_20251101_110432-removebg-preview.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Copilot_20251101_110432-removebg-preview.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -28577,7 +28585,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.5468750000000046,
+        "zoomFactor": 0.5468750000000047,
         "windowMask": false
       },
       "objectsGroups": [
@@ -28684,6 +28692,22 @@
           "x": 592,
           "y": 342,
           "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Game Over",
+          "name": "GameOver",
+          "persistentUuid": "0f04f127-e81f-453c-a814-d41de0b0c346",
+          "width": 0,
+          "x": 376,
+          "y": 128,
+          "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -29362,6 +29386,66 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "GameOver",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Copilot_20251101_110432-removebg-preview.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 38,
+                            "y": 103
+                          },
+                          {
+                            "x": 461,
+                            "y": 103
+                          },
+                          {
+                            "x": 461,
+                            "y": 346
+                          },
+                          {
+                            "x": 38,
+                            "y": 346
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -29375,6 +29459,9 @@
           },
           {
             "objectName": "BackGround"
+          },
+          {
+            "objectName": "GameOver"
           },
           {
             "folderName": "Enemies",
@@ -29888,12 +29975,24 @@
           "actions": [
             {
               "type": {
-                "value": "SetNumberVariable"
+                "value": "Health::Health::Hit"
               },
               "parameters": [
-                "IsDamaged",
-                "=",
-                "40"
+                "Player",
+                "Health",
+                "100",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Enemies",
+                ""
               ]
             }
           ]
@@ -29917,12 +30016,15 @@
           "actions": [
             {
               "type": {
-                "value": "SetNumberVariable"
+                "value": "Health::Health::Hit"
               },
               "parameters": [
-                "IsDamaged",
-                "=",
-                "30"
+                "Player",
+                "Health",
+                "100",
+                "",
+                "",
+                ""
               ]
             },
             {
@@ -29931,35 +30033,6 @@
               },
               "parameters": [
                 "BulletEnemy",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "IsDamaged",
-                ">=",
-                "1"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Health::Health::SetFlatDamageReductionOp"
-              },
-              "parameters": [
-                "Player",
-                "Health",
-                "=",
-                "0",
                 ""
               ]
             }
@@ -29982,12 +30055,20 @@
           "actions": [
             {
               "type": {
-                "value": "Scene"
+                "value": "Delete"
+              },
+              "parameters": [
+                "Player",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ShowLayer"
               },
               "parameters": [
                 "",
-                "\"byte defender\"",
-                ""
+                "\"Game Over\""
               ]
             }
           ]
@@ -30073,6 +30154,59 @@
               "width": 0
             }
           ],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Game Over",
+          "renderingType": "",
+          "visibility": false,
+          "cameras": [],
           "effects": [
             {
               "effectType": "Scene3D::HemisphereLight",
