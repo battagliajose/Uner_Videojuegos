@@ -1615,6 +1615,206 @@
         "name": "Enemy8",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/Enemy11.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Enemy9",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Enemy12.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Enemy10",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Enemy13.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Enemy11",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Enemy14.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Enemy14.png\"}",
+        "name": "Enemy12",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite62.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite62.png\"}",
+        "name": "NewSprite62",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite63.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite63",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite64.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite64",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite65.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite65",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Enemy15.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Enemy13",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Enemy15.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Enemy14",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Enemy15.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Enemy15",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Enemy16.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Enemy16",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Enemy17.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Enemy17.png\"}",
+        "name": "Enemy17",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Enemy18.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Enemy18",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite66.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite66",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite67.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite67",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite68.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite68",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite69.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite69",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite70.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite70",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite71.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite71",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Enemy19.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Enemy19",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Enemy20.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Enemy20",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Enemy21.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Enemy21",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite72.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite72",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2115,8 +2315,7 @@
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.30104611971824724,
-        "windowMask": false,
-        "selectedLayer": ""
+        "windowMask": false
       },
       "objectsGroups": [],
       "variables": [
@@ -28370,29 +28569,18 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.338969317284544,
+        "zoomFactor": 0.6672773998330023,
         "windowMask": false
       },
       "objectsGroups": [],
-      "variables": [],
-      "instances": [
+      "variables": [
         {
-          "angle": 0,
-          "customSize": true,
-          "depth": 5,
-          "height": 64,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Player",
-          "persistentUuid": "e752d345-804c-4eb5-a994-4ff0c9dd4113",
-          "width": 94,
-          "x": 42,
-          "y": 320,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
+          "name": "IsDamaged",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "instances": [
         {
           "angle": 0,
           "customSize": true,
@@ -28413,16 +28601,16 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 3,
-          "height": 40,
+          "depth": 1,
+          "height": 64,
           "keepRatio": true,
           "layer": "",
-          "name": "Enemy1",
-          "persistentUuid": "6e6e1adf-3039-4600-b7e3-a93163a881f0",
-          "width": 40,
-          "x": 592,
+          "name": "Player",
+          "persistentUuid": "176c4dc1-bfd3-4e94-847d-d37b988c07b7",
+          "width": 58,
+          "x": 40,
           "y": 296,
-          "zOrder": 3,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -28431,49 +28619,49 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 39,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Enemy2",
-          "persistentUuid": "9d25822c-bdd7-41f1-b2be-4216fafc7fdd",
-          "width": 64,
-          "x": 632,
-          "y": 409,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 39,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Enemy2",
-          "persistentUuid": "dcdb060c-6e23-43e3-8ffc-3f6beaae427c",
-          "width": 64,
-          "x": 744,
-          "y": 272,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 40,
+          "height": 64,
           "keepRatio": true,
           "layer": "",
           "name": "Enemy3",
-          "persistentUuid": "733b4e94-be01-44a6-997d-69bcb6b4a810",
-          "width": 47,
-          "x": 777,
-          "y": 344,
-          "zOrder": 5,
+          "persistentUuid": "559434a5-cc8e-4dc7-ba89-98a214abb686",
+          "width": 59,
+          "x": 456,
+          "y": 400,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 64,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Enemy1",
+          "persistentUuid": "e4983a3d-0a56-4f22-a2cd-bf6f28a54c7f",
+          "width": 64,
+          "x": 1024,
+          "y": 216,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 66,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Enemy2",
+          "persistentUuid": "9a9355a5-1592-43b3-aefd-f6f223a3c6ae",
+          "width": 34,
+          "x": 592,
+          "y": 342,
+          "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -28578,7 +28766,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "NewSprite45",
+                      "image": "Player",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -28594,92 +28782,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 6,
-                            "y": 1
+                            "x": 3,
+                            "y": 15
                           },
                           {
-                            "x": 25,
-                            "y": 1
+                            "x": 149,
+                            "y": 15
                           },
                           {
-                            "x": 25,
-                            "y": 21
+                            "x": 149,
+                            "y": 154
                           },
                           {
-                            "x": 6,
-                            "y": 21
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "NewSprite46",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 6,
-                            "y": 1
-                          },
-                          {
-                            "x": 25,
-                            "y": 1
-                          },
-                          {
-                            "x": 25,
-                            "y": 21
-                          },
-                          {
-                            "x": 6,
-                            "y": 21
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "NewSprite47",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 6,
-                            "y": 1
-                          },
-                          {
-                            "x": 25,
-                            "y": 1
-                          },
-                          {
-                            "x": 25,
-                            "y": 21
-                          },
-                          {
-                            "x": 6,
-                            "y": 21
+                            "x": 3,
+                            "y": 154
                           }
                         ]
                       ]
@@ -28777,41 +28893,88 @@
           "variables": [],
           "effects": [
             {
-              "effectType": "CRT",
+              "effectType": "BlackAndWhite",
               "name": "Effect",
               "doubleParameters": {
-                "animationFrequency": 60,
-                "animationSpeed": 1,
-                "curvature": 1,
-                "lineContrast": 0.25,
-                "lineWidth": 1,
-                "noise": 0.3,
-                "noiseSize": 1,
-                "padding": 0,
-                "vignetting": 0.3,
-                "vignettingAlpha": 1,
-                "vignettingBlur": 0.3
+                "opacity": 1
               },
               "stringParameters": {},
-              "booleanParameters": {
-                "verticalLine": false
-              }
+              "booleanParameters": {}
             }
           ],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "FireBullet",
+              "type": "FireBullet::FireBullet",
+              "FireCooldown": 0.1,
+              "HasJustFired": false,
+              "RotateBullet": true,
+              "FiringArc": 45,
+              "BulletQuantity": 1,
+              "AngleVariance": 0,
+              "BulletSpeedVariance": 0,
+              "AmmoQuantity": 0,
+              "ShotsPerReload": 0,
+              "ReloadDuration": 1,
+              "MaxAmmo": 0,
+              "ShotsBeforeNextReload": 0,
+              "TotalShotsFired": 0,
+              "TotalBulletsCreated": 0,
+              "StartingAmmo": 0,
+              "TotalReloadsCompleted": 0,
+              "UnlimitedAmmo": true,
+              "ReloadInProgress": false,
+              "HeatIncreasePerShot": 0,
+              "HeatLevel": 0,
+              "AutomaticReloading": true,
+              "OverheatDuration": 0,
+              "LinearCoolingRate": 0.1,
+              "ExponentialCoolingRate": 0.3,
+              "BulletLayer": "",
+              "RandomizedAngle": 0
+            },
+            {
+              "name": "Health",
+              "type": "Health::Health",
+              "Health": 100,
+              "CurrentHealth": 0,
+              "MaxHealth": 100,
+              "DamageCooldown": 0,
+              "AllowOverHealing": false,
+              "IsHealthJustDamaged": false,
+              "DamageToBeApplied": 0,
+              "HitAtLeastOnce": false,
+              "ChanceToDodge": 0,
+              "IsJustDodged": false,
+              "HealToBeApplied": 0,
+              "HealthRegenRate": 0,
+              "HealthRegenDelay": 0,
+              "IsJustHealed": false,
+              "CurrentShieldPoints": 2.0247e-320,
+              "MaxShieldPoints": 0,
+              "ShieldDuration": 5,
+              "ShieldRegenRate": 0,
+              "BlockExcessDamage": false,
+              "ShieldRegenDelay": 0,
+              "IsShieldJustDamaged": false,
+              "ShieldDamageTaken": 2.0247e-320,
+              "FlatDamageReduction": 0,
+              "PercentDamageReduction": 0
+            }
+          ],
           "animations": [
             {
-              "name": "Enemy1",
+              "name": "NewSprite",
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": false,
+                  "looping": true,
                   "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
+                  "timeBetweenFrames": 0.22,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Enemy6",
+                      "image": "NewSprite72",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -28828,91 +28991,19 @@
                         [
                           {
                             "x": 0,
-                            "y": 1
+                            "y": 0
                           },
                           {
-                            "x": 16,
-                            "y": 1
+                            "x": 75,
+                            "y": 0
                           },
                           {
-                            "x": 16,
-                            "y": 22
-                          },
-                          {
-                            "x": 0,
-                            "y": 22
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Enemy2",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 1
-                          },
-                          {
-                            "x": 16,
-                            "y": 1
-                          },
-                          {
-                            "x": 16,
-                            "y": 22
+                            "x": 75,
+                            "y": 99
                           },
                           {
                             "x": 0,
-                            "y": 22
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Enemy7",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 1
-                          },
-                          {
-                            "x": 16,
-                            "y": 1
-                          },
-                          {
-                            "x": 16,
-                            "y": 22
-                          },
-                          {
-                            "x": 0,
-                            "y": 22
+                            "y": 99
                           }
                         ]
                       ]
@@ -28932,41 +29023,88 @@
           "variables": [],
           "effects": [
             {
-              "effectType": "CRT",
+              "effectType": "BlackAndWhite",
               "name": "Effect",
               "doubleParameters": {
-                "animationFrequency": 60,
-                "animationSpeed": 1,
-                "curvature": 1,
-                "lineContrast": 0.25,
-                "lineWidth": 1,
-                "noise": 0.3,
-                "noiseSize": 1,
-                "padding": 0,
-                "vignetting": 0.3,
-                "vignettingAlpha": 1,
-                "vignettingBlur": 0.3
+                "opacity": 1
               },
               "stringParameters": {},
-              "booleanParameters": {
-                "verticalLine": false
-              }
+              "booleanParameters": {}
             }
           ],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "FireBullet",
+              "type": "FireBullet::FireBullet",
+              "FireCooldown": 0.1,
+              "HasJustFired": false,
+              "RotateBullet": true,
+              "FiringArc": 45,
+              "BulletQuantity": 1,
+              "AngleVariance": 0,
+              "BulletSpeedVariance": 0,
+              "AmmoQuantity": 0,
+              "ShotsPerReload": 0,
+              "ReloadDuration": 1,
+              "MaxAmmo": 0,
+              "ShotsBeforeNextReload": 0,
+              "TotalShotsFired": 0,
+              "TotalBulletsCreated": 0,
+              "StartingAmmo": 0,
+              "TotalReloadsCompleted": 0,
+              "UnlimitedAmmo": true,
+              "ReloadInProgress": false,
+              "HeatIncreasePerShot": 0,
+              "HeatLevel": 0,
+              "AutomaticReloading": true,
+              "OverheatDuration": 0,
+              "LinearCoolingRate": 0.1,
+              "ExponentialCoolingRate": 0.3,
+              "BulletLayer": "",
+              "RandomizedAngle": 0
+            },
+            {
+              "name": "Health",
+              "type": "Health::Health",
+              "Health": 100,
+              "CurrentHealth": 0,
+              "MaxHealth": 100,
+              "DamageCooldown": 0,
+              "AllowOverHealing": false,
+              "IsHealthJustDamaged": false,
+              "DamageToBeApplied": 0,
+              "HitAtLeastOnce": false,
+              "ChanceToDodge": 0,
+              "IsJustDodged": false,
+              "HealToBeApplied": 0,
+              "HealthRegenRate": 0,
+              "HealthRegenDelay": 0,
+              "IsJustHealed": false,
+              "CurrentShieldPoints": 2.0247e-320,
+              "MaxShieldPoints": 0,
+              "ShieldDuration": 5,
+              "ShieldRegenRate": 0,
+              "BlockExcessDamage": false,
+              "ShieldRegenDelay": 0,
+              "IsShieldJustDamaged": false,
+              "ShieldDamageTaken": 2.0247e-320,
+              "FlatDamageReduction": 0,
+              "PercentDamageReduction": 0
+            }
+          ],
           "animations": [
             {
-              "name": "Enemy2",
+              "name": "Enemy5",
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": true,
+                  "looping": false,
                   "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
+                  "timeBetweenFrames": 0.22,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Enemy3",
+                      "image": "Enemy21",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -28986,88 +29124,16 @@
                             "y": 0
                           },
                           {
-                            "x": 20,
+                            "x": 50,
                             "y": 0
                           },
                           {
-                            "x": 20,
-                            "y": 15
+                            "x": 50,
+                            "y": 98
                           },
                           {
                             "x": 0,
-                            "y": 15
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Enemy4",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 20,
-                            "y": 0
-                          },
-                          {
-                            "x": 20,
-                            "y": 15
-                          },
-                          {
-                            "x": 0,
-                            "y": 15
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Enemy5",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 20,
-                            "y": 0
-                          },
-                          {
-                            "x": 20,
-                            "y": 15
-                          },
-                          {
-                            "x": 0,
-                            "y": 15
+                            "y": 98
                           }
                         ]
                       ]
@@ -29087,31 +29153,78 @@
           "variables": [],
           "effects": [
             {
-              "effectType": "CRT",
+              "effectType": "BlackAndWhite",
               "name": "Effect",
               "doubleParameters": {
-                "animationFrequency": 60,
-                "animationSpeed": 1,
-                "curvature": 1,
-                "lineContrast": 0.25,
-                "lineWidth": 1,
-                "noise": 0.3,
-                "noiseSize": 1,
-                "padding": 0,
-                "vignetting": 0.3,
-                "vignettingAlpha": 1,
-                "vignettingBlur": 0.3
+                "opacity": 1
               },
               "stringParameters": {},
-              "booleanParameters": {
-                "verticalLine": false
-              }
+              "booleanParameters": {}
             }
           ],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "FireBullet",
+              "type": "FireBullet::FireBullet",
+              "FireCooldown": 0.1,
+              "HasJustFired": false,
+              "RotateBullet": true,
+              "FiringArc": 45,
+              "BulletQuantity": 1,
+              "AngleVariance": 0,
+              "BulletSpeedVariance": 0,
+              "AmmoQuantity": 0,
+              "ShotsPerReload": 0,
+              "ReloadDuration": 1,
+              "MaxAmmo": 0,
+              "ShotsBeforeNextReload": 0,
+              "TotalShotsFired": 0,
+              "TotalBulletsCreated": 0,
+              "StartingAmmo": 0,
+              "TotalReloadsCompleted": 0,
+              "UnlimitedAmmo": true,
+              "ReloadInProgress": false,
+              "HeatIncreasePerShot": 0,
+              "HeatLevel": 0,
+              "AutomaticReloading": true,
+              "OverheatDuration": 0,
+              "LinearCoolingRate": 0.1,
+              "ExponentialCoolingRate": 0.3,
+              "BulletLayer": "",
+              "RandomizedAngle": 0
+            },
+            {
+              "name": "Health",
+              "type": "Health::Health",
+              "Health": 100,
+              "CurrentHealth": 0,
+              "MaxHealth": 100,
+              "DamageCooldown": 0,
+              "AllowOverHealing": false,
+              "IsHealthJustDamaged": false,
+              "DamageToBeApplied": 0,
+              "HitAtLeastOnce": false,
+              "ChanceToDodge": 0,
+              "IsJustDodged": false,
+              "HealToBeApplied": 0,
+              "HealthRegenRate": 0,
+              "HealthRegenDelay": 0,
+              "IsJustHealed": false,
+              "CurrentShieldPoints": 2.0247e-320,
+              "MaxShieldPoints": 0,
+              "ShieldDuration": 5,
+              "ShieldRegenRate": 0,
+              "BlockExcessDamage": false,
+              "ShieldRegenDelay": 0,
+              "IsShieldJustDamaged": false,
+              "ShieldDamageTaken": 2.0247e-320,
+              "FlatDamageReduction": 0,
+              "PercentDamageReduction": 0
+            }
+          ],
           "animations": [
             {
-              "name": "Enemy3",
+              "name": "Enemy4",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -29121,7 +29234,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Enemy8",
+                      "image": "NewSprite70",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -29138,55 +29251,19 @@
                         [
                           {
                             "x": 0,
-                            "y": 0
+                            "y": 11
                           },
                           {
-                            "x": 23,
-                            "y": 0
+                            "x": 144,
+                            "y": 11
                           },
                           {
-                            "x": 23,
-                            "y": 27
-                          },
-                          {
-                            "x": 0,
-                            "y": 27
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "NewSprite61",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 23,
-                            "y": 0
-                          },
-                          {
-                            "x": 23,
-                            "y": 27
+                            "x": 144,
+                            "y": 151
                           },
                           {
                             "x": 0,
-                            "y": 27
+                            "y": 151
                           }
                         ]
                       ]
@@ -29464,7 +29541,7 @@
               "parameters": [
                 "Player",
                 "FireBullet",
-                "Player.X()+82",
+                "Player.X()+60",
                 "Player.Y()+30",
                 "bullet",
                 "0",
@@ -29537,6 +29614,422 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Enemies"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Enemy1",
+                "bullet",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "bullet",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::Hit"
+              },
+              "parameters": [
+                "Enemy1",
+                "Health",
+                "100",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Health::Health::IsDead"
+              },
+              "parameters": [
+                "Enemy1",
+                "Health",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Enemy1",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Enemy2",
+                "bullet",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "bullet",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::Hit"
+              },
+              "parameters": [
+                "Enemy2",
+                "Health",
+                "100",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Health::Health::IsDead"
+              },
+              "parameters": [
+                "Enemy2",
+                "Health",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Enemy2",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Enemy3",
+                "bullet",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "bullet",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::Hit"
+              },
+              "parameters": [
+                "Enemy3",
+                "Health",
+                "100",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Health::Health::IsDead"
+              },
+              "parameters": [
+                "Enemy3",
+                "Health",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Enemy3",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosX"
+              },
+              "parameters": [
+                "Enemy1",
+                "<=",
+                "CameraX()+450"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AddForceXY"
+              },
+              "parameters": [
+                "Enemy1",
+                "180",
+                "200",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosX"
+              },
+              "parameters": [
+                "Enemy2",
+                "<=",
+                "CameraX()+450"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AddForceXY"
+              },
+              "parameters": [
+                "Enemy2",
+                "180",
+                "200",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosX"
+              },
+              "parameters": [
+                "Enemy2",
+                "<=",
+                "CameraX()+450"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AddForceXY"
+              },
+              "parameters": [
+                "Enemy3",
+                "180",
+                "200",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Player",
+                "Enemy1",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "IsDamaged",
+                "=",
+                "40"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Enemy1",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Player",
+                "Enemy2",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "IsDamaged",
+                "=",
+                "40"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Enemy2",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Player",
+                "Enemy3",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "IsDamaged",
+                "=",
+                "40"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Enemy3",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
@@ -29553,7 +30046,7 @@
           "isLocked": false,
           "name": "BackGround",
           "renderingType": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": [
             {
