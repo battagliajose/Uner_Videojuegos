@@ -29942,36 +29942,54 @@
                 "\"Respawn\""
               ]
             }
-          ],
-          "events": [
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "CompareTimer"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Respawn\"",
-                    ">=",
-                    "3"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "Enemies",
-                    "RandomInRange(CameraX() - 400, CameraX() + 400)",
-                    "RandomInRange(CameraY() - 400, CameraY() + 400)",
-                    ""
-                  ]
-                }
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"Respawn\"",
+                ">=",
+                "3"
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Health::Health::IsDead"
+              },
+              "parameters": [
+                "Player",
+                "Health",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Enemy1",
+                "CameraX() + CameraWidth() / 2 + 50",
+                "RandomInRange(CameraY() - CameraHeight() / 2 + 100, CameraY() + CameraHeight() / 2 - 100)",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"Respawn\""
               ]
             }
           ]
@@ -68912,6 +68930,7 @@
                       "comment": "Check if max number of instances per spawner has been reached. Always spawn objects if quantity is set to \"0\""
                     },
                     {
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
