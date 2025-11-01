@@ -28958,7 +28958,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.3673257545058861,
+        "zoomFactor": 0.30104611971824924,
         "windowMask": false
       },
       "objectsGroups": [
@@ -29056,38 +29056,6 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "Game Over",
-          "name": "PlayAgain",
-          "persistentUuid": "2575e1cc-c261-430b-85eb-56d30450843d",
-          "width": 0,
-          "x": 522,
-          "y": 438,
-          "zOrder": 14,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "Game Over",
-          "name": "Exit",
-          "persistentUuid": "a175ce6d-3d6e-434a-8a1e-e957408f59cd",
-          "width": 0,
-          "x": 608,
-          "y": 526,
-          "zOrder": 15,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
           "layer": "Score",
           "name": "ScoreText",
           "persistentUuid": "6ab08e4a-fb7c-4e04-95c3-41dddd110f24",
@@ -29111,6 +29079,54 @@
           "x": 424,
           "y": 123,
           "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Game Over",
+          "name": "PlayAgain",
+          "persistentUuid": "d86380b5-3674-4228-85ad-b397eb020bf9",
+          "width": 0,
+          "x": 508,
+          "y": 416,
+          "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Game Over",
+          "name": "Exit",
+          "persistentUuid": "438aa5eb-12eb-4a1a-b695-f2cda88f38e4",
+          "width": 0,
+          "x": 594,
+          "y": 504,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "VictoryLayer",
+          "name": "winText",
+          "persistentUuid": "51a82267-739d-4a2b-998b-0299df084b1c",
+          "width": 0,
+          "x": 328,
+          "y": 224,
+          "zOrder": 20,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -30039,6 +30055,49 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "winText",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "ByteDefender has prevailed – 120 points earned!\nVictory!",
+          "font": "80s-retro-future2.ttf",
+          "textAlignment": "center",
+          "characterSize": 30,
+          "color": {
+            "b": 208,
+            "g": 208,
+            "r": 212
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "ByteDefender has prevailed – 120 points earned!\nVictory!",
+            "font": "80s-retro-future2.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 30,
+            "lineHeight": 0,
+            "color": "212;208;208"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -30052,6 +30111,9 @@
           },
           {
             "objectName": "BackGround"
+          },
+          {
+            "objectName": "winText"
           },
           {
             "objectName": "ByteDefenderStartScreen"
@@ -30098,7 +30160,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Puntaje"
+          "comment": "Puntaje "
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -30861,6 +30923,77 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "contador",
+                    "=",
+                    "120"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "BulletEnemy",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "GameOver",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"StartLayer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"VictoryLayer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"PlayExitLayer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    ""
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -31012,7 +31145,7 @@
               },
               "parameters": [
                 "",
-                "game-over-417465.mp3",
+                "retro-game-jingleaif-14638.mp3",
                 "",
                 "",
                 ""
@@ -31025,6 +31158,15 @@
               "parameters": [
                 "",
                 "\"Game Over\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"PlayExitLayer\""
               ]
             }
           ],
@@ -31082,14 +31224,6 @@
                 "\"byte defender\"",
                 ""
               ]
-            },
-            {
-              "type": {
-                "value": "Arreter"
-              },
-              "parameters": [
-                "PlayAgain"
-              ]
             }
           ]
         },
@@ -31127,14 +31261,6 @@
                 "\"Start Screen\"",
                 ""
               ]
-            },
-            {
-              "type": {
-                "value": "Arreter"
-              },
-              "parameters": [
-                "Exit"
-              ]
             }
           ]
         },
@@ -31142,6 +31268,18 @@
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Win"
         }
       ],
       "layers": [
@@ -31382,6 +31520,112 @@
           "name": "StartLayer",
           "renderingType": "",
           "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "VictoryLayer",
+          "renderingType": "",
+          "visibility": false,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "PlayExitLayer",
+          "renderingType": "",
+          "visibility": false,
           "cameras": [],
           "effects": [
             {
