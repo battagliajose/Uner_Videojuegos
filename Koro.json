@@ -30434,12 +30434,13 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "PosX"
+                    "inverted": true,
+                    "value": "Health::Health::IsDead"
                   },
                   "parameters": [
-                    "Enemies",
-                    "<=",
-                    "CameraX()+150"
+                    "Player",
+                    "Health",
+                    ""
                   ]
                 }
               ],
@@ -30449,10 +30450,40 @@
                     "value": "FireBullet::FireBullet::Fire"
                   },
                   "parameters": [
+                    "Enemy1",
+                    "FireBullet",
+                    "Enemy1.X()-5",
+                    "Enemy1.Y()+45",
+                    "BulletEnemy",
+                    "180",
+                    "700",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::Fire"
+                  },
+                  "parameters": [
                     "Enemy2",
                     "FireBullet",
                     "Enemy2.X()-5",
                     "Enemy2.Y()+45",
+                    "BulletEnemy",
+                    "180",
+                    "700",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::Fire"
+                  },
+                  "parameters": [
+                    "Enemy3",
+                    "FireBullet",
+                    "Enemy3.X()-5",
+                    "Enemy3.Y()+45",
                     "BulletEnemy",
                     "180",
                     "700",
