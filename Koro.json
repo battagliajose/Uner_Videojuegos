@@ -1871,6 +1871,56 @@
         "name": "Enemy22",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "cinematic-bass-boom-free-370400.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "cinematic-bass-boom-free-370400.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "game-over-417465.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "game-over-417465.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "retro-game-jingleaif-14638.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "retro-game-jingleaif-14638.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "laser-312360.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "laser-312360.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "game-over-417464.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "game-over-417464.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -28900,7 +28950,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.7619362677197677,
+        "zoomFactor": 0.40575189059438665,
         "windowMask": false
       },
       "objectsGroups": [
@@ -29034,8 +29084,8 @@
           "name": "ScoreText",
           "persistentUuid": "6ab08e4a-fb7c-4e04-95c3-41dddd110f24",
           "width": 0,
-          "x": 72,
-          "y": 48,
+          "x": 56,
+          "y": 40,
           "zOrder": 16,
           "numberProperties": [],
           "stringProperties": [],
@@ -29977,6 +30027,18 @@
           "actions": [
             {
               "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "retro-game-jingleaif-14638.mp3",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "SetNumberVariable"
               },
               "parameters": [
@@ -30368,6 +30430,18 @@
                 "600",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "laser-312360.mp3",
+                "",
+                "",
+                ""
+              ]
             }
           ]
         },
@@ -30505,6 +30579,18 @@
                 "Text",
                 "=",
                 "contador"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "cinematic-bass-boom-free-370400.mp3",
+                "",
+                "",
+                ""
               ]
             }
           ]
@@ -30687,6 +30773,18 @@
                 "Enemies",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "cinematic-bass-boom-free-370400.mp3",
+                "",
+                "",
+                ""
+              ]
             }
           ]
         },
@@ -30707,6 +30805,18 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "cinematic-bass-boom-free-370400.mp3",
+                "",
+                "",
+                ""
+              ]
+            },
             {
               "type": {
                 "value": "Health::Health::Hit"
@@ -30757,13 +30867,14 @@
             },
             {
               "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                "value": "PlaySound"
               },
               "parameters": [
-                "ScoreText",
-                "Text",
-                "=",
-                "\"00\""
+                "",
+                "game-over-417465.mp3",
+                "",
+                "",
+                ""
               ]
             },
             {
@@ -30774,6 +30885,25 @@
                 "",
                 "\"Game Over\""
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "game-over-417464.mp3",
+                "yes",
+                "",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
             }
           ]
         },
@@ -30823,6 +30953,14 @@
                 "\"byte defender\"",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "Arreter"
+              },
+              "parameters": [
+                "PlayAgain"
+              ]
             }
           ]
         },
@@ -30859,6 +30997,14 @@
                 "",
                 "\"Start Screen\"",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Arreter"
+              },
+              "parameters": [
+                "Exit"
               ]
             }
           ]
