@@ -1803,7 +1803,7 @@
       {
         "file": "assets/Enemy21.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Enemy21.png\"}",
         "name": "Enemy21",
         "smoothed": true,
         "userAdded": false
@@ -1927,6 +1927,62 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "NewSprite75",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Enemy23.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Enemy23.png\"}",
+        "name": "Enemy23",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Enemy24.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Enemy24",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite76.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite76.png\"}",
+        "name": "NewSprite76",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite77.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite77.png\"}",
+        "name": "NewSprite77",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite78.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite78.png\"}",
+        "name": "NewSprite78",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite79.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite79",
         "smoothed": true,
         "userAdded": false
       }
@@ -17922,7 +17978,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Pruebas",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -29231,7 +29286,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Player",
+                      "image": "Player2",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -29247,20 +29302,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 3,
-                            "y": 15
+                            "x": 0,
+                            "y": 0
                           },
                           {
-                            "x": 149,
-                            "y": 15
+                            "x": 150,
+                            "y": 0
                           },
                           {
-                            "x": 149,
-                            "y": 154
+                            "x": 150,
+                            "y": 120
                           },
                           {
-                            "x": 3,
-                            "y": 154
+                            "x": 0,
+                            "y": 120
                           }
                         ]
                       ]
@@ -29439,7 +29494,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "NewSprite74",
+                      "image": "NewSprite79",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -29456,19 +29511,19 @@
                         [
                           {
                             "x": 0,
-                            "y": 0
+                            "y": 8
                           },
                           {
-                            "x": 65,
-                            "y": 0
+                            "x": 73,
+                            "y": 8
                           },
                           {
-                            "x": 65,
-                            "y": 86
+                            "x": 73,
+                            "y": 91
                           },
                           {
                             "x": 0,
-                            "y": 86
+                            "y": 91
                           }
                         ]
                       ]
@@ -29699,7 +29754,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Enemy22",
+                      "image": "Enemy24",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -29716,19 +29771,19 @@
                         [
                           {
                             "x": 0,
-                            "y": 5
+                            "y": 6
                           },
                           {
-                            "x": 67,
-                            "y": 5
+                            "x": 86,
+                            "y": 6
                           },
                           {
-                            "x": 67,
-                            "y": 70
+                            "x": 86,
+                            "y": 90
                           },
                           {
                             "x": 0,
-                            "y": 70
+                            "y": 90
                           }
                         ]
                       ]
