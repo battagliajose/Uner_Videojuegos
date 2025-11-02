@@ -28958,7 +28958,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.30104611971824924,
+        "zoomFactor": 0.7130377630690476,
         "windowMask": false
       },
       "objectsGroups": [
@@ -29044,7 +29044,7 @@
           "name": "GameOver",
           "persistentUuid": "0f04f127-e81f-453c-a814-d41de0b0c346",
           "width": 384,
-          "x": 472,
+          "x": 467,
           "y": 104,
           "zOrder": 13,
           "numberProperties": [],
@@ -29093,7 +29093,7 @@
           "persistentUuid": "d86380b5-3674-4228-85ad-b397eb020bf9",
           "width": 0,
           "x": 508,
-          "y": 416,
+          "y": 405,
           "zOrder": 18,
           "numberProperties": [],
           "stringProperties": [],
@@ -29109,7 +29109,7 @@
           "persistentUuid": "438aa5eb-12eb-4a1a-b695-f2cda88f38e4",
           "width": 0,
           "x": 594,
-          "y": 504,
+          "y": 493,
           "zOrder": 19,
           "numberProperties": [],
           "stringProperties": [],
@@ -29124,8 +29124,8 @@
           "name": "winText",
           "persistentUuid": "51a82267-739d-4a2b-998b-0299df084b1c",
           "width": 0,
-          "x": 328,
-          "y": 224,
+          "x": 249,
+          "y": 241,
           "zOrder": 20,
           "numberProperties": [],
           "stringProperties": [],
@@ -30196,6 +30196,15 @@
                 "=",
                 "0"
               ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"PlayExitLayer\""
+              ]
             }
           ]
         },
@@ -30955,15 +30964,6 @@
                   "parameters": [
                     "GameOver",
                     ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ShowLayer"
-                  },
-                  "parameters": [
-                    "",
-                    "\"StartLayer\""
                   ]
                 },
                 {
