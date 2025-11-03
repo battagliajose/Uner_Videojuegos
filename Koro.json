@@ -30041,9 +30041,9 @@
           "textAlignment": "left",
           "characterSize": 40,
           "color": {
-            "b": 172,
-            "g": 172,
-            "r": 179
+            "b": 214,
+            "g": 214,
+            "r": 218
           },
           "content": {
             "bold": true,
@@ -30065,7 +30065,7 @@
             "verticalTextAlignment": "top",
             "characterSize": 40,
             "lineHeight": 0,
-            "color": "179;172;172"
+            "color": "218;214;214"
           }
         },
         {
