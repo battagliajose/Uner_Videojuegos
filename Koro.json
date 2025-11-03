@@ -22791,6 +22791,41 @@
             }
           ],
           "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"LControl\""
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"b\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"byte defender\"",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -23330,7 +23365,7 @@
           "persistentUuid": "7785d838-c60d-473b-9d97-6784136e566c",
           "width": 0,
           "x": 567,
-          "y": 317,
+          "y": 275,
           "zOrder": 112,
           "numberProperties": [],
           "stringProperties": [],
@@ -23381,7 +23416,7 @@
           "persistentUuid": "bec62a6e-fce8-4cea-853c-e0a4686b4294",
           "width": 216,
           "x": 518,
-          "y": 315,
+          "y": 272,
           "zOrder": 115,
           "numberProperties": [],
           "stringProperties": [],
@@ -23744,39 +23779,6 @@
           "x": 1455,
           "y": 677,
           "zOrder": 137,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "CapaBotonesOpciones",
-          "name": "MiniGameText",
-          "persistentUuid": "6fbded5d-8e7d-4a47-83a6-2c0ba8118861",
-          "width": 0,
-          "x": 533,
-          "y": 273,
-          "zOrder": 138,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 42,
-          "keepRatio": true,
-          "layer": "CapaBotonesOpciones",
-          "name": "ByteDefender_btn",
-          "persistentUuid": "b677f397-c836-40ee-b692-4c146b9910d3",
-          "width": 217,
-          "x": 517,
-          "y": 271,
-          "zOrder": 139,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -29013,7 +29015,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.097367969562965,
+        "zoomFactor": 0.4194339782759124,
         "windowMask": false
       },
       "objectsGroups": [
@@ -29065,8 +29067,8 @@
           "name": "BackGround",
           "persistentUuid": "a25d2138-986d-430c-b9ec-8f348a7ac49b",
           "width": 3552,
-          "x": -1840,
-          "y": -224,
+          "x": -1960,
+          "y": -168,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -29099,8 +29101,8 @@
           "name": "GameOver",
           "persistentUuid": "0f04f127-e81f-453c-a814-d41de0b0c346",
           "width": 384,
-          "x": 467,
-          "y": 104,
+          "x": 453,
+          "y": 167,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -29147,8 +29149,8 @@
           "name": "PlayAgain",
           "persistentUuid": "d86380b5-3674-4228-85ad-b397eb020bf9",
           "width": 0,
-          "x": 508,
-          "y": 405,
+          "x": 917,
+          "y": 610,
           "zOrder": 18,
           "numberProperties": [],
           "stringProperties": [],
@@ -29163,8 +29165,8 @@
           "name": "Exit",
           "persistentUuid": "438aa5eb-12eb-4a1a-b695-f2cda88f38e4",
           "width": 0,
-          "x": 594,
-          "y": 493,
+          "x": 1098,
+          "y": 545,
           "zOrder": 19,
           "numberProperties": [],
           "stringProperties": [],
@@ -29953,9 +29955,9 @@
           "textAlignment": "left",
           "characterSize": 50,
           "color": {
-            "b": 200,
-            "g": 200,
-            "r": 230
+            "b": 183,
+            "g": 183,
+            "r": 185
           },
           "content": {
             "bold": true,
@@ -29977,7 +29979,7 @@
             "verticalTextAlignment": "top",
             "characterSize": 50,
             "lineHeight": 0,
-            "color": "230;200;200"
+            "color": "185;183;183"
           }
         },
         {
@@ -29996,9 +29998,9 @@
           "textAlignment": "left",
           "characterSize": 50,
           "color": {
-            "b": 200,
-            "g": 200,
-            "r": 230
+            "b": 172,
+            "g": 172,
+            "r": 172
           },
           "content": {
             "bold": true,
@@ -30020,7 +30022,7 @@
             "verticalTextAlignment": "top",
             "characterSize": 50,
             "lineHeight": 0,
-            "color": "230;200;200"
+            "color": "172;172;172"
           }
         },
         {
