@@ -23020,7 +23020,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.1343715797161391,
+        "zoomFactor": 0.6672773998330236,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -29013,7 +29013,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.7130377630690476,
+        "zoomFactor": 1.097367969562965,
         "windowMask": false
       },
       "objectsGroups": [
@@ -29182,6 +29182,22 @@
           "x": 249,
           "y": 241,
           "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "StartLayer",
+          "name": "HelpText",
+          "persistentUuid": "8edbc7a2-08f9-4d0b-8f3d-7b85dfdf2c04",
+          "width": 0,
+          "x": 236,
+          "y": 263,
+          "zOrder": 21,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -29804,9 +29820,9 @@
           "effects": [],
           "behaviors": [
             {
-              "extraBorder": 0,
               "name": "DestroyOutside",
-              "type": "DestroyOutsideBehavior::DestroyOutside"
+              "type": "DestroyOutsideBehavior::DestroyOutside",
+              "extraBorder": 0
             }
           ],
           "animations": [
@@ -30122,7 +30138,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "ByteDefender has prevailed – 120 points earned!\nVictory!",
+          "string": "ByteDefender has prevailed ≥ 120 points earned!\nVictory!",
           "font": "80s-retro-future2.ttf",
           "textAlignment": "center",
           "characterSize": 30,
@@ -30145,13 +30161,56 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "ByteDefender has prevailed – 120 points earned!\nVictory!",
+            "text": "ByteDefender has prevailed ≥ 120 points earned!\nVictory!",
             "font": "80s-retro-future2.ttf",
             "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 30,
             "lineHeight": 0,
             "color": "212;208;208"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "HelpText",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Control your ship with the arrow keys  \n[Space]  Fire  \nEarn 120 points to win!",
+          "font": "80s-retro-future2.ttf",
+          "textAlignment": "center",
+          "characterSize": 40,
+          "color": {
+            "b": 207,
+            "g": 207,
+            "r": 207
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Control your ship with the arrow keys  \n[Space]  Fire  \nEarn 120 points to win!",
+            "font": "80s-retro-future2.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 40,
+            "lineHeight": 0,
+            "color": "207;207;207"
           }
         }
       ],
@@ -30201,6 +30260,9 @@
                 "objectName": "BulletEnemy"
               }
             ]
+          },
+          {
+            "objectName": "HelpText"
           }
         ]
       },
