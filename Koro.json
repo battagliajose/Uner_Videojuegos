@@ -1,7 +1,7 @@
 {
   "firstLayout": "Start Screen",
   "gdVersion": {
-    "build": 242,
+    "build": 245,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -2485,7 +2485,8 @@
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.30104611971824724,
-        "windowMask": false
+        "windowMask": false,
+        "selectedLayer": ""
       },
       "objectsGroups": [],
       "variables": [
@@ -5885,7 +5886,8 @@
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.39251611754882576,
-        "windowMask": false
+        "windowMask": false,
+        "selectedLayer": ""
       },
       "objectsGroups": [],
       "variables": [
@@ -12403,7 +12405,8 @@
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.6897782140104604,
-        "windowMask": false
+        "windowMask": false,
+        "selectedLayer": ""
       },
       "objectsGroups": [],
       "variables": [
@@ -19697,7 +19700,8 @@
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.49508400737489716,
-        "windowMask": false
+        "windowMask": false,
+        "selectedLayer": ""
       },
       "objectsGroups": [],
       "variables": [
@@ -29016,7 +29020,8 @@
         "gridAlpha": 0.8,
         "snap": true,
         "zoomFactor": 0.5117784035210251,
-        "windowMask": false
+        "windowMask": false,
+        "selectedLayer": ""
       },
       "objectsGroups": [
         {
@@ -30302,7 +30307,7 @@
                 "",
                 "retro-game-jingleaif-14638.mp3",
                 "",
-                "",
+                "20",
                 ""
               ]
             },
@@ -30770,7 +30775,7 @@
                 "",
                 "laser-312360.mp3",
                 "",
-                "",
+                "20",
                 ""
               ]
             }
@@ -30920,7 +30925,7 @@
                 "",
                 "cinematic-bass-boom-free-370400.mp3",
                 "",
-                "",
+                "20",
                 ""
               ]
             }
@@ -31175,7 +31180,7 @@
                 "",
                 "cinematic-bass-boom-free-370400.mp3",
                 "",
-                "",
+                "20",
                 ""
               ]
             }
@@ -31206,7 +31211,7 @@
                 "",
                 "cinematic-bass-boom-free-370400.mp3",
                 "",
-                "",
+                "20",
                 ""
               ]
             },
@@ -31266,7 +31271,7 @@
                 "",
                 "retro-game-jingleaif-14638.mp3",
                 "",
-                "",
+                "20",
                 ""
               ]
             },
@@ -46654,6 +46659,7 @@
               "initialVariables": []
             }
           ],
+          "editionSettings": {},
           "eventsFunctions": [
             {
               "fullName": "",
@@ -48138,7 +48144,8 @@
                   "stringProperties": [],
                   "initialVariables": []
                 }
-              ]
+              ],
+              "editionSettings": {}
             },
             {
               "areaMaxX": 68,
@@ -48443,7 +48450,8 @@
                   "stringProperties": [],
                   "initialVariables": []
                 }
-              ]
+              ],
+              "editionSettings": {}
             }
           ]
         }
@@ -56001,6 +56009,7 @@
             }
           ],
           "instances": [],
+          "editionSettings": {},
           "eventsFunctions": [
             {
               "fullName": "",
