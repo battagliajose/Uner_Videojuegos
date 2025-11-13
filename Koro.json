@@ -1,7 +1,7 @@
 {
   "firstLayout": "Start Screen",
   "gdVersion": {
-    "build": 245,
+    "build": 244,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -2013,6 +2013,32 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/New sound effect5.wav",
+        "kind": "audio",
+        "metadata": "{\"extension\":\".wav\",\"jfxr\":{\"data\":\"{\\\"_version\\\":1,\\\"_name\\\":\\\"Hit/hurt 1\\\",\\\"_locked\\\":[],\\\"sampleRate\\\":44100,\\\"attack\\\":0,\\\"sustain\\\":0.08,\\\"sustainPunch\\\":0,\\\"decay\\\":0.09,\\\"tremoloDepth\\\":0,\\\"tremoloFrequency\\\":10,\\\"frequency\\\":900,\\\"frequencySweep\\\":-300,\\\"frequencyDeltaSweep\\\":-500,\\\"repeatFrequency\\\":0,\\\"frequencyJump1Onset\\\":33,\\\"frequencyJump1Amount\\\":0,\\\"frequencyJump2Onset\\\":66,\\\"frequencyJump2Amount\\\":0,\\\"harmonics\\\":0,\\\"harmonicsFalloff\\\":0.5,\\\"waveform\\\":\\\"whitenoise\\\",\\\"interpolateNoise\\\":true,\\\"vibratoDepth\\\":0,\\\"vibratoFrequency\\\":10,\\\"squareDuty\\\":50,\\\"squareDutySweep\\\":0,\\\"flangerOffset\\\":0,\\\"flangerOffsetSweep\\\":-1,\\\"bitCrush\\\":16,\\\"bitCrushSweep\\\":0,\\\"lowPassCutoff\\\":22050,\\\"lowPassCutoffSweep\\\":14000,\\\"highPassCutoff\\\":0,\\\"highPassCutoffSweep\\\":0,\\\"compression\\\":1,\\\"normalization\\\":true,\\\"amplification\\\":100}\",\"name\":\"New sound effect\"}}",
+        "name": "New sound effect5",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "layer3 nocturno2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "layer3 nocturno2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "layer3 nocturno transp.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "layer3 nocturno transp.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2430,6 +2456,53 @@
           ]
         }
       ]
+    },
+    {
+      "additive": true,
+      "assetStoreId": "b87985c7d940ec893b61769fbdc76585c5a871da0bd68799eeda96791b3b763d",
+      "destroyWhenNoParticles": true,
+      "emitterAngleA": 0,
+      "emitterAngleB": 360,
+      "emitterForceMax": 140,
+      "emitterForceMin": 80,
+      "flow": 400,
+      "jumpForwardInTimeOnCreation": 0,
+      "maxParticleNb": 500,
+      "name": "RedExplosion",
+      "particleAlpha1": 255,
+      "particleAlpha2": 0,
+      "particleAlphaRandomness1": 0,
+      "particleAlphaRandomness2": 0,
+      "particleAngle1": 0,
+      "particleAngle2": 0,
+      "particleAngleRandomness1": 0,
+      "particleAngleRandomness2": 0,
+      "particleBlue1": 64,
+      "particleBlue2": 0,
+      "particleColor1": "255;255;64",
+      "particleColor2": "255;0;0",
+      "particleGravityX": 0,
+      "particleGravityY": 0,
+      "particleGreen1": 255,
+      "particleGreen2": 0,
+      "particleLifeTimeMax": 1.2,
+      "particleLifeTimeMin": 0.6,
+      "particleRed1": 255,
+      "particleRed2": 255,
+      "particleSize1": 50,
+      "particleSize2": 200,
+      "particleSizeRandomness1": 0,
+      "particleSizeRandomness2": 0,
+      "rendererParam1": 0,
+      "rendererParam2": 0,
+      "rendererType": "Quad",
+      "tank": 100,
+      "textureParticleName": "LightGlow.png",
+      "type": "ParticleSystem::ParticleEmitter",
+      "zoneRadius": 0,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -2446,6 +2519,9 @@
       },
       {
         "objectName": "PlataformaFlotanteMovH2"
+      },
+      {
+        "objectName": "RedExplosion"
       },
       {
         "objectName": "PlataformaFlotanteMovV2"
@@ -9880,53 +9956,6 @@
           ]
         },
         {
-          "additive": true,
-          "assetStoreId": "b87985c7d940ec893b61769fbdc76585c5a871da0bd68799eeda96791b3b763d",
-          "destroyWhenNoParticles": true,
-          "emitterAngleA": 0,
-          "emitterAngleB": 360,
-          "emitterForceMax": 140,
-          "emitterForceMin": 80,
-          "flow": 400,
-          "jumpForwardInTimeOnCreation": 0,
-          "maxParticleNb": 500,
-          "name": "RedExplosion",
-          "particleAlpha1": 255,
-          "particleAlpha2": 0,
-          "particleAlphaRandomness1": 0,
-          "particleAlphaRandomness2": 0,
-          "particleAngle1": 0,
-          "particleAngle2": 0,
-          "particleAngleRandomness1": 0,
-          "particleAngleRandomness2": 0,
-          "particleBlue1": 64,
-          "particleBlue2": 0,
-          "particleColor1": "255;255;64",
-          "particleColor2": "255;0;0",
-          "particleGravityX": 0,
-          "particleGravityY": 0,
-          "particleGreen1": 255,
-          "particleGreen2": 0,
-          "particleLifeTimeMax": 1.2,
-          "particleLifeTimeMin": 0.6,
-          "particleRed1": 255,
-          "particleRed2": 255,
-          "particleSize1": 50,
-          "particleSize2": 200,
-          "particleSizeRandomness1": 0,
-          "particleSizeRandomness2": 0,
-          "rendererParam1": 0,
-          "rendererParam2": 0,
-          "rendererType": "Quad",
-          "tank": 100,
-          "textureParticleName": "LightGlow.png",
-          "type": "ParticleSystem::ParticleEmitter",
-          "zoneRadius": 0,
-          "variables": [],
-          "effects": [],
-          "behaviors": []
-        },
-        {
           "additive": false,
           "assetStoreId": "6f92b69880fa0285fd436b12083e29adb2d45af5669106fcfbb3d745a72b053d",
           "destroyWhenNoParticles": true,
@@ -10256,9 +10285,6 @@
             "objectName": "NaveEnemiga"
           },
           {
-            "objectName": "RedExplosion"
-          },
-          {
             "objectName": "IceBall"
           },
           {
@@ -10478,7 +10504,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Camara",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -11999,6 +12024,15 @@
                 "LifeNave",
                 "=",
                 "LifeNave-1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "IceBall",
+                ""
               ]
             }
           ]
@@ -19727,7 +19761,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.3797121001948002,
+        "zoomFactor": 0.17708595277544223,
         "windowMask": false,
         "selectedLayer": "Background"
       },
@@ -19861,13 +19895,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 520,
+          "height": 370,
           "layer": "",
           "name": "BG3",
           "persistentUuid": "f554de16-77a8-400a-a32d-9bacc6750ed6",
-          "width": 3280,
-          "x": 1,
-          "y": 6,
+          "width": 2600,
+          "x": -9,
+          "y": -17,
           "zOrder": -7,
           "numberProperties": [],
           "stringProperties": [],
@@ -20171,62 +20205,9 @@
           "opacity": 140,
           "persistentUuid": "61a9109f-2d0f-4ec7-9058-86bf6ddecfad",
           "width": 0,
-          "x": 1068,
-          "y": -173,
+          "x": 1323,
+          "y": 61,
           "zOrder": 100,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Planeta",
-          "opacity": 0,
-          "persistentUuid": "88dc89b1-15ff-43a3-b63d-ae863c2cd1be",
-          "width": 0,
-          "x": 1468,
-          "y": -216,
-          "zOrder": 126,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 2,
-          "height": 192,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Luna",
-          "opacity": 28,
-          "persistentUuid": "58737f6f-76b3-40d8-b14f-77e2af62182c",
-          "width": 192,
-          "x": 1857,
-          "y": 49,
-          "zOrder": 125,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 113,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Luna",
-          "opacity": 128,
-          "persistentUuid": "8e622077-c502-409b-93f9-69b35fa5e582",
-          "width": 113,
-          "x": 3877,
-          "y": -17,
-          "zOrder": 125,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -20361,9 +20342,9 @@
           "opacity": 128,
           "persistentUuid": "8b03a4a3-db5e-4696-baea-ba6f80689cd6",
           "width": 152,
-          "x": 5425,
-          "y": -380,
-          "zOrder": 125,
+          "x": 2567,
+          "y": 369,
+          "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -20375,11 +20356,11 @@
           "keepRatio": true,
           "layer": "",
           "name": "Planeta",
-          "opacity": 0,
+          "opacity": 31,
           "persistentUuid": "d470c3ae-0c6c-43f2-b41c-1f28898072a0",
           "width": 0,
-          "x": 3022,
-          "y": -78,
+          "x": 3397,
+          "y": 139,
           "zOrder": 126,
           "numberProperties": [],
           "stringProperties": [],
@@ -20393,46 +20374,11 @@
           "keepRatio": true,
           "layer": "",
           "name": "Planeta",
-          "opacity": 0,
+          "opacity": 31,
           "persistentUuid": "e4f9ce60-2778-45a8-a691-3b303ce0135d",
           "width": 93,
-          "x": 4909,
-          "y": -357,
-          "zOrder": 126,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 2,
-          "height": 192,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Luna",
-          "opacity": 28,
-          "persistentUuid": "7e1c4ad9-f512-4ec2-9d2a-9ab89af19485",
-          "width": 192,
-          "x": 1731,
-          "y": -253,
-          "zOrder": 125,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Planeta",
-          "opacity": 0,
-          "persistentUuid": "b0cd6747-50b2-4d6b-9efc-92b2d5630152",
-          "width": 0,
-          "x": 1622,
-          "y": 1071,
+          "x": 4839,
+          "y": 394,
           "zOrder": 126,
           "numberProperties": [],
           "stringProperties": [],
@@ -20442,14 +20388,16 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 651,
+          "height": 60,
+          "keepRatio": true,
           "layer": "",
-          "name": "BG3",
-          "persistentUuid": "0c3959db-2389-4c86-b3dc-ea3fcee14376",
-          "width": 3390,
-          "x": -82,
-          "y": 318,
-          "zOrder": -7,
+          "name": "Planeta",
+          "opacity": 64,
+          "persistentUuid": "b0cd6747-50b2-4d6b-9efc-92b2d5630152",
+          "width": 60,
+          "x": 1585,
+          "y": 506,
+          "zOrder": 126,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -20502,6 +20450,54 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 370,
+          "layer": "",
+          "name": "BG3_Transp",
+          "persistentUuid": "63198a05-ff07-4ebc-a1f1-e83605cf39c0",
+          "width": 2600,
+          "x": -3,
+          "y": -28,
+          "zOrder": 3000,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 370,
+          "layer": "",
+          "name": "BG3",
+          "persistentUuid": "29b1964a-7258-408e-b6e6-4bf357b9522a",
+          "width": 2600,
+          "x": 2,
+          "y": 331,
+          "zOrder": -7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 370,
+          "layer": "",
+          "name": "BG3_Transp",
+          "persistentUuid": "e57c6040-3ca1-4eaf-9255-27d65fb28b08",
+          "width": 2600,
+          "x": -12,
+          "y": 340,
+          "zOrder": 3000,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -20512,15 +20508,27 @@
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
-          "effects": [],
+          "effects": [
+            {
+              "effectType": "MotionBlur",
+              "name": "EffectBlur",
+              "doubleParameters": {
+                "kernelSize": 5,
+                "offset": 5,
+                "velocityX": 5,
+                "velocityY": 5
+              },
+              "stringParameters": {},
+              "booleanParameters": {}
+            }
+          ],
           "behaviors": [
             {
-              "isFolded": true,
               "name": "Physics2",
               "type": "Physics2::Physics2Behavior",
               "bodyType": "Dynamic",
               "bullet": false,
-              "fixedRotation": true,
+              "fixedRotation": false,
               "canSleep": true,
               "shape": "Circle",
               "shapeDimensionA": 60,
@@ -20529,51 +20537,14 @@
               "shapeOffsetY": 0,
               "polygonOrigin": "Center",
               "vertices": [],
-              "density": 0.5,
-              "friction": 0.3,
-              "restitution": 0.1,
+              "density": 0.8,
+              "friction": 0.5,
+              "restitution": 0.8,
               "linearDamping": 0.1,
               "angularDamping": 0.1,
               "gravityScale": 0,
               "layers": 1,
               "masks": 1
-            },
-            {
-              "isFolded": true,
-              "name": "PixelPerfectPlatformerCharacter",
-              "type": "PixelPerfectMovement::PixelPerfectPlatformerCharacter",
-              "PlatformerCharacter": "PlatformerObject",
-              "PixelSize": 1,
-              "OffsetX": 0,
-              "OffsetY": 0,
-              "TargetX": 0,
-              "TargetDirectionX": 0,
-              "TargetY": 0,
-              "TargetDirectionY": 0,
-              "PreviousSpeedX": 2.0247e-320,
-              "IsDecelerating": false
-            },
-            {
-              "isFolded": true,
-              "name": "PlatformerObject",
-              "type": "PlatformBehavior::PlatformerObjectBehavior",
-              "acceleration": 1500,
-              "canGoDownFromJumpthru": true,
-              "canGrabPlatforms": false,
-              "canGrabWithoutMoving": true,
-              "deceleration": 1500,
-              "gravity": 0,
-              "ignoreDefaultControls": true,
-              "jumpSpeed": 600,
-              "jumpSustainTime": 0.2,
-              "ladderClimbingSpeed": 150,
-              "maxFallingSpeed": 700,
-              "maxSpeed": 250,
-              "slopeMaxAngle": 60,
-              "useLegacyTrajectory": false,
-              "useRepeatedJump": false,
-              "xGrabTolerance": 10,
-              "yGrabOffset": 0
             },
             {
               "isFolded": true,
@@ -20648,29 +20619,27 @@
             },
             {
               "acceleration": 800,
+              "angleOffset": 30,
+              "customIsometryAngle": 30,
               "deceleration": 800,
-              "isFolded": true,
-              "maxSpeed": 600,
+              "maxSpeed": 800,
               "name": "TopDownMovement",
+              "rotateObject": false,
               "type": "TopDownMovementBehavior::TopDownMovementBehavior",
               "allowDiagonals": true,
-              "angleOffset": 0,
               "angularMaxSpeed": 180,
-              "customIsometryAngle": 30,
               "ignoreDefaultControls": false,
               "movementAngleOffset": 0,
-              "rotateObject": false,
               "useLegacyTurnBack": false,
               "viewpoint": "TopDown"
             },
             {
-              "isFolded": true,
               "name": "TopDownMultitouchMapper",
               "type": "SpriteMultitouchJoystick::TopDownMultitouchMapper",
               "TopDownMovement": "TopDownMovement",
               "ControllerIdentifier": 1,
               "JoystickIdentifier": "Primary",
-              "StickMode": "8 Directions"
+              "StickMode": "360°"
             }
           ],
           "animations": [
@@ -21289,7 +21258,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "layer3 nocturno.png",
+                      "image": "layer3 nocturno2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -22466,6 +22435,66 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "BG3_Transp",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "layer3 nocturno transp.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 14,
+                            "y": 2
+                          },
+                          {
+                            "x": 2542,
+                            "y": 2
+                          },
+                          {
+                            "x": 2542,
+                            "y": 351
+                          },
+                          {
+                            "x": 14,
+                            "y": 351
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -22542,6 +22571,9 @@
           },
           {
             "objectName": "Planeta"
+          },
+          {
+            "objectName": "BG3_Transp"
           }
         ]
       },
@@ -22551,7 +22583,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Inicio",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -22619,11 +22650,6 @@
                   ]
                 }
               ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
             }
           ],
           "parameters": []
@@ -23162,6 +23188,26 @@
                     "=",
                     "PlataformaFlotante.X()-(Velocidad/1.3)"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "MettreX"
+                  },
+                  "parameters": [
+                    "Luna",
+                    "=",
+                    "Luna.X()-(Velocidad/10)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreX"
+                  },
+                  "parameters": [
+                    "Planeta",
+                    "=",
+                    "Planeta.X()-(Velocidad/10)"
+                  ]
                 }
               ]
             },
@@ -23204,6 +23250,69 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "Luna",
+                    "<",
+                    "LimiteInferior.X()-Luna.Width()"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "Luna",
+                    "=",
+                    "LimiteInferior.X()+LimiteInferior.Width()+Random(3000)",
+                    "=",
+                    "Random(700)"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "Planeta",
+                    "<",
+                    "LimiteInferior.X()-Planeta.Width()"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "Planeta",
+                    "=",
+                    "LimiteInferior.X()+LimiteInferior.Width()+Random(3000)",
+                    "=",
+                    "Random(700)"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
             }
           ],
           "parameters": []
@@ -23213,7 +23322,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Background",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -23232,6 +23340,18 @@
                     "BG3.X() - Velocidad",
                     "=",
                     "BG3.Y()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "BG3_Transp",
+                    "=",
+                    "BG3_Transp.X() - Velocidad/1.4",
+                    "=",
+                    "BG3_Transp.Y()"
                   ]
                 },
                 {
@@ -23257,6 +23377,16 @@
                     "Velocidad",
                     "<",
                     "20"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Life",
+                    ">",
+                    "0"
                   ]
                 }
               ],
@@ -23299,6 +23429,38 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "BG3_Transp",
+                    "<",
+                    "LimiteInferior.X() - BG3_Transp.Width()"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MettreX"
+                  },
+                  "parameters": [
+                    "BG3_Transp",
+                    "=",
+                    "LimiteInferior.X()+BG3_Transp.Width()"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
             }
           ],
           "parameters": []
@@ -23351,6 +23513,74 @@
                 "=",
                 "Life-1"
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "New sound effect5",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Velocidad",
+                ">",
+                "40"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "Koro",
+                "Effect",
+                "\"EffectBlur\"",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Velocidad",
+                "<",
+                "40"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "Koro",
+                "Effect",
+                "\"EffectBlur\"",
+                "no"
+              ]
             }
           ]
         },
@@ -23366,9 +23596,66 @@
                 "<=",
                 "0"
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "New sound effect3",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Koro",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "RedExplosion",
+                "Koro.CenterX()",
+                "Koro.CenterY()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Velocidad",
+                "=",
+                "10"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "3"
+              ]
+            },
             {
               "type": {
                 "value": "Scene"
@@ -23380,6 +23667,16 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
@@ -23748,16 +24045,8 @@
           "scaleY": 100
         },
         {
-          "name": "PixelPerfectPlatformerCharacter",
-          "type": "PixelPerfectMovement::PixelPerfectPlatformerCharacter"
-        },
-        {
           "name": "Platform",
           "type": "PlatformBehavior::PlatformBehavior"
-        },
-        {
-          "name": "PlatformerObject",
-          "type": "PlatformBehavior::PlatformerObjectBehavior"
         },
         {
           "name": "RectangleMovement",
