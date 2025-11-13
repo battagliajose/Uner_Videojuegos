@@ -1,7 +1,7 @@
 {
   "firstLayout": "Start Screen",
   "gdVersion": {
-    "build": 244,
+    "build": 245,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -2039,6 +2039,38 @@
         "name": "layer3 nocturno transp.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "cañon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "cañon.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/DarkMagicSmoke.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "DarkMagicSmoke.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Particles/015985f8d1d3aaa13173ebdf90f8e893ccb834accbe76f55adbc9dfabef145f7_DarkMagicSmoke.png",
+          "name": "DarkMagicSmoke.png"
+        }
+      },
+      {
+        "file": "assets/Glow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Glow.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Particles/054cca73b5082c5f8639999d0eee82f4f42a1b346ee9efbd013058ccc70b45ca_Glow.png",
+          "name": "Glow.png"
+        }
       }
     ],
     "resourceFolders": []
@@ -2503,6 +2535,67 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "FireBall2",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "FireBall",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite37",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 5,
+                        "y": 12
+                      },
+                      {
+                        "x": 27,
+                        "y": 12
+                      },
+                      {
+                        "x": 27,
+                        "y": 32
+                      },
+                      {
+                        "x": 5,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -2522,6 +2615,9 @@
       },
       {
         "objectName": "RedExplosion"
+      },
+      {
+        "objectName": "FireBall2"
       },
       {
         "objectName": "PlataformaFlotanteMovV2"
@@ -5989,7 +6085,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6672773998330036,
+        "zoomFactor": 0.3797121001947966,
         "windowMask": false,
         "selectedLayer": ""
       },
@@ -9829,67 +9925,6 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "FireBall2",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "FireBall",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "NewSprite37",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 5,
-                            "y": 12
-                          },
-                          {
-                            "x": 27,
-                            "y": 12
-                          },
-                          {
-                            "x": 27,
-                            "y": 32
-                          },
-                          {
-                            "x": 5,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
           "name": "IceBall",
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -10277,9 +10312,6 @@
           },
           {
             "objectName": "FireBall"
-          },
-          {
-            "objectName": "FireBall2"
           },
           {
             "objectName": "NaveEnemiga"
@@ -19761,7 +19793,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.17708595277544223,
+        "zoomFactor": 0.8700232859857477,
         "windowMask": false,
         "selectedLayer": "Background"
       },
@@ -19786,6 +19818,11 @@
           "name": "CEVelCapa",
           "type": "number",
           "value": 1.3
+        },
+        {
+          "name": "SwCanon",
+          "type": "number",
+          "value": 0
         }
       ],
       "instances": [
@@ -19899,27 +19936,10 @@
           "layer": "",
           "name": "BG3",
           "persistentUuid": "f554de16-77a8-400a-a32d-9bacc6750ed6",
-          "width": 2600,
+          "width": 2550,
           "x": -9,
           "y": -17,
           "zOrder": -7,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 128,
-          "keepRatio": true,
-          "layer": "",
-          "name": "PlataformaFlotante",
-          "persistentUuid": "8cb3267f-85c5-43a6-898a-00477b14177d",
-          "width": 128,
-          "x": 3498,
-          "y": 426,
-          "zOrder": 103,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -19987,23 +20007,6 @@
           "x": 3542,
           "y": 369,
           "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 128,
-          "keepRatio": true,
-          "layer": "",
-          "name": "PlataformaFlotanteMovV",
-          "persistentUuid": "f7051a7a-408c-43be-b89e-8af3b64acadb",
-          "width": 128,
-          "x": 2919,
-          "y": 82,
-          "zOrder": 110,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -20249,23 +20252,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 0,
-          "height": 128,
-          "keepRatio": true,
-          "layer": "",
-          "name": "PlataformaFlotanteMovV2",
-          "persistentUuid": "c9e92016-601e-4c71-a80b-1e815a829f20",
-          "width": 128,
-          "x": 2371,
-          "y": 589,
-          "zOrder": 1007,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "depth": 1,
           "height": 17,
           "keepRatio": true,
@@ -20333,24 +20319,6 @@
         },
         {
           "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 152,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Luna",
-          "opacity": 128,
-          "persistentUuid": "8b03a4a3-db5e-4696-baea-ba6f80689cd6",
-          "width": 152,
-          "x": 2567,
-          "y": 369,
-          "zOrder": -1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": false,
           "height": 0,
           "keepRatio": true,
@@ -20370,24 +20338,6 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 93,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Planeta",
-          "opacity": 31,
-          "persistentUuid": "e4f9ce60-2778-45a8-a691-3b303ce0135d",
-          "width": 93,
-          "x": 4839,
-          "y": 394,
-          "zOrder": 126,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
           "height": 60,
           "keepRatio": true,
           "layer": "",
@@ -20398,38 +20348,6 @@
           "x": 1585,
           "y": 506,
           "zOrder": 126,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 520,
-          "layer": "",
-          "name": "BG3",
-          "persistentUuid": "f2efac40-0763-41ef-b542-2b9163aee25d",
-          "width": 3280,
-          "x": 3295,
-          "y": 3,
-          "zOrder": -7,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 651,
-          "layer": "",
-          "name": "BG3",
-          "persistentUuid": "a69e377a-805a-495c-9b9f-545d44761204",
-          "width": 3390,
-          "x": 3316,
-          "y": 378,
-          "zOrder": -7,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -20459,9 +20377,9 @@
           "layer": "",
           "name": "BG3_Transp",
           "persistentUuid": "63198a05-ff07-4ebc-a1f1-e83605cf39c0",
-          "width": 2600,
-          "x": -3,
-          "y": -28,
+          "width": 2550,
+          "x": -557,
+          "y": -4,
           "zOrder": 3000,
           "numberProperties": [],
           "stringProperties": [],
@@ -20475,7 +20393,7 @@
           "layer": "",
           "name": "BG3",
           "persistentUuid": "29b1964a-7258-408e-b6e6-4bf357b9522a",
-          "width": 2600,
+          "width": 2550,
           "x": 2,
           "y": 331,
           "zOrder": -7,
@@ -20491,10 +20409,91 @@
           "layer": "",
           "name": "BG3_Transp",
           "persistentUuid": "e57c6040-3ca1-4eaf-9255-27d65fb28b08",
-          "width": 2600,
-          "x": -12,
-          "y": 340,
+          "width": 2550,
+          "x": -533,
+          "y": 335,
           "zOrder": 3000,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 370,
+          "layer": "",
+          "name": "BG3",
+          "persistentUuid": "6dad008b-964e-4dde-9913-46e30766d6b0",
+          "width": 2550,
+          "x": 2537,
+          "y": -13,
+          "zOrder": -7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 370,
+          "layer": "",
+          "name": "BG3",
+          "persistentUuid": "0c1d0c72-d863-406e-be15-0eab44b1e9db",
+          "width": 2550,
+          "x": 2544,
+          "y": 346,
+          "zOrder": -7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 370,
+          "layer": "",
+          "name": "BG3_Transp",
+          "persistentUuid": "ba0cd58d-993a-41c4-b741-2bb46365abf2",
+          "width": 2550,
+          "x": 2002,
+          "y": 5,
+          "zOrder": 3000,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 370,
+          "layer": "",
+          "name": "BG3_Transp",
+          "persistentUuid": "aec6c348-ae06-4dd1-a009-317d810ff65a",
+          "width": 2550,
+          "x": 1991,
+          "y": 354,
+          "zOrder": 3000,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 128,
+          "keepRatio": true,
+          "layer": "",
+          "name": "PlataformaFlotante",
+          "persistentUuid": "31ed313d-a7e7-4ec6-b3d1-fb4dc264f20c",
+          "width": 128,
+          "x": 2371,
+          "y": 589,
+          "zOrder": 103,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -20530,16 +20529,16 @@
               "bullet": false,
               "fixedRotation": false,
               "canSleep": true,
-              "shape": "Circle",
-              "shapeDimensionA": 60,
+              "shape": "Box",
+              "shapeDimensionA": 0,
               "shapeDimensionB": 0,
               "shapeOffsetX": 0,
               "shapeOffsetY": 0,
               "polygonOrigin": "Center",
               "vertices": [],
-              "density": 0.8,
-              "friction": 0.5,
-              "restitution": 0.8,
+              "density": 1,
+              "friction": 0,
+              "restitution": 0.1,
               "linearDamping": 0.1,
               "angularDamping": 0.1,
               "gravityScale": 0,
@@ -20618,28 +20617,21 @@
               "IsCalledManually": false
             },
             {
-              "acceleration": 800,
-              "angleOffset": 30,
+              "acceleration": 1000,
+              "allowDiagonals": true,
+              "angleOffset": 0,
+              "angularMaxSpeed": 180,
               "customIsometryAngle": 30,
-              "deceleration": 800,
+              "deceleration": 2400,
+              "ignoreDefaultControls": false,
+              "isFolded": true,
               "maxSpeed": 800,
+              "movementAngleOffset": 0,
               "name": "TopDownMovement",
               "rotateObject": false,
               "type": "TopDownMovementBehavior::TopDownMovementBehavior",
-              "allowDiagonals": true,
-              "angularMaxSpeed": 180,
-              "ignoreDefaultControls": false,
-              "movementAngleOffset": 0,
               "useLegacyTurnBack": false,
               "viewpoint": "TopDown"
-            },
-            {
-              "name": "TopDownMultitouchMapper",
-              "type": "SpriteMultitouchJoystick::TopDownMultitouchMapper",
-              "TopDownMovement": "TopDownMovement",
-              "ControllerIdentifier": 1,
-              "JoystickIdentifier": "Primary",
-              "StickMode": "360°"
             }
           ],
           "animations": [
@@ -22495,6 +22487,121 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Canon",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "FireBullet",
+              "type": "FireBullet::FireBullet",
+              "FireCooldown": 1,
+              "HasJustFired": false,
+              "RotateBullet": true,
+              "FiringArc": 25,
+              "BulletQuantity": 1,
+              "AngleVariance": 0,
+              "BulletSpeedVariance": 0,
+              "AmmoQuantity": 0,
+              "ShotsPerReload": 0,
+              "ReloadDuration": 1,
+              "MaxAmmo": 0,
+              "ShotsBeforeNextReload": 0,
+              "TotalShotsFired": 0,
+              "TotalBulletsCreated": 0,
+              "StartingAmmo": 0,
+              "TotalReloadsCompleted": 0,
+              "UnlimitedAmmo": true,
+              "ReloadInProgress": false,
+              "HeatIncreasePerShot": 0,
+              "HeatLevel": 0,
+              "AutomaticReloading": false,
+              "OverheatDuration": 0,
+              "LinearCoolingRate": 0.1,
+              "ExponentialCoolingRate": 0.3,
+              "BulletLayer": "",
+              "RandomizedAngle": 0
+            },
+            {
+              "isFolded": true,
+              "name": "Physics2",
+              "type": "Physics2::Physics2Behavior",
+              "bodyType": "Dynamic",
+              "bullet": false,
+              "fixedRotation": false,
+              "canSleep": true,
+              "shape": "Box",
+              "shapeDimensionA": 0,
+              "shapeDimensionB": 0,
+              "shapeOffsetX": 0,
+              "shapeOffsetY": 0,
+              "polygonOrigin": "Center",
+              "vertices": [],
+              "density": 1,
+              "friction": 0.3,
+              "restitution": 0.1,
+              "linearDamping": 0.1,
+              "angularDamping": 0.1,
+              "gravityScale": 0,
+              "layers": 1,
+              "masks": 1
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "cañon.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 3
+                          },
+                          {
+                            "x": 54,
+                            "y": 3
+                          },
+                          {
+                            "x": 54,
+                            "y": 54
+                          },
+                          {
+                            "x": 0,
+                            "y": 54
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -22574,6 +22681,9 @@
           },
           {
             "objectName": "BG3_Transp"
+          },
+          {
+            "objectName": "Canon"
           }
         ]
       },
@@ -23194,9 +23304,19 @@
                     "value": "MettreX"
                   },
                   "parameters": [
+                    "Canon",
+                    "=",
+                    "Canon.X()-(Velocidad/1.3)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreX"
+                  },
+                  "parameters": [
                     "Luna",
                     "=",
-                    "Luna.X()-(Velocidad/10)"
+                    "Luna.X()-(Velocidad/20)"
                   ]
                 },
                 {
@@ -23206,7 +23326,7 @@
                   "parameters": [
                     "Planeta",
                     "=",
-                    "Planeta.X()-(Velocidad/10)"
+                    "Planeta.X()-(Velocidad/25)"
                   ]
                 }
               ]
@@ -23247,6 +23367,47 @@
                     "=",
                     "0",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "SwCanon",
+                    "=",
+                    "Random(4)"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "SwCanon",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Canon",
+                        "PlataformaFlotante.X()+32",
+                        "PlataformaFlotante.Y()-16",
+                        ""
+                      ]
+                    }
                   ]
                 }
               ]
@@ -23311,6 +23472,32 @@
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "Canon",
+                    "<",
+                    "LimiteInferior.X()-Luna.Width()"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Canon",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
               "actions": []
             }
@@ -23337,7 +23524,7 @@
                   "parameters": [
                     "BG3",
                     "=",
-                    "BG3.X() - Velocidad",
+                    "BG3.X() - Velocidad/1.4",
                     "=",
                     "BG3.Y()"
                   ]
@@ -23349,7 +23536,7 @@
                   "parameters": [
                     "BG3_Transp",
                     "=",
-                    "BG3_Transp.X() - Velocidad/1.4",
+                    "BG3_Transp.X() - Velocidad",
                     "=",
                     "BG3_Transp.Y()"
                   ]
@@ -23671,12 +23858,96 @@
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
-          "actions": []
+          "actions": [
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::FireTowardObject"
+              },
+              "parameters": [
+                "Canon",
+                "FireBullet",
+                "Canon.X()",
+                "Canon.Y()",
+                "FireBall2",
+                "Koro",
+                "200",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Koro",
+                "FireBall2",
+                "FireBall2",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Life",
+                "=",
+                "Life-1"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "New sound effect5",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "FireBall2",
+                ""
+              ]
+            }
+          ]
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
-          "actions": []
+          "actions": [
+            {
+              "type": {
+                "value": "RotateTowardAngle"
+              },
+              "parameters": [
+                "Koro",
+                "0",
+                "90",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -24020,6 +24291,10 @@
           "type": "EffectCapability::EffectBehavior"
         },
         {
+          "name": "FireBullet",
+          "type": "FireBullet::FireBullet"
+        },
+        {
           "name": "Flippable",
           "type": "FlippableCapability::FlippableBehavior"
         },
@@ -24071,10 +24346,6 @@
         {
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior"
-        },
-        {
-          "name": "TopDownMultitouchMapper",
-          "type": "SpriteMultitouchJoystick::TopDownMultitouchMapper"
         }
       ]
     },
