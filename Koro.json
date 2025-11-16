@@ -12541,7 +12541,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.7458023987468076,
+        "zoomFactor": 0.667277399833008,
         "windowMask": false,
         "selectedLayer": ""
       },
@@ -13215,7 +13215,7 @@
           "layer": "Interface",
           "name": "Life_TiledSprite",
           "persistentUuid": "ec94fcca-f9c4-4c2d-9ad9-9417ba918bdb",
-          "width": 181,
+          "width": 135,
           "x": 21,
           "y": 20,
           "zOrder": 115,
@@ -17780,7 +17780,97 @@
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
-              "actions": []
+              "actions": [
+                {
+                  "type": {
+                    "value": "ResizableCapability::ResizableBehavior::SetWidth"
+                  },
+                  "parameters": [
+                    "Life_TiledSprite",
+                    "Resizable",
+                    "=",
+                    "45 * Life / 2"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Life",
+                    "<=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "falling-game-character.mp3",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Life",
+                    "=",
+                    "6"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Start Screen\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Life",
+                    "=",
+                    "6"
+                  ]
+                }
+              ]
             }
           ],
           "parameters": []
@@ -17919,17 +18009,6 @@
                 },
                 {
                   "type": {
-                    "value": "ResizableCapability::ResizableBehavior::SetSize"
-                  },
-                  "parameters": [
-                    "Life_TiledSprite",
-                    "Resizable",
-                    "0",
-                    "0"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "SetBooleanVariable"
                   },
                   "parameters": [
@@ -17970,13 +18049,12 @@
                 },
                 {
                   "type": {
-                    "value": "ResizableCapability::ResizableBehavior::SetSize"
+                    "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "Life_TiledSprite",
-                    "Resizable",
-                    "181",
-                    "40"
+                    "Life",
+                    "=",
+                    "Life - 2"
                   ]
                 },
                 {
@@ -22615,6 +22693,34 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Life",
+                    "=",
+                    "6"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
             }
           ],
           "parameters": []
