@@ -2089,6 +2089,22 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "nave_sola.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "nave_sola.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "base_nave.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "base_nave.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -12517,7 +12533,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.4950840073748963,
+        "zoomFactor": 1.7458023987468076,
         "windowMask": false,
         "selectedLayer": ""
       },
@@ -13051,15 +13067,15 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 0,
-          "height": 256,
+          "depth": 1.5999999999999999,
+          "height": 64,
           "keepRatio": true,
           "layer": "",
           "name": "Portal",
           "persistentUuid": "b1d7fa73-00a9-4bc4-bb82-67952d1d1d87",
-          "width": 256,
-          "x": 4609,
-          "y": -705,
+          "width": 108.79999999999998,
+          "x": 4679,
+          "y": -556,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -13753,6 +13769,39 @@
           "x": 4909,
           "y": -357,
           "zOrder": 126,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 56.888888888888886,
+          "keepRatio": true,
+          "layer": "",
+          "name": "BaseNave",
+          "persistentUuid": "d899099e-6c11-49e0-b7cb-8848c5a139be",
+          "width": 128,
+          "x": 4675,
+          "y": -513,
+          "zOrder": 1009,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Lighting",
+          "name": "LuzNave",
+          "persistentUuid": "6fc31b10-8566-42bd-8104-ebbafc2ed749",
+          "width": 0,
+          "x": 4736,
+          "y": -517,
+          "zOrder": 1010,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -15727,7 +15776,7 @@
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": false,
+          "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
           "name": "Portal",
           "type": "Sprite",
@@ -15737,17 +15786,16 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "Idle",
+              "name": "",
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": true,
-                  "metadata": "{\"pskl\":{}}",
+                  "looping": false,
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "NewSprite13",
+                      "image": "nave_sola.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -15763,116 +15811,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 45.5,
-                            "y": 91.5
+                            "x": 2,
+                            "y": 1
                           },
                           {
-                            "x": 52.5,
-                            "y": 69
+                            "x": 53,
+                            "y": 1
                           },
                           {
-                            "x": 76,
-                            "y": 68.5
+                            "x": 53,
+                            "y": 28
                           },
                           {
-                            "x": 81,
-                            "y": 90
-                          },
-                          {
-                            "x": 74,
-                            "y": 111.5
-                          },
-                          {
-                            "x": 55,
-                            "y": 111
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "NewSprite14",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 45.5,
-                            "y": 91.5
-                          },
-                          {
-                            "x": 52.5,
-                            "y": 69
-                          },
-                          {
-                            "x": 76,
-                            "y": 68.5
-                          },
-                          {
-                            "x": 81,
-                            "y": 90
-                          },
-                          {
-                            "x": 74,
-                            "y": 111.5
-                          },
-                          {
-                            "x": 55,
-                            "y": 111
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "NewSprite15",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 45.5,
-                            "y": 91.5
-                          },
-                          {
-                            "x": 52.5,
-                            "y": 69
-                          },
-                          {
-                            "x": 76,
-                            "y": 68.5
-                          },
-                          {
-                            "x": 81,
-                            "y": 90
-                          },
-                          {
-                            "x": 74,
-                            "y": 111.5
-                          },
-                          {
-                            "x": 55,
-                            "y": 111
+                            "x": 2,
+                            "y": 28
                           }
                         ]
                       ]
@@ -17414,6 +17366,80 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "BaseNave",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "base_nave.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 10
+                          },
+                          {
+                            "x": 54,
+                            "y": 10
+                          },
+                          {
+                            "x": 54,
+                            "y": 24
+                          },
+                          {
+                            "x": 0,
+                            "y": 24
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "LuzNave",
+          "type": "Lighting::LightObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "radius": 100,
+            "color": "255;255;255",
+            "debugMode": false,
+            "texture": ""
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -17550,6 +17576,12 @@
           },
           {
             "objectName": "Flevel2"
+          },
+          {
+            "objectName": "BaseNave"
+          },
+          {
+            "objectName": "LuzNave"
           }
         ]
       },
@@ -19795,7 +19827,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.3216911764705966,
+        "zoomFactor": 0.6040838749989017,
         "windowMask": false,
         "selectedLayer": "Background"
       },
