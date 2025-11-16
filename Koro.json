@@ -2105,6 +2105,14 @@
         "name": "base_nave.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "canon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "canon.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -22360,7 +22368,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "cañon.png",
+                      "image": "canon.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -27886,7 +27894,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6672773998330236,
+        "zoomFactor": 0.3925161175488377,
         "windowMask": false,
         "selectedLayer": ""
       },
@@ -27996,40 +28004,6 @@
           "x": -787,
           "y": -209,
           "zOrder": 104,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 761,
-          "keepRatio": true,
-          "layer": "",
-          "name": "LimiteHorizontal",
-          "persistentUuid": "51a192fc-858e-4953-bf00-9536674822e9",
-          "width": 14,
-          "x": -14,
-          "y": -30,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 845,
-          "keepRatio": true,
-          "layer": "",
-          "name": "LimiteHorizontal",
-          "persistentUuid": "054b81ad-7c24-43fe-bacd-4cf262a0ee6d",
-          "width": 14,
-          "x": 1247,
-          "y": -120,
-          "zOrder": 105,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
