@@ -1,7 +1,7 @@
 {
   "firstLayout": "Start Screen",
   "gdVersion": {
-    "build": 242,
+    "build": 245,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -2129,6 +2129,94 @@
         "name": "NewSprite81",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "terreno-largo2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "terreno-largo2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "terreno-largo (1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "terreno-largo (1).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "terreno-largo (2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "terreno-largo (2).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "terreno-largo_Izq.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "terreno-largo_Izq.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "terreno-largo_der.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "terreno-largo_der.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "terreno-largo_Der.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "terreno-largo_Der.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "terreno-largo_Izq_Der (1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "terreno-largo_Izq_Der (1).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "terreno-largo_Izq_Der (1)2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "terreno-largo_Izq_Der (1)2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "terreno-largo_Der (1).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "terreno-largo_Der (1).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "terreno-largo_Der (2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "terreno-largo_Der (2).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "terreno-largo_Der (3).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "terreno-largo_Der (3).png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2602,7 +2690,14 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "extraBorder": 200,
+          "name": "Destruir Fuera",
+          "type": "DestroyOutsideBehavior::DestroyOutside",
+          "unseenGraceDistance": 10000
+        }
+      ],
       "animations": [
         {
           "name": "FireBall",
@@ -2719,6 +2814,16 @@
       "name": "LifeNave",
       "type": "number",
       "value": 3
+    },
+    {
+      "name": "Disparando",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "Pausado",
+      "type": "boolean",
+      "value": false
     }
   ],
   "layouts": [
@@ -6143,8 +6248,9 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.8416428125373194,
-        "windowMask": false
+        "zoomFactor": 0.2090255622833548,
+        "windowMask": false,
+        "selectedLayer": ""
       },
       "objectsGroups": [],
       "variables": [
@@ -6173,23 +6279,6 @@
           "x": 380,
           "y": 350,
           "zOrder": 100,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 122,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Plataforma",
-          "persistentUuid": "61670e35-484d-4758-9129-437e5d412644",
-          "width": 717,
-          "x": 5,
-          "y": 591,
-          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6275,23 +6364,6 @@
           "x": 567,
           "y": 420,
           "zOrder": 102,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 122,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Plataforma",
-          "persistentUuid": "330fc475-04ea-4168-8df8-56dad23a4613",
-          "width": 722,
-          "x": 2169,
-          "y": 591,
-          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6407,40 +6479,6 @@
           "x": -13,
           "y": -22,
           "zOrder": -7,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 204,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Water",
-          "persistentUuid": "3a2d0962-2eab-4ead-90e0-997265d70172",
-          "width": 1264,
-          "x": 859,
-          "y": -520,
-          "zOrder": 106,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 212,
-          "keepRatio": true,
-          "layer": "",
-          "name": "backWater",
-          "persistentUuid": "f51b483d-a72a-43ca-a0d2-3f0ca19cba55",
-          "width": 1266,
-          "x": 850,
-          "y": -520,
-          "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6744,23 +6782,6 @@
           "persistentUuid": "97d9132a-02e1-42a9-9257-1c7a3508780e",
           "width": 722,
           "x": 4322,
-          "y": 591,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 122,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Plataforma",
-          "persistentUuid": "37b029eb-21e9-4294-88a3-23e38d5c5dc6",
-          "width": 722,
-          "x": 5041,
           "y": 591,
           "zOrder": 2,
           "numberProperties": [],
@@ -7189,7 +7210,7 @@
           "layer": "",
           "name": "Water",
           "persistentUuid": "c7eac134-0ddc-45d7-bc9f-31781b7afd35",
-          "width": 1450,
+          "width": 1443,
           "x": 721,
           "y": 696,
           "zOrder": 118,
@@ -7259,7 +7280,72 @@
           "width": 252,
           "x": 6149,
           "y": 298,
-          "zOrder": 121,
+          "zOrder": 90,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 122,
+          "layer": "",
+          "name": "Plataforma_Izq",
+          "persistentUuid": "463da824-8c9f-4839-85f7-ec1c6ca27a1e",
+          "width": 722,
+          "x": 2166,
+          "y": 591,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 122,
+          "layer": "",
+          "name": "Plataforma_Der",
+          "persistentUuid": "628f9ae1-7748-4e62-b662-e9f924f3303d",
+          "width": 717,
+          "x": 5,
+          "y": 591,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 122,
+          "layer": "",
+          "name": "Plataforma_Der",
+          "persistentUuid": "5c9625fd-6723-4c40-8604-4a8ef2c41fd5",
+          "width": 722,
+          "x": 5041,
+          "y": 591,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 150,
+          "keepRatio": true,
+          "layer": "ControlesTactiles",
+          "name": "FireButton",
+          "persistentUuid": "89cbab3d-d2e6-47f6-9039-369036a70517",
+          "width": 150,
+          "x": 409,
+          "y": 536,
+          "zOrder": 122,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -7979,7 +8065,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "terreno-largo.png",
+                      "image": "terreno-largo (2).png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -7996,15 +8082,11 @@
                         [
                           {
                             "x": 0,
-                            "y": 27.5
-                          },
-                          {
-                            "x": 104.5,
-                            "y": 27.5
+                            "y": 28
                           },
                           {
                             "x": 224,
-                            "y": 27.5
+                            "y": 28
                           },
                           {
                             "x": 224,
@@ -10022,6 +10104,12 @@
           "effects": [],
           "behaviors": [
             {
+              "extraBorder": 200,
+              "name": "Destruir Fuera",
+              "type": "DestroyOutsideBehavior::DestroyOutside",
+              "unseenGraceDistance": 10000
+            },
+            {
               "name": "LinearMovement",
               "type": "LinearMovement::LinearMovement",
               "SpeedX": 0,
@@ -10462,6 +10550,217 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": false,
+          "assetStoreId": "",
+          "name": "Plataforma_Izq",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "canBeGrabbed": true,
+              "isFolded": true,
+              "name": "Platform",
+              "platformType": "NormalPlatform",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "yGrabOffset": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "terreno-largo_Izq.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 28
+                          },
+                          {
+                            "x": 224,
+                            "y": 28
+                          },
+                          {
+                            "x": 224,
+                            "y": 32
+                          },
+                          {
+                            "x": 0,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": false,
+          "assetStoreId": "",
+          "name": "Plataforma_Der",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "canBeGrabbed": true,
+              "isFolded": true,
+              "name": "Platform",
+              "platformType": "NormalPlatform",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "yGrabOffset": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "terreno-largo_Der (3).png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 28
+                          },
+                          {
+                            "x": 224,
+                            "y": 28
+                          },
+                          {
+                            "x": 224,
+                            "y": 32
+                          },
+                          {
+                            "x": 0,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "FireButton",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "MultitouchButton",
+              "type": "SpriteMultitouchJoystick::MultitouchButton",
+              "ControllerIdentifier": 1,
+              "ButtonIdentifier": "LCTRL",
+              "TouchId": 0,
+              "TouchIndex": 2.0247e-320,
+              "IsReleased": false,
+              "IsJustPressed": false,
+              "Radius": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "NewSprite2",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite27",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 64
+                          },
+                          {
+                            "x": 0,
+                            "y": 64
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -10472,6 +10771,12 @@
           },
           {
             "objectName": "Plataforma"
+          },
+          {
+            "objectName": "Plataforma_Der"
+          },
+          {
+            "objectName": "Plataforma_Izq"
           },
           {
             "objectName": "Diamante"
@@ -10546,6 +10851,9 @@
             "objectName": "JumpButton"
           },
           {
+            "objectName": "FireButton"
+          },
+          {
             "objectName": "PilarLargo"
           },
           {
@@ -10600,22 +10908,26 @@
               "actions": [
                 {
                   "type": {
-                    "value": "MettreX"
+                    "value": "MettreXY"
                   },
                   "parameters": [
                     "JumpButton",
                     "=",
-                    "CameraWidth() - JumpButton.Width() - 40"
+                    "CameraWidth() - JumpButton.Width() - 40",
+                    "=",
+                    "CameraHeight() - JumpButton.Height() - 40"
                   ]
                 },
                 {
                   "type": {
-                    "value": "MettreY"
+                    "value": "MettreXY"
                   },
                   "parameters": [
-                    "JumpButton",
+                    "FireButton",
                     "=",
-                    "CameraHeight() - JumpButton.Height() - 40"
+                    "CameraWidth() - FireButton.Width() - 200",
+                    "=",
+                    "CameraHeight() - FireButton.Height() - 40"
                   ]
                 }
               ]
@@ -10737,6 +11049,16 @@
                     "NaveEnemiga",
                     "FireBullet",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "LifeNave",
+                    "=",
+                    "3"
                   ]
                 }
               ]
@@ -11309,6 +11631,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Items",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -12136,245 +12459,372 @@
           ]
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Disparo",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "value": "KeyFromTextJustPressed"
-              },
-              "parameters": [
-                "",
-                "\"LControl\""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextJustPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"LControl\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Disparando",
+                    "True",
+                    ""
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "FlippableCapability::FlippableBehavior::FlippedX"
-              },
-              "parameters": [
-                "Koro",
-                "Flippable"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "\"LControl\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Disparando",
+                    "False",
+                    ""
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "CompareObjectTimer"
-              },
-              "parameters": [
-                "Koro",
-                "\"Disparo\"",
-                ">=",
-                "0.3"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Disparando",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlippedX"
+                  },
+                  "parameters": [
+                    "Koro",
+                    "Flippable"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Koro",
+                    "\"Disparo\"",
+                    ">=",
+                    "0.3"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "IceBall",
+                    "Koro.X()",
+                    "Koro.Y()+15",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "LinearMovement::LinearMovement::SetSpeedX"
+                  },
+                  "parameters": [
+                    "IceBall",
+                    "LinearMovement",
+                    "=",
+                    "-600",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "New sound effect4",
+                    "",
+                    "30",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "Koro",
+                    "\"Disparo\""
+                  ]
+                }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Disparando",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "FlippableCapability::FlippableBehavior::FlippedX"
+                  },
+                  "parameters": [
+                    "Koro",
+                    "Flippable"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Koro",
+                    "\"Disparo\"",
+                    ">=",
+                    "0.3"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "IceBall",
+                    "Koro.X()+30",
+                    "Koro.Y()+15",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "LinearMovement::LinearMovement::SetSpeedX"
+                  },
+                  "parameters": [
+                    "IceBall",
+                    "LinearMovement",
+                    "=",
+                    "600",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "New sound effect4",
+                    "",
+                    "30",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "Koro",
+                    "\"Disparo\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "IceBall",
+                    "NaveEnemiga",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "New sound effect",
+                    "",
+                    "30",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "LifeNave",
+                    "=",
+                    "LifeNave-1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "IceBall",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "Koro",
+                    "\"Disparo\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "FireButton",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonFromTextPressed"
+                  },
+                  "parameters": [
+                    "Start_btn",
+                    "\"Left\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Disparando",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Disparando",
+                    "False",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "IceBall",
-                "Koro.CenterX()",
-                "Koro.CenterY()",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "LinearMovement::LinearMovement::SetSpeedX"
-              },
-              "parameters": [
-                "IceBall",
-                "LinearMovement",
-                "=",
-                "-600",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "PlaySound"
-              },
-              "parameters": [
-                "",
-                "New sound effect4",
-                "",
-                "30",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetObjectTimer"
-              },
-              "parameters": [
-                "Koro",
-                "\"Disparo\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "KeyFromTextJustPressed"
-              },
-              "parameters": [
-                "",
-                "\"LControl\""
-              ]
-            },
-            {
-              "type": {
-                "inverted": true,
-                "value": "FlippableCapability::FlippableBehavior::FlippedX"
-              },
-              "parameters": [
-                "Koro",
-                "Flippable"
-              ]
-            },
-            {
-              "type": {
-                "value": "CompareObjectTimer"
-              },
-              "parameters": [
-                "Koro",
-                "\"Disparo\"",
-                ">=",
-                "0.3"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "IceBall",
-                "Koro.CenterX()",
-                "Koro.CenterY()",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "LinearMovement::LinearMovement::SetSpeedX"
-              },
-              "parameters": [
-                "IceBall",
-                "LinearMovement",
-                "=",
-                "600",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "PlaySound"
-              },
-              "parameters": [
-                "",
-                "New sound effect4",
-                "",
-                "30",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetObjectTimer"
-              },
-              "parameters": [
-                "Koro",
-                "\"Disparo\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "IceBall",
-                "NaveEnemiga",
-                "",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "PlaySound"
-              },
-              "parameters": [
-                "",
-                "New sound effect",
-                "",
-                "30",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "LifeNave",
-                "=",
-                "LifeNave-1"
-              ]
-            },
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "IceBall",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ResetObjectTimer"
-              },
-              "parameters": [
-                "Koro",
-                "\"Disparo\""
-              ]
-            }
-          ]
+          "parameters": []
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -12457,6 +12907,119 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Pausa",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextJustPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"p\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "Pausado",
+                    "Toggle",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Pausado",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ChangeTimeScale"
+                  },
+                  "parameters": [
+                    "",
+                    "0"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "Pausado",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ChangeTimeScale"
+                  },
+                  "parameters": [
+                    "",
+                    "1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
@@ -12784,7 +13347,8 @@
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.667277399833008,
-        "windowMask": false
+        "windowMask": false,
+        "selectedLayer": ""
       },
       "objectsGroups": [],
       "variables": [
@@ -20360,7 +20924,8 @@
         "gridAlpha": 0.8,
         "snap": false,
         "zoomFactor": 0.6040838749989017,
-        "windowMask": false
+        "windowMask": false,
+        "selectedLayer": ""
       },
       "objectsGroups": [],
       "variables": [
@@ -24957,8 +25522,9 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.27253598967729764,
-        "windowMask": false
+        "zoomFactor": 0.4335774304702447,
+        "windowMask": false,
+        "selectedLayer": ""
       },
       "objectsGroups": [],
       "variables": [
@@ -52008,6 +52574,7 @@
               "initialVariables": []
             }
           ],
+          "editionSettings": {},
           "eventsFunctions": [
             {
               "fullName": "",
@@ -53492,7 +54059,8 @@
                   "stringProperties": [],
                   "initialVariables": []
                 }
-              ]
+              ],
+              "editionSettings": {}
             },
             {
               "areaMaxX": 68,
@@ -53797,7 +54365,8 @@
                   "stringProperties": [],
                   "initialVariables": []
                 }
-              ]
+              ],
+              "editionSettings": {}
             }
           ]
         }
@@ -61355,6 +61924,7 @@
             }
           ],
           "instances": [],
+          "editionSettings": {},
           "eventsFunctions": [
             {
               "fullName": "",
