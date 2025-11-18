@@ -24,7 +24,7 @@
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "d:\\Downloads\\Export15",
+    "latestCompilationDirectory": "d:\\Downloads\\Export16",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -2279,6 +2279,30 @@
         "kind": "image",
         "metadata": "",
         "name": "Rayo.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/New image.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "New image",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "pilar flotante2.gif",
+        "kind": "image",
+        "metadata": "",
+        "name": "pilar flotante2.gif",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "koro_en_nave2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "koro_en_nave2.png",
         "smoothed": true,
         "userAdded": false
       }
@@ -11223,6 +11247,41 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SystemInfo::HasTouchScreen"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Water",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
             }
           ],
           "parameters": []
@@ -20356,6 +20415,89 @@
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "FlashDroneButton",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Left\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "FlashCant",
+                    ">",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "FlashTimer",
+                    "=",
+                    "500"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "RadioLuz",
+                    "=",
+                    "RadioLuzFlash"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "FlashCant",
+                    "=",
+                    "FlashCant-1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "FlashTimer",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
               "actions": [
                 {
@@ -20750,49 +20892,6 @@
                 "PlayerSeleccionado",
                 "Toggle",
                 ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "FlashDroneButton",
-                "",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "MouseButtonFromTextPressed"
-              },
-              "parameters": [
-                "",
-                "\"Left\""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "RadioLuz",
-                "=",
-                "RadioLuzFlash"
               ]
             }
           ]
@@ -21601,7 +21700,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6040838749989017,
+        "zoomFactor": 0.47893418845353686,
         "windowMask": false,
         "selectedLayer": ""
       },
@@ -21783,23 +21882,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 2.3255813953488373,
-          "height": 150,
-          "keepRatio": true,
-          "layer": "ControlesTactiles",
-          "name": "JumpButton",
-          "persistentUuid": "3b4a4823-0a09-4980-82f9-ed0c500dd37a",
-          "width": 150,
-          "x": 247,
-          "y": 536,
-          "zOrder": 113,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "depth": 3,
           "height": 80,
           "keepRatio": true,
@@ -21844,57 +21926,6 @@
           "x": 3799,
           "y": 233,
           "zOrder": 117,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 100,
-          "keepRatio": true,
-          "layer": "ControlesTactiles",
-          "name": "DroneButton",
-          "persistentUuid": "0efec6f5-d9e2-46e3-8425-a1d95e63bcad",
-          "width": 100,
-          "x": 508,
-          "y": 600,
-          "zOrder": 118,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 100,
-          "keepRatio": true,
-          "layer": "ControlesTactiles",
-          "name": "SetDroneButton",
-          "persistentUuid": "621bc08b-51f9-45ae-8083-95e1b804ccbc",
-          "width": 100,
-          "x": 634,
-          "y": 600,
-          "zOrder": 119,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 100,
-          "keepRatio": true,
-          "layer": "ControlesTactiles",
-          "name": "FlashDroneButton",
-          "persistentUuid": "2c466454-7064-4784-89c5-d86bd90a3f74",
-          "width": 100,
-          "x": 762,
-          "y": 600,
-          "zOrder": 122,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -22232,15 +22263,44 @@
               "bullet": false,
               "fixedRotation": false,
               "canSleep": true,
-              "shape": "Box",
-              "shapeDimensionA": 0,
-              "shapeDimensionB": 0,
+              "shape": "Circle",
+              "shapeDimensionA": 25,
+              "shapeDimensionB": 25,
               "shapeOffsetX": 0,
               "shapeOffsetY": 0,
               "polygonOrigin": "Center",
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": -25,
+                  "y": 0
+                },
+                {
+                  "x": -25,
+                  "y": 12
+                },
+                {
+                  "x": 15,
+                  "y": 10
+                },
+                {
+                  "x": 25,
+                  "y": 0
+                },
+                {
+                  "x": 15,
+                  "y": -10
+                },
+                {
+                  "x": 0,
+                  "y": -15
+                },
+                {
+                  "x": -25,
+                  "y": -15
+                }
+              ],
               "density": 1,
-              "friction": 0,
+              "friction": 0.5,
               "restitution": 0.1,
               "linearDamping": 0.1,
               "angularDamping": 0.1,
@@ -22709,15 +22769,36 @@
               "bullet": false,
               "fixedRotation": false,
               "canSleep": true,
-              "shape": "Box",
-              "shapeDimensionA": 96,
+              "shape": "Polygon",
+              "shapeDimensionA": 10,
               "shapeDimensionB": 64,
               "shapeOffsetX": 0,
-              "shapeOffsetY": 32,
+              "shapeOffsetY": 0,
               "polygonOrigin": "Center",
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": -28,
+                  "y": -15
+                },
+                {
+                  "x": -28,
+                  "y": 0
+                },
+                {
+                  "x": 0,
+                  "y": 25
+                },
+                {
+                  "x": 28,
+                  "y": 0
+                },
+                {
+                  "x": 28,
+                  "y": -15
+                }
+              ],
               "density": 1,
-              "friction": 0.3,
+              "friction": 1,
               "restitution": 0.1,
               "linearDamping": 0.1,
               "angularDamping": 0.1,
@@ -25523,12 +25604,13 @@
           "conditions": [
             {
               "type": {
-                "value": "Physics2::CollisionStarted"
+                "value": "CollisionNP"
               },
               "parameters": [
                 "Koro",
-                "Physics2",
                 "PlataformaFlotante",
+                "PlataformaFlotante",
+                "",
                 ""
               ]
             },
@@ -34201,7 +34283,7 @@
               "name": "AutoTyping",
               "type": "AutoTyping::AutoTyping",
               "Text": "Text",
-              "Interval": 0.05,
+              "Interval": 0.01,
               "CharacterJustAdded": false,
               "FullText": "",
               "TypedText": ""
@@ -34254,7 +34336,7 @@
               "name": "AutoTyping",
               "type": "AutoTyping::AutoTyping",
               "Text": "Text",
-              "Interval": 0.05,
+              "Interval": 0.01,
               "CharacterJustAdded": false,
               "FullText": "",
               "TypedText": ""
@@ -34307,7 +34389,7 @@
               "name": "AutoTyping",
               "type": "AutoTyping::AutoTyping",
               "Text": "Text",
-              "Interval": 0.05,
+              "Interval": 0.01,
               "CharacterJustAdded": false,
               "FullText": "",
               "TypedText": ""
