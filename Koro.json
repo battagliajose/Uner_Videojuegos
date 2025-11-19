@@ -24,7 +24,7 @@
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "d:\\Downloads\\Export16",
+    "latestCompilationDirectory": "d:\\Downloads\\Export17",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -12039,7 +12039,7 @@
                     "TextoContadorDiamantes",
                     "Text",
                     "=",
-                    "\"00\" + ContadorDiamantes"
+                    "(SubStr(\"000\", 0, (3 - StrLength(ToString(ContadorDiamantes)))) + ToString(ContadorDiamantes))"
                   ]
                 },
                 {
@@ -20007,7 +20007,7 @@
                     "TextoContadorDiamantes",
                     "Text",
                     "=",
-                    "\"00\" + ContadorDiamantes"
+                    "(SubStr(\"000\", 0, (3 - StrLength(ToString(ContadorDiamantes)))) + ToString(ContadorDiamantes))"
                   ]
                 },
                 {
@@ -22417,6 +22417,14 @@
               "rotateObject": false,
               "useLegacyTurnBack": false,
               "viewpoint": "TopDown"
+            },
+            {
+              "name": "TopDownMultitouchMapper",
+              "type": "SpriteMultitouchJoystick::TopDownMultitouchMapper",
+              "TopDownMovement": "TopDownMovement",
+              "ControllerIdentifier": 1,
+              "JoystickIdentifier": "Primary",
+              "StickMode": "8 Directions"
             }
           ],
           "animations": [
@@ -26531,6 +26539,10 @@
         {
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+        },
+        {
+          "name": "TopDownMultitouchMapper",
+          "type": "SpriteMultitouchJoystick::TopDownMultitouchMapper"
         }
       ]
     },
