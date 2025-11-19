@@ -24,7 +24,7 @@
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "d:\\Downloads\\Export19",
+    "latestCompilationDirectory": "d:\\Downloads\\Export22",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -30183,7 +30183,7 @@
               },
               "parameters": [
                 "",
-                "\"LControl\""
+                "\"j\""
               ]
             },
             {
@@ -30218,7 +30218,7 @@
               },
               "parameters": [
                 "",
-                "\"LControl\""
+                "\"j\""
               ]
             },
             {
